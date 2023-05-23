@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: resources/support.html 
+keywords: support resources 
+summary: È possibile utilizzare queste chiamate API per gestire le funzionalità ONTAP utilizzate per supportare un cluster. 
+---
+= Supporto
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare queste chiamate API per gestire le funzionalità ONTAP utilizzate per supportare un cluster.
+
+.Log dell'applicazione
+Un'applicazione standalone può registrare eventi EMS e pacchetti AutoSupport generati facoltativamente in un sistema ONTAP inviando una richiesta POST. Questo tipo di risorsa è stato introdotto con ONTAP 9.11.1
+
+.Aggiornamento automatico
+La funzione di aggiornamento automatico mantiene aggiornati i sistemi ONTAP scaricando e applicando gli aggiornamenti software più recenti. Sono disponibili diverse categorie di endpoint a supporto della funzionalità, tra cui stato, configurazioni e aggiornamenti. Questi tipi di risorse sono stati introdotti con ONTAP 9.10.
+
+.AutoSupport
+AutoSupport raccoglie i dettagli di configurazione e stato, oltre agli errori, e riporta le informazioni a NetApp. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Messaggi AutoSupport
+Ogni nodo conserva i messaggi AutoSupport che possono essere generati e recuperati. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Backup della configurazione
+È possibile utilizzare queste API per recuperare e aggiornare le impostazioni di backup correnti. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Operazioni di backup della configurazione
+È possibile creare, recuperare ed eliminare i file di backup della configurazione. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.Core dump
+È possibile utilizzare questi endpoint per recuperare e gestire i core dump di memoria generati da un cluster o nodo. Questo tipo di risorsa è stato introdotto con ONTAP 9.10.
+
+.EMS
+Il sistema di gestione degli eventi (EMS) raccoglie gli eventi e invia le notifiche a una o più destinazioni. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Destinazioni EMS
+Le destinazioni EMS determinano come e dove inviare le notifiche. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Istanza di destinazioni EMS
+Un'istanza di destinazione EMS viene definita in base al tipo e alla posizione. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Eventi EMS
+Si tratta di una raccolta live di eventi di sistema per il cluster. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Filtri EMS
+I filtri EMS identificano collettivamente gli eventi che richiedono un'elaborazione aggiuntiva. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.EMS filtra l'istanza
+Un'istanza di filtro EMS è un insieme di regole applicate agli eventi. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Messaggi EMS
+Fornisce l'accesso al catalogo eventi EMS. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Configurazione del ruolo EMS
+La funzione di supporto EMS consente la gestione dei ruoli e la configurazione del controllo degli accessi assegnata ai ruoli. In questo modo è possibile limitare o filtrare gli eventi e i messaggi in base alla configurazione del ruolo. Questo tipo di risorsa è stato introdotto con ONTAP 9.13.
+
+.Regole EMS per l'istanza del filtro
+È possibile gestire un elenco di regole per un'istanza specifica di un filtro EMS. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Istanza delle regole EMS per l'istanza del filtro
+Una singola regola per un'istanza specifica di un filtro EMS. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.SNMP
+È possibile attivare e disattivare le operazioni SNMP e trap per il cluster. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.Host trap SNMP
+Un host trap SNMP è un sistema configurato per ricevere trap SNMP da ONTAP. È possibile recuperare e definire gli host. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.Istanza host trap SNMP
+È possibile gestire host trap SNMP specifici. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.Utenti SNMP
+È possibile definire e amministrare gli utenti SNMP. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.Istanza degli utenti SNMP
+È possibile amministrare un utente SNMP specifico in cui l'ID del motore è associato alla SVM amministrativa o a una SVM dati. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.

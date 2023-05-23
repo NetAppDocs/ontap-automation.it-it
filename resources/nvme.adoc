@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: resources/nvme.html 
+keywords: nvme resources 
+summary: È possibile utilizzare queste chiamate API per gestire le risorse che supportano NVMe. 
+---
+= NVMe
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare queste chiamate API per gestire le risorse che supportano NVMe (non-volatile Memory Express).
+
+.Accessi Fibre Channel
+Gli accessi Fibre Channel rappresentano le connessioni formate dagli iniziatori Fibre Channel connessi a ONTAP. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Spazi dei nomi
+Uno spazio dei nomi NVMe è un insieme di blocchi logici indirizzabili presentati agli host connessi alla SVM utilizzando il protocollo NVMe over Fabrics. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.8.
+
+.Interfacce NVMe
+Le interfacce NVMe sono le interfacce di rete configurate per supportare il protocollo NVMe over Fabrics (NVMe-of). Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Servizi NVMe
+Un servizio NVMe definisce le proprietà della destinazione del controller NVMe per una SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.7.
+
+.Controller del sottosistema NVMe
+I controller del sottosistema NVMe rappresentano connessioni dinamiche tra host e una soluzione di storage. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Mappe dei sottosistemi NVMe
+Una mappa del sottosistema NVMe è un'associazione di uno spazio dei nomi NVMe con un sottosistema NVMe. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Sottosistemi NVMe
+Un sottosistema NVMe mantiene lo stato di configurazione e il controllo dell'accesso allo spazio dei nomi per un set di host connessi a NVMe. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.

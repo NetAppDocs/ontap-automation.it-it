@@ -1,0 +1,8 @@
+---
+section: automate
+title: Tecnologie di automazione
+entries:
+- title: ONTAP e Ansible
+  url: "/automate/ontap_ansible.html"
+- title: Blog di automazione
+  url: "/automate/blogs.html"

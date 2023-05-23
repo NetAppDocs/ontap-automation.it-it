@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: rest/asynchronous_processing.html 
+keywords: asynchronous, asynchronous processing, job, job object 
+summary: 'Dopo aver inviato una richiesta API progettata per essere eseguita in modo asincrono, un oggetto di lavoro viene sempre creato e restituito al chiamante. Il lavoro descrive e ancora un"attività in background che elabora la richiesta.' 
+---
+= Elaborazione asincrona utilizzando l'oggetto Job
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dopo aver inviato una richiesta API progettata per essere eseguita in modo asincrono, un oggetto di lavoro viene sempre creato e restituito al chiamante. Il lavoro descrive e ancora un'attività in background che elabora la richiesta. A seconda del codice di stato HTTP, è necessario recuperare lo stato del lavoro per determinare se la richiesta ha avuto esito positivo.
+
+Fare riferimento a. link:../reference/api_reference.html["Riferimento API"] Per determinare quali chiamate API sono progettate per essere eseguite in modo asincrono.
+
+
+
+== Controllo della modalità di elaborazione di una richiesta
+
+È possibile utilizzare `return_timeout` Parametro query per controllare il modo in cui viene elaborata una chiamata API asincrona. L'utilizzo di questo parametro può avere due risultati.
+
+Il timer scade prima del completamento della richiesta:: Per le richieste valide, ONTAP restituisce un codice di stato HTTP 202 insieme all'oggetto lavoro. È necessario recuperare lo stato del lavoro per determinare se la richiesta è stata completata correttamente.
+La richiesta viene completata prima della scadenza del timer:: Se la richiesta è valida e viene completata correttamente prima della scadenza del tempo, ONTAP restituisce un codice di stato HTTP 200 insieme all'oggetto lavoro. Poiché la richiesta viene completata in modo sincrono, come indicato dal file 200, non è necessario recuperare lo stato del lavoro.
++
+--
+
+NOTE: Il valore predefinito per `return_timeout` il parametro è pari a zero secondi. Pertanto, se non si include il parametro, il codice di stato HTTP 202 viene sempre restituito per una richiesta valida.
+
+--
+
+
+
+
+== Esecuzione di query sull'oggetto Job associato a una richiesta API
+
+L'oggetto Job restituito nella risposta HTTP contiene diverse proprietà. È possibile eseguire una query sulla proprietà state in una successiva chiamata API per determinare se la richiesta è stata completata correttamente. Un oggetto Job si trova sempre in uno dei seguenti stati:
+
+stati non terminali::
++
+--
+* In coda
+* In esecuzione
+* In pausa
+
+
+--
+stati del terminale::
++
+--
+* Successo
+* Guasto
+
+
+--
+
+
+
+
+== Procedura generale per l'emissione di una richiesta asincrona
+
+È possibile utilizzare la seguente procedura di alto livello per completare una chiamata API asincrona. Questo esempio presuppone `return_timeout` il parametro non viene utilizzato o il tempo scade prima del completamento del processo in background.
+
+. Eseguire una chiamata API progettata per essere eseguita in modo asincrono.
+. Ricevere una risposta HTTP 202 che indichi l'accettazione di una richiesta valida.
+. Estrarre l'identificatore per l'oggetto Job dal corpo della risposta.
+. All'interno di un ciclo temporizzato, eseguire le seguenti operazioni in ogni ciclo:
++
+.. Ottenere lo stato corrente del lavoro.
+.. Se il lavoro è in uno stato non terminale, eseguire nuovamente il loop.
+
+
+. Interrompere quando il lavoro raggiunge uno stato terminale (successo, errore).
+
+
+.Informazioni correlate
+* link:../workflows/wf_1_update_cluster_contact.html["Workflow 1: Aggiornamento del contatto del cluster e verifica dello stato del lavoro"]
+

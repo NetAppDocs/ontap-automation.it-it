@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: resources/application.html 
+keywords: application resources 
+summary: 'È possibile utilizzare queste chiamate API per gestire le risorse dell"applicazione ONTAP.' 
+---
+= Applicazione
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare queste chiamate API per gestire le risorse dell'applicazione ONTAP.
+
+.Snapshot delle applicazioni
+Le applicazioni supportano copie Snapshot, che possono essere create o ripristinate in qualsiasi momento. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Applicazioni
+Le applicazioni ONTAP sono organizzate in base al tipo, inclusi modelli, applicazioni, componenti e copie Snapshot. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Gruppi di coerenza
+Un gruppo di coerenza è un insieme di volumi raggruppati quando si eseguono determinate operazioni, ad esempio uno snapshot. Questa funzionalità estende la stessa coerenza del crash e l'integrità dei dati implicita con operazioni a volume singolo in un insieme di volumi. Questo tipo di risorsa è stato introdotto con ONTAP 9.10 e aggiornato con 9.12. Con ONTAP 9.13 è stato aggiunto un endpoint per recuperare i dati relativi alle prestazioni metriche e alla capacità.
+
+.La coerenza raggruppa le snapshot
+È possibile utilizzare questi endpoint per copiare, creare, inventariare e ripristinare snapshot per un gruppo di coerenza. Questo tipo di risorsa è stato introdotto con ONTAP 9.10.

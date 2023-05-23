@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: get-started/retrieve_cluster_software_version.html 
+keywords: transaction, API transaction, request, response 
+summary: Ogni transazione API è costituita da una richiesta HTTP e dalla risposta associata. 
+---
+= Recupero della versione del software del cluster
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ogni transazione API è costituita da una richiesta HTTP e dalla risposta associata. Questa illustrazione mostra come recuperare la versione del software ONTAP utilizzato dal cluster.
+
+image:rest_call_01.png["Immagine di una semplice chiamata API REST"]
+
+.Richiesta HTTP
+La richiesta inviata dal client al server è costituita dai seguenti elementi:
+
+* OTTIENI verbo
+* Percorso URL del cluster
+* Parametro query (campi)
+* Intestazioni delle richieste, inclusa l'autorizzazione
+
+
+.Risposta HTTP
+La risposta inviata dal server al client è costituita dai seguenti elementi:
+
+* Codice di stato 200
+* Intestazioni delle risposte
+* Corpo di risposta contenente la versione del software del cluster
+

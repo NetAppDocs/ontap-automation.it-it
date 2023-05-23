@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: resources/snapmirror.html 
+keywords: snapmirror resources 
+summary: È possibile utilizzare queste chiamate API per gestire la tecnologia di protezione dei dati SnapMirror. 
+---
+= SnapMirror
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare queste chiamate API per gestire la tecnologia di protezione dei dati SnapMirror.
+
+.Policy
+I criteri di SnapMirror vengono applicati alle relazioni e controllano gli attributi di configurazione e il comportamento di ciascuna relazione. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Relazioni
+Le relazioni asincrone e sincrona stabiliscono la connettività necessaria per i dati di trasferimento. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Trasferimenti di relazioni
+È possibile gestire i trasferimenti SnapMirror sulle relazioni SnapMirror esistenti. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.

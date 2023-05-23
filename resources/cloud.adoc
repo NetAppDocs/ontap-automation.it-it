@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: resources/cloud.html 
+keywords: cloud resources 
+summary: È possibile utilizzare queste chiamate API per gestire le connessioni alle risorse di storage a oggetti nel cloud. 
+---
+= Cloud
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare queste chiamate API per gestire le connessioni alle risorse di storage a oggetti nel cloud.
+
+.Destinazioni
+Una destinazione rappresenta una risorsa di storage a oggetti nel cloud. Ciascuna destinazione include le informazioni di configurazione necessarie per connettersi alla risorsa di storage. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.

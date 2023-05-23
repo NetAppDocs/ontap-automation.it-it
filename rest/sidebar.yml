@@ -1,0 +1,41 @@
+---
+section: rest
+title: API REST di ONTAP
+entries:
+- title: Dettagli sull'implementazione REST
+  entries:
+  - title: Base REST per i web Services
+    url: "/rest/rest_web_services_foundation.html"
+  - title: Versione dell'API REST di ONTAP
+    url: "/rest/rest_api_versioning.html"
+  - title: Come accedere all'API REST
+    url: "/rest/access_rest_api.html"
+  - title: Caratteristiche operative di base
+    url: "/rest/operational_characteristics.html"
+  - title: Variabili di input
+    url: "/rest/input_variables.html"
+  - title: Interpretare una risposta API
+    url: "/rest/interpret_api_response.html"
+  - title: Elaborazione asincrona utilizzando l'oggetto lavoro
+    url: "/rest/asynchronous_processing.html"
+- title: Considerazioni aggiuntive
+  entries:
+  - title: Riferimenti e accesso agli oggetti
+    url: "/rest/object_references_and_access.html"
+  - title: Utenti di ONTAPI API e CLI ONTAP
+    url: "/rest/users_ontapi_api_ontap_cli.html"
+  - title: Accedere all'interfaccia utente di ONTAP
+    url: "/rest/access_ontap_cli.html"
+  - title: Metriche delle performance per le risorse di storage
+    url: "/rest/performance_metrics.html"
+- title: Sicurezza RBAC
+  entries:
+  - title: Panoramica
+    url: "/rest/rbac_overview.html"
+  - title: Lavorare con ruoli e utenti
+    url: "/rest/rbac_roles_users.html"
+  - title: Definizioni di ruoli di esempio
+    url: "/rest/rbac_sample_roles.html"
+  - title: Creare un utente con un ruolo
+    url: "/rest/rbac_wf_create_user.html"
+- section: resources

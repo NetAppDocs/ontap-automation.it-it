@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: resources/networking.html 
+keywords: networking resources 
+summary: È possibile utilizzare queste chiamate API per gestire le risorse di rete fisiche e logiche utilizzate con il cluster. 
+---
+= Networking
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare queste chiamate API per gestire le risorse di rete fisiche e logiche utilizzate con il cluster.
+
+.Peer group BGP
+È possibile creare e amministrare gruppi peer del protocollo Border Gateway. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.Domini di broadcast Ethernet
+Un dominio di trasmissione Ethernet è un insieme di porte fisiche che sembrano far parte della stessa rete fisica. Tutte le porte ricevono un pacchetto quando vengono trasmesse da una delle porte del dominio. Ogni dominio di broadcast fa parte di un IPSpace. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Porte Ethernet
+Una porta Ethernet è un endpoint di rete fisico o virtuale. Le porte possono essere combinate in un link aggregate Group (LAG) o separate utilizzando una Virtual LAN (VLAN). Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.8.
+
+.Porte switch Ethernet
+È possibile recuperare le informazioni sulla porta di uno switch Ethernet. Questo tipo di risorsa è stato utilizzato per la prima volta in ONTAP 9.8.
+
+.Switch Ethernet
+È possibile recuperare o modificare la configurazione degli switch Ethernet utilizzati per il cluster ONTAP o la rete di storage. Questo tipo di risorsa è stato aggiornato con ONTAP 9.8 e con 9.11.
+
+.Fabric Fibre Channel
+È possibile utilizzare gli endpoint API REST del fabric Fibre Channel (FC) per recuperare informazioni sulla rete FC. Ciò include le connessioni tra il cluster ONTAP e il fabric FC, gli switch che compongono il fabric e le zone dello zoneset attivo. Questo tipo di risorsa è stato introdotto con ONTAP 9.11.
+
+.Interfacce Fibre Channel
+Un'interfaccia Fibre Channel è un endpoint logico associato a una SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.8.
+
+.Porte Fibre Channel
+Una porta Fibre Channel è un adattatore fisico su un nodo ONTAP utilizzato per il collegamento alla rete Fibre Channel. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.8.
+
+.Proxy HTTP
+È possibile configurare un proxy HTTP per una SVM o un IPSpace del cluster. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.Interfacce IP
+Un'interfaccia logica (LIF) è un indirizzo IP con attributi di configurazione aggiuntivi. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.8.
+
+.Instradamenti IP
+Una tabella di routing è un insieme di route IP utilizzate per inoltrare il traffico alla destinazione. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Policy di servizio IP
+I criteri dei servizi IP definiscono i servizi disponibili in una LIF specifica. Le policy di servizio possono essere configurate nel contesto di una SVM o IPSpace. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.8.
+
+.Subnet IP
+La funzionalità di rete ONTAP è stata ampliata per supportare le subnet IP. L'API REST consente di accedere alla configurazione e alla gestione delle subnet IP all'interno di un cluster ONTAP. Questo tipo di risorsa è stato introdotto con ONTAP 9.11.
+
+.IPspaces
+Un IPSpace crea uno spazio di rete per supportare una o più SVM. Gli IPspaces possono essere isolati l'uno dall'altro, garantendo sicurezza e privacy. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.

@@ -1,0 +1,98 @@
+---
+sidebar: sidebar 
+permalink: resources/storage.html 
+keywords: storage resources 
+summary: È possibile utilizzare queste chiamate API per gestire lo storage fisico e logico. 
+---
+= Storage
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare queste chiamate API per gestire lo storage fisico e logico.
+
+.Metriche aggregate
+È possibile recuperare i dati storici delle metriche per un aggregato specifico. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.7.
+
+.Plessi aggregati
+Copia fisica dello storage WAFL all'interno di un aggregato. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Aggregati
+Un aggregato è costituito da uno o più gruppi RAID. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Ponti
+È possibile recuperare i bridge in un cluster. Questo tipo di risorsa è stato introdotto con ONTAP 9.9.
+
+.Dischi
+I dischi fisici nel cluster. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.7 e 9.8.
+
+.Clone del file
+È possibile utilizzare questi endpoint per creare cloni di file, recuperare lo stato di divisione e gestire i carichi divisi. Le risorse endpoint per la clonazione dei file sono state introdotte per la prima volta con ONTAP 9.6 ed estese con ONTAP 9.8. Sono stati ampliati di nuovo in maniera significativa con ONTAP 9.10.
+
+.Il file si sposta
+È possibile utilizzare questi endpoint API REST per spostare un file tra due volumi FlexVol o all'interno di un volume FlexGroup. Una volta accettata la richiesta, è possibile monitorare l'avanzamento e lo stato. Questo tipo di risorsa è stato introdotto con ONTAP 9.11.1.
+
+.FlexCache
+Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.8.
+
+.Origini di FlexCache
+FlexCache è una cache persistente di un volume di origine. Questo tipo di risorsa è stato introdotto originariamente con ONTAP 9.6. Il supporto è stato migliorato con l'API REST di ONTAP 9.9 per supportare la modifica tramite il metodo DI PATCH HTTP.
+
+.File monitorati
+È possibile designare file specifici per un ulteriore monitoraggio. Questo tipo di risorsa è stato utilizzato per la prima volta in ONTAP 9.8.
+
+.Piscine
+È possibile creare un pool di storage condiviso e recuperare i pool di storage in un cluster. Questo tipo di risorsa è stato introdotto con ONTAP 9.11.1.
+
+.Porte
+Porte di storage del cluster. Questo tipo di risorse è stato introdotto con ONTAP 9.6 e migliorato con ONTAP 9.11.1.
+
+.Policy DI QOS
+Configurazione della policy di qualità del servizio. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Carichi di lavoro QOS
+Un carico DI lavoro QOS rappresenta un oggetto storage monitorato dalla QOS. È possibile recuperare i flussi DI lavoro QOS. Questo tipo di risorsa è stato introdotto con ONTAP 9.10.
+
+.Qtree
+È possibile utilizzare queste chiamate API per i Qtree di gestione, un tipo di file system suddiviso in modo logico. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Report sulle quote
+Report sulle quote, una tecnica per limitare o tenere traccia dell'utilizzo di file o spazio. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Regole di quota
+Le regole utilizzate per applicare le quote. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.7.
+
+.Shelf
+Shelf nel cluster. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Policy di Snapshot
+Le snapshot vengono create in base alle policy. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Pianificazioni di Snapshot
+È possibile controllare le pianificazioni degli snapshot. Questo tipo di risorse è stato riprogettato con ONTAP 9.8.
+
+.Switch
+È possibile recuperare gli switch in un cluster. Questo tipo di risorsa è stato introdotto con ONTAP 9.9.
+
+.Dispositivi a nastro
+È possibile recuperare i dispositivi a nastro in un cluster. Questo tipo di risorsa è stato introdotto con ONTAP 9.9.
+
+.Metriche principali
+Gli endpoint principali delle metriche consentono di determinare l'attività di un volume filtrato in base a una metrica specifica. Il filtraggio può essere eseguito in base a client, directory, file e utenti. Questo tipo di risorsa è stato introdotto con ONTAP 9.10.
+
+.Policy di efficienza dei volumi
+È possibile utilizzare queste chiamate API per configurare le efficienze applicate a un intero volume. Questo tipo di risorsa è stato utilizzato per la prima volta in ONTAP 9.8.
+
+.Volumi
+I contenitori logici vengono utilizzati per fornire i dati ai client. Questo tipo di risorsa è stato introdotto originariamente con l'API REST di ONTAP 9.6. Molti dei valori dei parametri utilizzati con l'API sono stati notevolmente espansi con ONTAP 9.9, inclusi quelli utilizzati con la gestione dello spazio.
+
+.File di volume
+È possibile recuperare un elenco di file e directory per una directory specifica su un volume. Questo tipo di risorsa è stato introdotto con ONTAP 9.7 e aggiornato con ONTAP 9.8.
+
+.Snapshot dei volumi
+Snapshot per un volume. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.

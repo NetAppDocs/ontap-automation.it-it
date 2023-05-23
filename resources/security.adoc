@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: resources/security.html 
+keywords:  
+summary:  
+---
+= Sicurezza
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Queste chiamate API possono essere utilizzate per gestire le impostazioni di sicurezza del cluster e SVM.
+
+.Account
+Esiste una raccolta di account utente per il cluster e le SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Nome account
+La configurazione per un account utente con ambito. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Proxy di Active Directory
+È possibile amministrare le informazioni dell'account SVM sul server Active Directory. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.Anti-ransomware
+ONTAP rileva i file potenzialmente contenenti una minaccia ransomware. Esistono diverse categorie di endpoint. È possibile recuperare un elenco di questi file sospetti e rimuoverli da un volume. Questo tipo di risorsa è stato introdotto con ONTAP 9.10.1.
+
+.Audit
+Le impostazioni che determinano ciò che viene registrato nei file di log dell'audit. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Destinazioni di audit
+Queste impostazioni controllano il modo in cui le informazioni del registro di controllo vengono inoltrate ai sistemi remoti o ai server splunk. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Messaggi di audit
+È possibile recuperare i messaggi del registro di controllo. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.AWS KMS
+Amazon Web Services include un servizio di gestione delle chiavi che fornisce storage sicuro per chiavi e altri segreti. È possibile accedere a questo servizio tramite l'API REST per consentire a ONTAP di memorizzare in modo sicuro le proprie chiavi di crittografia nel cloud. Inoltre, è possibile creare ed elencare le chiavi di autenticazione utilizzate con NetApp Storage Encryption. Questo supporto è una novità di ONTAP 9.12.
+
+.Archivio chiavi Azure
+Questo set di chiamate API consente di utilizzare il vault delle chiavi Azure per memorizzare le chiavi di crittografia ONTAP. Questo tipo di risorsa è stato utilizzato per la prima volta in ONTAP 9.8.
+
+.Certificati
+Le chiamate API possono essere utilizzate per installare, visualizzare ed eliminare i certificati utilizzati da ONTAP. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.Sicurezza del cluster
+È possibile recuperare i dettagli della protezione a livello di cluster e aggiornare alcuni parametri. Questo tipo di risorsa è stato introdotto con ONTAP 9.7 e aggiornato con ONTAP 9.8.
+
+.KMS GCP
+Questo set di chiamate API consente di utilizzare il servizio di gestione delle chiavi della piattaforma cloud di Google per memorizzare e gestire le chiavi di crittografia ONTAP. Questo tipo di risorsa è stato introdotto inizialmente con l'API REST di ONTAP 9.8. Tuttavia, questa funzionalità è stata riprogettata e quindi è considerata una novità, con nuovi tipi di risorse, in ONTAP 9.9.
+
+.IPSec
+IPSec (Internet Protocol Security) è una suite di protocolli che garantisce la sicurezza tra due endpoint su una rete IP sottostante. Questo tipo di risorsa è stato utilizzato per la prima volta in ONTAP 9.8.
+
+.Certificati CA IPsec
+È possibile aggiungere, rimuovere e recuperare certificati CA IPSec. Questo tipo di risorsa è stato utilizzato per la prima volta in ONTAP 9.10.
+
+.Criteri IPsec
+È possibile utilizzare questo set di chiamate API per gestire i criteri in vigore per un'implementazione IPSec. Questo tipo di risorsa è stato utilizzato per la prima volta in ONTAP 9.8.
+
+.Associazioni di protezione IPsec
+È possibile utilizzare questo set di chiamate API per gestire le associazioni di protezione in vigore per una distribuzione IPSec. Questo tipo di risorsa è stato utilizzato per la prima volta in ONTAP 9.8.
+
+.Configurazioni del gestore delle chiavi
+Questi endpoint consentono di recuperare e aggiornare le configurazioni per i key manager. Questo tipo di risorsa è stato utilizzato per la prima volta in ONTAP 9.10.
+
+.Responsabili chiave
+Un gestore delle chiavi consente ai moduli client all'interno di ONTAP di memorizzare chiavi in modo sicuro. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato per ONTAP 9.7. C'era un altro aggiornamento con ONTAP 9.12 per supportare le chiavi di autenticazione. Con ONTAP 9.13 è stata aggiunta una funzionalità di ripristino.
+
+.Negozi chiave
+Un archivio chiavi descrive il tipo di gestore delle chiavi. Questo tipo di risorsa è stato utilizzato per la prima volta in ONTAP 9.10.
+
+.Autenticazione LDAP
+Queste chiamate API vengono utilizzate per recuperare e gestire la configurazione del server LDAP del cluster. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Messaggi di accesso
+Consente di visualizzare e gestire i messaggi di accesso utilizzati da ONTAP. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Verifica di più amministratori
+La funzione di verifica di più amministratori fornisce un framework di autorizzazione flessibile per proteggere l'accesso ai comandi o alle operazioni ONTAP. Ci sono diciassette nuovi endpoint che supportano la definizione, la richiesta e l'approvazione dell'accesso nelle seguenti aree:
+
+* Regole
+* Richieste
+* Gruppi di approvazione
+
+
+La possibilità per più amministratori di approvare l'accesso migliora la sicurezza degli ambienti ONTAP e IT. Questi tipi di risorse sono stati introdotti con ONTAP 9.11.
+
+.Autenticazione NIS
+Queste impostazioni vengono utilizzate per recuperare e gestire la configurazione del server NIS del cluster. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Autenticazione della password
+Include la chiamata API utilizzata per modificare la password di un account utente. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Privilegi per un'istanza di ruolo
+Gestire i privilegi per un ruolo specifico. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Autenticazione a chiave pubblica
+È possibile utilizzare queste chiamate API per configurare le chiavi pubbliche per gli account utente. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.Ruoli
+I ruoli consentono di assegnare privilegi agli account utente. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Istanza dei ruoli
+Istanza specifica di un ruolo. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Provider di servizi SAML
+È possibile visualizzare e gestire la configurazione del provider di servizi SAML. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.SSH
+Queste chiamate consentono di impostare la configurazione SSH. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.SSH SVM
+Questi endpoint consentono di recuperare la configurazione di sicurezza SSH per tutte le SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9.10.
+
+.TOTPS
+È possibile utilizzare l'API REST per configurare i profili TOTP (Time-Based One-Time Password) per gli account che accedono a ONTAP utilizzando SSH. Questo tipo di risorsa è stato introdotto con ONTAP 9.13.

@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: rn/known_limitations.html 
+keywords: limitations, known limitations 
+summary: 'L"API REST di ONTAP presenta alcune limitazioni o restrizioni che potrebbero influire sull"utilizzo dell"API e sullo sviluppo del codice di automazione.' 
+---
+= Limitazioni note
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'API REST di ONTAP presenta alcune limitazioni o restrizioni che potrebbero influire sull'utilizzo dell'API e sullo sviluppo del codice di automazione. Queste limitazioni sono descritte di seguito. In generale, ciascuno di essi si applica a tutte le release ONTAP supportate in cui è disponibile l'API REST. Per ulteriori informazioni, consulta il campo _ONTAP release_.
+
+
+NOTE: L'API REST è stata resa disponibile per la prima volta con ONTAP 9.6.
+
+.Le richieste REST API sono state rifiutate quando la coda di input è piena
+_ONTAP release: Tutte supportate_
+
+Ogni richiesta del client API REST viene ricevuta da ONTAP e inserita in una coda di input prima di essere elaborata. In caso di velocità di arrivo estremamente elevate, la coda di attesa di input che contiene queste richieste API può riempirsi temporaneamente. In questo caso, ogni richiesta di overflow aggiuntiva viene rifiutata. In queste situazioni:
+
+* ONTAP riconosce che la connessione in entrata supera la profondità della coda di attesa e registra un messaggio che indica che la connessione non riesce.
+* Il client REST osserva la connessione non riuscita, anche se il comportamento esatto può dipendere dal client. Ad esempio, con un client NMSDK viene visualizzato il messaggio "Impossibile connettersi a SSL".
+
+
+Il riempimento della coda di attesa dell'API REST è un evento raro. Tuttavia, il rifiuto delle richieste in eccesso offre protezione contro gli attacchi DOS.

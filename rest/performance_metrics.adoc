@@ -1,0 +1,92 @@
+---
+sidebar: sidebar 
+permalink: rest/performance_metrics.html 
+keywords: performance, performance metrics 
+summary: 'ONTAP raccoglie le metriche delle performance relative agli oggetti e ai protocolli di storage SVM selezionati e riporta queste informazioni attraverso l"API REST. È possibile utilizzare questi dati per monitorare le prestazioni di un sistema ONTAP.' 
+---
+= Metriche delle performance per le risorse di storage
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP raccoglie le metriche delle performance relative agli oggetti e ai protocolli di storage SVM selezionati e riporta queste informazioni attraverso l'API REST. È possibile utilizzare questi dati per monitorare le prestazioni di un sistema ONTAP.
+
+Per un determinato oggetto o protocollo di storage, i dati relativi alle performance sono suddivisi in tre categorie:
+
+* IOPS
+* Latenza
+* Throughput
+
+
+All'interno di ciascuna categoria, sono disponibili uno o più dei seguenti tipi di dati:
+
+* Lettura (R)
+* Scrittura (W)
+* Altro (o)
+* Totale (T)
+
+
+La seguente tabella riassume i dati sulle performance disponibili attraverso l'API REST di ONTAP, inclusa la release al momento dell'aggiunta. Per ulteriori informazioni, consultare la pagina della documentazione online dell'API REST nel sistema ONTAP.
+
+|===
+| Oggetto o protocollo di storage | IOPS | Latenza | Throughput | Release di ONTAP 
+
+
+| Porta Ethernet | Non applicabile | Non applicabile | RWT | 9.8 
+
+
+| Porta FC | RWOT | RWOT | RWT | 9.8 
+
+
+| Interfaccia IP | Non applicabile | Non applicabile | RWT | 9.8 
+
+
+| Interfaccia FC | RWOT | RWOT | RWT | 9.8 
+
+
+| Namespace NVMe | RWOT | RWOT | RWOT | 9.8 
+
+
+| Statistiche qtree | RWOT raw | Non applicabile | RWOT raw | 9.8 
+
+
+| Volume FlexCache (Nome volume) | RWOT | RWOT | RWT | 9.8 
+
+
+| Nodo: Utilizzo del processo | Utilizzo del processo come valore numerico | Utilizzo del processo come valore numerico | Utilizzo del processo come valore numerico | 9.8 
+
+
+| Volume cloud | RWOT | RWOT | Non applicato | 9.7 
+
+
+| LUN | RWOT | RWOT | RWOT | 9.7 
+
+
+| Aggregato | RWOT | RWOT | RWOT | 9.7 
+
+
+| Protocollo NFS SVM | RWOT | RWOT | RWT | 9.7 
+
+
+| Protocollo CIFS SVM | RWOT | RWOT | RWT | 9.7 
+
+
+| Protocollo FCP SVM | RWOT | RWOT | RWT | 9.7 
+
+
+| Protocollo iSCSI SVM | RWOT | RWOT | RWT | 9.7 
+
+
+| Protocollo NVMe SVM | RWOT | RWOT | RWT | 9.7 
+
+
+| Cluster | RWOT | RWOT | RWOT | 9.6 
+
+
+| Volumi | RWOT | RWOT | RWOT | 9.6 
+|===

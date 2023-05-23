@@ -1,0 +1,50 @@
+---
+sidebar: sidebar 
+permalink: workflows/prepare_workflows.html 
+keywords: workflows, preparation, prepare to use workflows 
+summary: È necessario prepararsi prima di utilizzare i processi del flusso di lavoro. 
+---
+= Preparati a utilizzare i flussi di lavoro
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È necessario prepararsi prima di utilizzare i processi del flusso di lavoro.
+
+
+
+=== Informazioni sulle chiamate API utilizzate nei flussi di lavoro
+
+La pagina della documentazione online dell'API ONTAP include i dettagli di ogni chiamata REST. Invece di ripetere questi dettagli qui, ogni chiamata API utilizzata negli esempi del flusso di lavoro include solo le informazioni necessarie per individuare la chiamata nella pagina della documentazione. Dopo aver individuato una chiamata API specifica, è possibile esaminare i dettagli completi della chiamata, inclusi i parametri di input, i formati di output, i codici di stato HTTP e il tipo di elaborazione della richiesta.
+
+Le seguenti informazioni sono incluse per ogni chiamata API all'interno di un flusso di lavoro per facilitare l'individuazione della chiamata nella pagina della documentazione:
+
+* Categoria
++
+Le chiamate API sono organizzate nella pagina della documentazione in aree o categorie correlate alla funzionalità. Per individuare una chiamata API specifica, scorrere fino alla fine della pagina e fare clic sulla categoria API appropriata.
+
+* Metodo HTTP
++
+Il metodo HTTP identifica l'azione eseguita su una risorsa. Ogni chiamata API viene eseguita mediante un singolo metodo HTTP.
+
+* Percorso
++
+Il percorso determina la risorsa specifica a cui si applica l'azione durante l'esecuzione di una chiamata. La stringa del percorso viene aggiunta all'URL principale per formare l'URL completo che identifica la risorsa.
+
+
+
+
+
+=== Creazione di un URL per accedere direttamente all'API REST
+
+Oltre alla pagina di documentazione di ONTAP, è possibile accedere all'API REST di ONTAP direttamente attraverso un linguaggio di programmazione come Python. In questo caso, l'URL principale è leggermente diverso dall'URL utilizzato per accedere alla pagina della documentazione online. Quando si accede direttamente all'API, è necessario aggiungere `/api` al dominio e alla stringa di porta. Ad esempio: `https://ontap.mycompany.com/api`
+
+.Link correlati
+* link:../rest/access_rest_api.html["Come accedere all'API ONTAP"]
+* link:../resources/overview_categories.html["Riepilogo delle risorse RIMANENTI"]
+

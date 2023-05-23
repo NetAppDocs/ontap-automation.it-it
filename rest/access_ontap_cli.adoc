@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: rest/access_ontap_cli.html 
+keywords: cli, ontap cli, cli passthrough 
+summary: 'Per assistere gli utenti delle API CLI e ONTAPI nella transizione all"API REST di ONTAP, ONTAP fornisce un endpoint REST per accedere all"interfaccia CLI. È possibile utilizzare questa funzionalità pass-through per eseguire qualsiasi comando CLI.' 
+---
+= Accedere all'interfaccia utente di ONTAP tramite l'API REST
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per assistere gli utenti delle API CLI e ONTAPI nella transizione all'API REST di ONTAP, ONTAP fornisce un endpoint REST per accedere all'interfaccia CLI. È possibile utilizzare questa funzionalità pass-through per eseguire qualsiasi comando CLI. L'utilizzo dell'endpoint REST viene restituito nei dati AutoSupport in modo che NetApp possa identificare le lacune nell'API REST e apportare miglioramenti nelle release future.
+
+Per eseguire un comando CLI, è necessario effettuare una chiamata API REST correttamente formata in base alle regole relative a:
+
+* Percorsi di risorse
+* Nomi dei campi
+* Metodi HTTP
+
+
+Il percorso delle risorse di base per l'accesso alla CLI è `/private/cli`. Fare riferimento alla pagina della documentazione online dell'API ONTAP per informazioni dettagliate sull'accesso all'interfaccia utente attraverso l'API REST.
+
+
+NOTE: NetApp gestisce un repository GitHub contenente esempi di codice e altre informazioni utili. È possibile accedere al repository per esempi su come utilizzare la funzione pass-through CLI.
+
+.Link correlati
+https://github.com/NetApp/ontap-rest-python/tree/master/examples/rest_api/cli_passthrough_samples["Repository GitHub di ONTAP REST Python - esempi di pass-through CLI"^]

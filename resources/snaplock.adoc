@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: resources/snaplock.html 
+keywords: snaplock resources 
+summary: È possibile utilizzare queste chiamate API per amministrare la funzione SnapLock. 
+---
+= SnapLock
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapLock è un'implementazione basata su storage della tradizionale soluzione ottica WORM (write once, Read Many) e fornisce la conservazione a lungo termine dei dati. È possibile utilizzare queste chiamate API per amministrare la funzione SnapLock.
+
+.Log (Registro)
+La struttura di log di SnapLock si basa su directory e file di un volume specifico che contengono i record di log. I file di log vengono riempiti e archiviati in base alle dimensioni massime dei log. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.Orologio per la compliance
+Il clock di compliance determina la scadenza degli oggetti SnapLock. Il clock deve essere inizializzato al di fuori dell'API REST e non può essere modificato. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.Conservazione degli eventi
+È possibile utilizzare la funzione di conservazione basata su eventi (EBR) di SnapLock per definire la durata della conservazione di un file dopo il verificarsi di un evento. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.Conservazione dei file ed eliminazione con privilegi
+È possibile gestire il tempo di conservazione di un file creato da SnapLock. Se necessario, è anche possibile eliminare i file WORM non scaduti su un volume aziendale SnapLock. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+
+NOTE: L'unico ruolo incorporato con autorità per eseguire l'operazione di eliminazione è vsadmin-snaplock.
+
+.Impronta digitale del file
+È possibile visualizzare e gestire le informazioni principali che descrivono file e volumi, come il tipo e la data di scadenza. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.Conservazione a fini giudiziari
+È possibile utilizzare queste chiamate API per gestire i file che fanno parte di un processo di contenzioso. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.

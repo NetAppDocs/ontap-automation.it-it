@@ -1,0 +1,14 @@
+---
+section: migrate
+title: Migrare all'API REST
+entries:
+- title: Non abilitazione di ONTAPI
+  url: "/migrate/overview.html"
+- title: ONTAPI per il mapping REST
+  url: "/migrate/mapping.html"
+- title: Contatori delle performance
+  url: "/migrate/performance-counters.html"
+- title: Tool e software
+  url: "/migrate/software.html"
+- title: Articoli del blog
+  url: "/migrate/blogs.html"

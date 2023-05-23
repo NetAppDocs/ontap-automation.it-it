@@ -1,0 +1,128 @@
+---
+sidebar: sidebar 
+permalink: resources/nas.html 
+keywords: nas resources 
+summary: È possibile utilizzare queste chiamate API per gestire le impostazioni CIFS e NFS per il cluster e le SVM. 
+---
+= NAS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare queste chiamate API per gestire le impostazioni CIFS e NFS per il cluster e le SVM.
+
+.Active Directory
+È possibile gestire gli account Active Directory definiti per un cluster ONTAP. Ciò include la creazione di nuovi account, nonché la visualizzazione, l'aggiornamento e l'eliminazione degli account. Questo supporto è stato aggiunto con ONTAP 9.12.
+
+.Audit
+Alcuni eventi CIFS e NFS possono essere registrati per le SVM, il che può contribuire a migliorare la sicurezza. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Reindirizzamento del registro di audit
+È possibile reindirizzare gli eventi di audit NAS a una SVM specifica. Questo tipo di risorsa è stato utilizzato per la prima volta in ONTAP 9.8.
+
+.Connessioni CIFS
+È possibile recuperare un elenco delle connessioni CIFS stabilite. Questo tipo di risorsa è stato introdotto con ONTAP 9.11.1.
+
+.Domini CIFS
+Il supporto per i domini CIFS è stato aggiunto a livello di cluster e SVM con diverse categorie di endpoint. È possibile recuperare la configurazione del dominio, nonché creare e rimuovere i domain controller preferiti. Questo tipo di risorse è stato introdotto con ONTAP 9.10 e migliorato con ONTAP 9.13.
+
+.Criteri di gruppo CIFS
+Gli endpoint sono stati aggiunti per supportare la creazione e la gestione delle policy di gruppo CIFS. Le informazioni di configurazione sono disponibili e amministrate tramite oggetti di policy di gruppo che vengono applicati a tutte le SVM o a specifiche SVM. Questo supporto è stato aggiunto con ONTAP 9.12.
+
+.Percorsi di ricerca della home directory CIFS
+Le home directory per gli utenti SMB su un server CIFS possono essere create senza creare una singola condivisione SMB per ciascun utente. Il percorso di ricerca della home directory è un insieme di percorsi assoluti dalla root di una SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Gruppi locali CIFS
+Il server CIFS può utilizzare i gruppi locali per l'autorizzazione quando determina i diritti di accesso a condivisioni, file e directory. Questo tipo di risorse è stato introdotto con ONTAP 9.9 ed è stato notevolmente ampliato con ONTAP 9.10.
+
+.NetBIOS CIFS
+È possibile visualizzare informazioni sulle connessioni NetBIOS del cluster. I dettagli includono gli indirizzi IP e i nomi NetBIOS registrati. Queste informazioni consentono di risolvere i problemi di risoluzione dei nomi. Questo tipo di risorsa è stato introdotto con ONTAP 9.11.1.
+
+.Servizi CIFS
+La configurazione principale del server CIFS. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.7.
+
+.File di sessione CIFS
+È possibile recuperare un elenco di file aperti per le sessioni CIFS in base a diverse opzioni di filtraggio. Questo tipo di risorsa è stato introdotto con ONTAP 9.11.1.
+
+.Sessioni CIFS
+È possibile utilizzare questa API per recuperare informazioni dettagliate su una sessione CIFS. Questo tipo di risorsa è stato introdotto con l'API REST di ONTAP 9.8 e migliorato con ONTAP 9.9.
+
+.Copie shadow CIFS
+Microsoft Remote Volume Shadow Copy Services è un'estensione della funzionalità Microsoft VSS esistente. Estende la funzionalità VSS per supportare la copia shadow delle condivisioni SMB. Questa funzione è ora disponibile tramite l'API REST di ONTAP. Questo tipo di risorsa è stato introdotto con ONTAP 9.11.1.
+
+.Condivisioni CIFS
+Le condivisioni SMB definite in un server CIFS. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.CIFS condivide gli ACL
+Gli ACL (Access Control List) che controllano l'accesso alle cartelle e ai file sulle condivisioni CIFS. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Mapping del collegamento simbolico UNIX CIFS
+Sia i client CIFS che UNIX possono accedere allo stesso datastore. Quando i client UNIX creano collegamenti simbolici, questi mapping forniscono un riferimento a un altro file o cartella per supportare i client CIFS. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Importazione bulk di utenti e gruppi CIFS
+È possibile utilizzare i nuovi endpoint REST API per eseguire un'importazione in blocco di utenti locali CIFS, gruppi e informazioni di appartenenza al gruppo, oltre a monitorare lo stato della richiesta. Questo tipo di risorsa è stato introdotto con ONTAP 9.11.1.
+
+.Tracciamento dell'accesso al file
+È possibile utilizzare queste chiamate API per tenere traccia dell'accesso a file specifici. Questo tipo di risorsa è stato utilizzato per la prima volta in ONTAP 9.8.
+
+.Permessi di sicurezza del file
+È possibile utilizzare queste chiamate API per visualizzare l'autorizzazione effettiva concessa a utenti Windows o Unix per un file o una cartella specifici. È inoltre possibile gestire le policy di controllo e sicurezza dei file NTFS. Questo tipo di risorse è stato introdotto con l'API REST di ONTAP 9.8 e migliorato in modo significativo con ONTAP 9.9.
+
+.FPolicy
+FPolicy è un framework di notifica di accesso ai file utilizzato per monitorare e gestire gli eventi di accesso ai file sulle SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Connessioni FPolicy
+Questi endpoint consentono di visualizzare e aggiornare le informazioni sullo stato della connessione per i server FPolicy esterni. Questo tipo di risorsa è stato introdotto con ONTAP 9.10.
+
+.Motori FPolicy
+I motori FPolicy consentono di identificare i server esterni che ricevono le notifiche di accesso ai file. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Eventi FPolicy
+La configurazione che identifica la modalità di monitoraggio dell'accesso ai file e gli eventi generati. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Policy FPolicy
+Un container per gli elementi del framework FPolicy, inclusi motori ed eventi FPolicy. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Blocchi
+Un blocco è un meccanismo di sincronizzazione per imporre limiti all'accesso simultaneo ai file in cui molti client accedono contemporaneamente allo stesso file. È possibile utilizzare questi endpoint per recuperare ed eliminare i blocchi. Questo tipo di risorsa è stato introdotto con ONTAP 9.10.
+
+.Mappe client connesse NFS
+Le informazioni sulle mappe NFS per i client connessi sono disponibili attraverso il nuovo endpoint. È possibile recuperare i dettagli relativi a nodo, SVM e indirizzi IP. Questo tipo di risorsa è stato introdotto con ONTAP 9.11.1.
+
+.Client connessi a NFS
+È possibile visualizzare un elenco dei client connessi con i dettagli della connessione. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.Policy di esportazione NFS
+Le policy, incluse le regole che descrivono le esportazioni NFS. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Interfacce Kerberos NFS
+Le impostazioni di configurazione di un'interfaccia per Kerberos. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Realms Kerberos NFS
+Le impostazioni di configurazione per i realm Kerberos. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Servizi NFS
+La configurazione principale del server NFS. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.7.
+
+.Archivio di oggetti
+Il controllo degli eventi S3 è un miglioramento della sicurezza che consente di tenere traccia e registrare determinati eventi S3. È possibile impostare un selettore di eventi di audit S3 per SVM per bucket. Questo tipo di risorsa è stato introdotto con ONTAP 9.10.
+
+.Vscan
+Una funzionalità di sicurezza per proteggere i dati da virus e altri codici dannosi. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Policy di accesso Vscan
+Le policy Vscan che consentono agli oggetti file di essere sottoposti attivamente a scansione quando si accede a un client. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Policy on-demand di Vscan
+Le policy Vscan che consentono di eseguire immediatamente la scansione degli oggetti file su richiesta o in base a una pianificazione stabilita. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Pool di scanner Vscan
+Insieme di attributi utilizzati per gestire la connessione tra ONTAP e un server esterno per la scansione dei virus. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Stato del server Vscan
+Lo stato del server di scansione virus esterno. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.

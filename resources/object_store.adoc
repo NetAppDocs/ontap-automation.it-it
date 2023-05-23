@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: resources/object_store.html 
+keywords: object store resources 
+summary: È possibile utilizzare queste chiamate API per accedere allo storage a oggetti basato su S3. 
+---
+= Archivio di oggetti
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare queste chiamate API per accedere allo storage a oggetti basato su S3.
+
+.Bucket
+Un bucket è un container di oggetti ed è strutturato utilizzando uno spazio dei nomi degli oggetti. Ogni server a oggetti S3 può avere più bucket. Questo tipo di risorsa è stato introdotto con ONTAP 9.7 e aggiornato con ONTAP 9.8.
+
+.Servizi
+È possibile creare e gestire la configurazione di ONTAP S3, incluse le configurazioni dei server e dei bucket. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.Bucket di servizio
+Un bucket è un container di oggetti ed è strutturato utilizzando uno spazio dei nomi degli oggetti. È possibile gestire i bucket per uno specifico server S3. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
+
+.Regole del bucket S3
+I bucket S3 possono includere una definizione di regola. Ogni regola è un elenco di oggetti e definisce l'insieme di azioni da eseguire su un oggetto all'interno del bucket. Questo tipo di risorsa è stato introdotto con ONTAP 9.13.
+
+.Gruppi S3
+È possibile creare gruppi di utenti S3 e gestire il controllo degli accessi a livello di gruppo. Questo tipo di risorsa è stato utilizzato per la prima volta in ONTAP 9.8.
+
+.Criteri S3
+È possibile creare un criterio S3 e associarlo a una risorsa per definire diverse autorizzazioni. Questo tipo di risorsa è stato utilizzato per la prima volta in ONTAP 9.8.
+
+.Utenti
+Gli account utente S3 vengono gestiti sul server S3. Gli account utente si basano su una coppia di chiavi e sono associati ai bucket che controllano. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.

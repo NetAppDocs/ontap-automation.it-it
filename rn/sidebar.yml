@@ -1,0 +1,10 @@
+---
+section: rn
+title: Note di rilascio
+entries:
+- title: Novità
+  url: "/rn/whats_new.html"
+- title: Limitazioni note
+  url: "/rn/known_limitations.html"
+- title: Note di rilascio di ONTAP
+  url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508

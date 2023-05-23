@@ -1,0 +1,79 @@
+---
+settings:
+  name: ONTAP Automation
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: it-it,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr
+sidebar:
+  entries:
+  - title: Documentazione sull'automazione ONTAP
+    url: "/index.html"
+  - section: rn
+  - section: get-started
+  - section: rest
+  - section: workflows
+  - section: manage
+  - section: python
+  - section: reference
+  - section: automate
+  - section: migrate
+  - section: additional
+  - title: Note legali
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: Inizia subito
+    links:
+    - title: Note di rilascio
+      url: "/rn/whats_new.html"
+    - title: Opzioni di automazione ONTAP
+      url: "/get-started/ontap_automation_options.html"
+    - title: Prepararsi a utilizzare l'API REST
+      url: "/get-started/prepare.html"
+    - title: La prima chiamata API
+      url: "/get-started/first_call.html"
+  - title: API REST di ONTAP
+    links:
+    - title: Dettagli sull'implementazione REST
+      url: "/rest/rest_web_services_foundation.html"
+    - title: Considerazioni aggiuntive
+      url: "/rest/object_references_and_access.html"
+    - title: Riepilogo delle risorse RIMANENTI
+      url: "/resources/overview_categories.html"
+    - title: Riferimento API
+      url: "/reference/api_reference.html"
+  - title: Automazione
+    links:
+    - title: Libreria client Python
+      url: "/python/overview_pcl.html"
+    - title: ONTAP e Ansible
+      url: "/automate/ontap_ansible.html"
+    - title: Blog di automazione
+      url: "/automate/blogs.html"
+  - title: Migrare all'API REST
+    links:
+    - title: Non abilitazione di ONTAPI
+      url: "/migrate/overview.html"
+    - title: ONTAPI per il mapping REST
+      url: "/migrate/mapping.html"
+    - title: Contatori delle performance
+      url: "/migrate/performance-counters.html"
+    - title: Articoli del blog
+      url: "/migrate/blogs.html"
+  - title: Più risorse
+    links:
+    - title: Ulteriori informazioni
+      url: "/additional/get_more_information.html"
+    - title: DevNet di NetApp
+      url: https://devnet.netapp.com/restapi.php
+    - title: Documenti di ONTAP 9
+      url: https://docs.netapp.com/us-en/ontap/
+    - title: Documenti ONTAP Select
+      url: https://docs.netapp.com/us-en/ontap-select/
+product-family:
+  name: ONTAP
+  repo: ontap-family
+  sidebar_label: Tutta la documentazione del prodotto ONTAP

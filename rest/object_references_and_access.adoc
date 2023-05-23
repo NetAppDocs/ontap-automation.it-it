@@ -1,0 +1,85 @@
+---
+sidebar: sidebar 
+permalink: rest/object_references_and_access.html 
+keywords: objects, access paths, uuid, uuidv4, collections, object collection 
+summary: 'È possibile fare riferimento alle istanze di risorse o agli oggetti esposti tramite l"API REST di ONTAP e accedervi in diversi modi.' 
+---
+= Riferimenti e accesso agli oggetti
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile fare riferimento alle istanze di risorse o agli oggetti esposti tramite l'API REST di ONTAP e accedervi in diversi modi.
+
+
+
+== Percorsi di accesso a oggetti
+
+Ad un livello elevato, esistono due tipi di percorso quando si accede a un oggetto:
+
+* Primario
++
+L'oggetto è la destinazione principale o diretta della chiamata API.
+
+* Straniero
++
+L'oggetto non è il riferimento principale della chiamata API, ma è collegato all'oggetto primario. Si tratta quindi di un oggetto esterno o downstream a cui viene fatto riferimento attraverso un campo nell'oggetto primario.
+
+
+
+
+
+== Accesso a un oggetto utilizzando l'UUID
+
+A ogni oggetto viene assegnato un identificatore univoco al momento della creazione, che nella maggior parte dei casi è un UUID a 128 bit. I valori UUID assegnati sono immutabili e vengono utilizzati internamente in ONTAP per accedere e gestire le risorse. Per questo motivo, l'UUID fornisce in genere il modo più rapido e stabile per accedere agli oggetti.
+
+Per molti tipi di risorse, è possibile fornire un valore UUID come parte della chiave di percorso nell'URL per accedere a un oggetto specifico. Ad esempio, è possibile utilizzare quanto segue per accedere a un'istanza di nodo: ``/cluster/nodes/{uuid}`
+
+
+
+== Accesso a un oggetto mediante una proprietà Object
+
+Oltre a un UUID, è anche possibile accedere a un oggetto utilizzando una proprietà Object. Nella maggior parte dei casi, è conveniente utilizzare la proprietà name. Ad esempio, è possibile utilizzare il seguente parametro di query nella stringa URL per accedere a un'istanza del nodo con il relativo nome: `/cluster/nodes?name=node_one`. Oltre a un parametro di query, è possibile accedere a un oggetto esterno tramite una proprietà nell'oggetto primario.
+
+Sebbene sia possibile utilizzare il nome o un'altra proprietà per accedere a un oggetto invece dell'UUID, esistono diversi svantaggi:
+
+* Il campo del nome non è immutabile e può essere modificato. Se il nome di un oggetto viene modificato prima di accedere a un oggetto, viene restituito l'oggetto errato o viene visualizzato un errore di accesso all'oggetto.
++
+
+NOTE: Questo problema può verificarsi con un METODO POST o PATCH su un oggetto esterno o con un metodo GET su un oggetto primario.
+
+* ONTAP deve convertire il campo del nome nell'UUID corrispondente. Si tratta di un tipo di accesso indiretto che può diventare un problema di performance.
+
+
+In particolare, è possibile un peggioramento delle performance quando si verifica una o più delle seguenti condizioni:
+
+* VIENE utilizzato IL metodo GET
+* È possibile accedere a un'ampia raccolta di oggetti
+* Viene utilizzata una query complessa o elaborata
+
+
+
+
+== Confronto tra cluster e contesto SVM
+
+Esistono diversi endpoint REST che supportano sia un cluster che SVM. Quando si utilizza uno di questi endpoint, è possibile indicare il contesto della chiamata API tramite `scope=[svm|cluster]` valore. Esempi di endpoint che supportano un contesto doppio includono interfacce IP e ruoli di sicurezza.
+
+
+NOTE: Il valore dell'ambito ha una base di valori predefinita sulle proprietà fornite per ogni chiamata API.
+
+
+
+== Utilizzo DI PATCH ed ELIMINAZIONE su un insieme di oggetti
+
+Ogni endpoint REST che supporta PATCH o ELIMINI su un'istanza di risorsa supporta anche lo stesso metodo su un insieme di oggetti. L'unico requisito è che almeno un campo debba essere fornito attraverso un parametro di query nella stringa URL. Quando si rilascia UNA PATCH o SI ELIMINA una raccolta, ciò equivale a eseguire le seguenti operazioni internamente:
+
+* GET basato su query per recuperare l'insieme
+* Sequenza seriale di CHIAMATE PATCH o DI ELIMINAZIONE su ciascun oggetto della raccolta
+
+
+Il timeout per l'operazione può essere impostato da `return_timeout` con un valore predefinito di 15 secondi. Se non viene completato prima del timeout, la risposta include un collegamento all'oggetto successivo. Per continuare l'operazione, è necessario eseguire nuovamente l'emissione dello stesso metodo HTTP utilizzando il collegamento successivo.

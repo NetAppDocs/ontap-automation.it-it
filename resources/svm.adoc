@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: resources/svm.html 
+keywords:  
+summary:  
+---
+= SVM
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare queste chiamate API per gestire le macchine virtuali di storage (SVM).
+
+.Migrazioni
+È possibile migrare una SVM da un cluster di origine a un cluster di destinazione. I nuovi endpoint offrono un controllo completo, inclusa la possibilità di sospendere, riprendere, recuperare lo stato e interrompere un'operazione di migrazione. Questo tipo di risorsa è stato introdotto con ONTAP 9.10.
+
+.Permessi peer
+È possibile assegnare autorizzazioni peer che abilitano le relazioni di peering SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Pari
+Le relazioni di peering stabiliscono la connettività tra le SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.SVM
+È possibile gestire le SVM associate a un cluster. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.Metriche principali
+È possibile accedere a dati di metriche delle performance aggiuntivi per una specifica istanza di SVM. Sono disponibili quattro elenchi, ciascuno dei quali fornisce l'attività i/o principale per i volumi ONTAP FlexVol e FlexGroup. Gli elenchi includono:
+
+* Client
+* Directory
+* File
+* Utenti
+
+
+Questi tipi di risorse sono stati introdotti con ONTAP 9.11.
+
+.Web
+È possibile utilizzare questi endpoint per aggiornare e recuperare la configurazione di sicurezza dei servizi Web per ogni SVM di dati. Questo tipo di risorsa è stato introdotto con ONTAP 9.10.

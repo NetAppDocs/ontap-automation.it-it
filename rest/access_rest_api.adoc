@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: rest/access_rest_api.html 
+keywords: accessing the rest api, lif 
+summary: 'È possibile accedere all"API REST di ONTAP in diversi modi.' 
+---
+= Come accedere all'API REST di ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile accedere all'API REST di ONTAP in diversi modi.
+
+
+
+== Considerazioni sulla rete
+
+È possibile connettersi all'API REST tramite le seguenti interfacce:
+
+* LIF gestione cluster
+* LIF di gestione dei nodi
+* LIF gestione SVM
+
+
+La LIF scelta deve essere configurata per supportare il protocollo di gestione HTTPS. Inoltre, la configurazione del firewall nella rete deve consentire il traffico HTTPS.
+
+
+TIP: Si consiglia di utilizzare sempre una LIF di gestione del cluster. In questo modo, le richieste API vengono bilanciate in tutti i nodi ed è possibile evitare i nodi offline o che presentano problemi di connettività. Se sono configurate più LIF di gestione del cluster, sono tutte equivalenti per quanto riguarda l'accesso all'API REST.
+
+
+
+== Pagina di documentazione online API ONTAP
+
+La pagina della documentazione online API di ONTAP fornisce un punto di accesso quando si utilizza un browser Web. Oltre a fornire un metodo per eseguire direttamente singole chiamate API, la pagina include una descrizione dettagliata dell'API, inclusi i parametri di input e altre opzioni per ciascuna chiamata. Le chiamate API sono organizzate in categorie funzionali. Vedere link:../resources/overview_categories.html["Riepilogo delle risorse RIMANENTI"] per ulteriori informazioni.
+
+Il formato dell'URL utilizzato per accedere alla pagina della documentazione relativa alla versione più recente dell'API è:
+
+`https://<cluster_mgmt_ip_address>/docs/api`
+
+
+
+== Software e tool personalizzati
+
+È possibile accedere all'API ONTAP utilizzando uno dei diversi linguaggi e tool di programmazione. Le scelte più popolari includono Python, Java, Curl e PowerShell. Un programma, uno script o uno strumento che utilizza l'API agisce come un client di servizi Web REST. L'utilizzo di un linguaggio di programmazione consente una comprensione più approfondita dell'API e offre l'opportunità di automatizzare l'amministrazione di ONTAP.
+
+Il formato dell'URL di base utilizzato per accedere direttamente alla versione più recente dell'API è:
+
+`https://<cluster_mgmt_ip_address>/api`
+
+Per accedere a una versione API specifica in cui sono supportate più versioni, il formato dell'URL è:
+
+`https://<cluster_mgmt_ip_address>/api/v1`
