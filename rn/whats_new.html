@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head class="at-element-marker">
+  <title>Novità dell&#8217;API REST ONTAP e dell&#8217;automazione</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Novità dell&#8217;API REST ONTAP e dell&#8217;automazione" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/it-it/ontap-automation/rn/whats_new.html" />
+	<meta property="og:description" content="NetApp aggiorna periodicamente l"API REST di ONTAP per offrire nuove funzionalità, miglioramenti e correzioni di bug." />
+  <meta property="og:image" content="https://docs.netapp.com/it-it/ontap-automation/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="NetApp aggiorna periodicamente l"API REST di ONTAP per offrire nuove funzionalità, miglioramenti e correzioni di bug.">
+  <meta name="keywords" content=" new features, new in release"><!-- Icons -->
+  <link rel="icon" href="/it-it/ontap-automation/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/it-it/ontap-automation/css/netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/it-it/ontap-automation/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/it-it/ontap-automation/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/it-it/ontap-automation/rn/whats_new.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/ontap-automation/rn/whats_new.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/ontap-automation/rn/whats_new.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/ontap-automation/rn/whats_new.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/ontap-automation/rn/whats_new.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/ontap-automation/rn/whats_new.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/ontap-automation/rn/whats_new.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/ontap-automation/rn/whats_new.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/ontap-automation/rn/whats_new.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/ontap-automation/rn/whats_new.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/ontap-automation/rn/whats_new.html" />
+  <link rel='stylesheet' href='/it-it/ontap-automation/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    function addAdobeLaunch(adobeId) {
+      var head = document.getElementsByTagName('head')[0];
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/"+adobeId+".min.js";
+      head.appendChild(adobe);
+    }
+
+    function addGoogleAnalytics(gtagId) {
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id="+gtagId;
+      var head = document.getElementsByTagName('head')[0];
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gtagId);
+    }
+
+    function addConsent(consentId) {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/"+consentId+"/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = consentId;
+      head.appendChild(onetrustScript);
+    }addConsent("72570c5c-fe30-465f-b0e0-b77f7fb4ae34");
+    addAdobeLaunch("launch-e9ff3acac59f");
+    addGoogleAnalytics("UA-81697994-3");function OptanonWrapper() { }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/it-it/ontap-automation/js/na-search.js'></script><script src='/it-it/ontap-automation/js/na-pagenav.js'></script><script src='/it-it/ontap-automation/js/na-utility.js'></script>
+ <!--  
+  <link rel='stylesheet' href='/it-it/ontap-automation/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/it-it/ontap-automation/css/prism-netapp.css' type='text/css'>
+ -->
+
+  <!-- <script src='/it-it/ontap-automation/js/na-utility.js'></script> -->
+  <script src='/it-it/ontap-automation/js/clouddocs.js'></script>
+  <script src='/it-it/ontap-automation/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- <script src='/it-it/ontap-automation/js/toc.js'></script> -->
+  <!-- <script src='/it-it/ontap-automation/js/customscripts.js'></script> --><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/it-it/ontap-automation"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+  <script src='/it-it/ontap-automation/js/custom-dropdown.js'></script>
+  <script src='/it-it/ontap-automation/js/FileSaver.min.js'></script>
+  <script src='/it-it/ontap-automation/js/jszip-utils.min.js'></script>
+  <script src='/it-it/ontap-automation/js/jszip.min.js'></script>
+  <!-- <script src='/it-it/ontap-automation/js/pdf-ux.js'></script> -->
+</head>
+
+
+  <body class role="document" data-flavor="">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation.it-it/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/it-it/ontap-automation/rn/whats_new.html&page-title=Novità dell&#8217;API REST ONTAP e dell&#8217;automazione" class="page-nav-contribute-link" role="button"><img src="/it-it/ontap-automation/images/discuss-sm.svg" alt="" class="github-icon" />Richiedi modifiche alla documentazione</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/rn/whats_new.adoc" class="page-nav-contribute-link" role="button"><img src="/it-it/ontap-automation/images/edit-sm.svg" alt="" class="github-icon" />Modifica questa pagina</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/it-it/ontap-automation/images/article-sm.svg" alt="" class="github-icon" />Scopri come collaborare</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">IN QUESTA PAGINA</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">Prodotto e soluzioni</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">Supporto e training</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">Community</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">Blog</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">Testimonianze dei clienti</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/company/contact-us/" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contatto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/it-it/ontap-automation/images/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/it-it/ontap-automation/images/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/it-it/ontap-automation/images/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/it-it/ontap-automation/search.html"
+          data-type="widget" 
+          data-placeholder="Esplora la documentazione"
+          data-no-results-found="Nessun risultato per {query}"
+          data-did-you-mean="Cerca {suggestion}."
+          data-no-results-found-did-you-mean="Nessun risultato per {query}. Intendi {suggestion}?"
+          data-results-found="{hitCount} risultati trovati"
+          data-error-message="Si è verificato un problema durante il recupero dei risultati. Riprova."
+          data-error-reset="Reimposta ricerca"
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/it-it/ontap-automation/images/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">Italiano</span>
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/it-it/ontap-automation/images/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/it-it/ontap-automation/rn/whats_new.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/rn/whats_new.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/rn/whats_new.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/rn/whats_new.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/rn/whats_new.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/rn/whats_new.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/ontap-automation/rn/whats_new.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/es-es/ontap-automation/rn/whats_new.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/ontap-automation/rn/whats_new.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
+    </div>
+    <!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <button id="btn-sidebar-collapse" onclick="hideSidebar()"><img src="/it-it/ontap-automation/images/collapse.png" alt="Comprimi pannello di navigazione"></button>
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/it-it/ontap-automation/images/pdf.png" alt="" width="16" height="16"/>PDF disponibili<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
+        <a target="_blank" href="/it-it/ontap-automation/pdfs/fullsite-sidebar/Documentazione_sull_automazione_ONTAP.pdf" >
+          <img src="/it-it/ontap-automation/images/pdf.png" alt="" width="16" height="16"/>PDF del sito di questa documentazione</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/ontap-automation/pdfs/sidebar/Note_di_rilascio.pdf" 
+            
+          >
+            <img src="/it-it/ontap-automation/images/pdf.png" alt="" width="16" height="16"/>
+            Note di rilascio
+          </a>
+          
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/ontap-automation/pdfs/sidebar/Inizia_subito.pdf" 
+            
+          >
+            <img src="/it-it/ontap-automation/images/pdf.png" alt="" width="16" height="16"/>
+            Inizia subito
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/ontap-automation/pdfs/sidebar/API_REST_di_ONTAP.pdf" 
+            
+          >
+            <img src="/it-it/ontap-automation/images/pdf.png" alt="" width="16" height="16"/>
+            API REST di ONTAP
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/ontap-automation/pdfs/sidebar/Dettagli_sull_implementazione_REST.pdf" 
+            
+          >
+            <img src="/it-it/ontap-automation/images/pdf.png" alt="" width="16" height="16"/>
+            Dettagli sull'implementazione REST
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/ontap-automation/pdfs/sidebar/Considerazioni_aggiuntive.pdf" 
+            
+          >
+            <img src="/it-it/ontap-automation/images/pdf.png" alt="" width="16" height="16"/>
+            Considerazioni aggiuntive
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/ontap-automation/pdfs/sidebar/Sicurezza_RBAC.pdf" 
+            
+          >
+            <img src="/it-it/ontap-automation/images/pdf.png" alt="" width="16" height="16"/>
+            Sicurezza RBAC
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/ontap-automation/pdfs/sidebar/Riepilogo_delle_risorse_RIMANENTI.pdf" 
+            
+          >
+            <img src="/it-it/ontap-automation/images/pdf.png" alt="" width="16" height="16"/>
+            Riepilogo delle risorse RIMANENTI
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/ontap-automation/pdfs/sidebar/Flussi_di_lavoro.pdf" 
+            
+          >
+            <img src="/it-it/ontap-automation/images/pdf.png" alt="" width="16" height="16"/>
+            Flussi di lavoro
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/ontap-automation/pdfs/sidebar/Gestisci_ONTAP_con_REST_API.pdf" 
+            
+          >
+            <img src="/it-it/ontap-automation/images/pdf.png" alt="" width="16" height="16"/>
+            Gestisci ONTAP con REST API
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/ontap-automation/pdfs/sidebar/Libreria_client_Python.pdf" 
+            
+          >
+            <img src="/it-it/ontap-automation/images/pdf.png" alt="" width="16" height="16"/>
+            Libreria client Python
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/ontap-automation/pdfs/sidebar/Tecnologie_di_automazione.pdf" 
+            
+          >
+            <img src="/it-it/ontap-automation/images/pdf.png" alt="" width="16" height="16"/>
+            Tecnologie di automazione
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/ontap-automation/pdfs/sidebar/Migrare_all_API_REST.pdf" 
+            
+          >
+            <img src="/it-it/ontap-automation/images/pdf.png" alt="" width="16" height="16"/>
+            Migrare all'API REST
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/it-it/ontap-automation/images/pdf-zip.png" alt="" width="16" height="16"/>
+      <pre>Raccolta di documenti PDF separati<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="prod-nav" id="product-nav">
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/it-it/ontap-family/"><img src="/it-it/ontap-automation/images/left_arrow.png" alt=""><pre>Tutta la documentazione del prodotto ONTAP</pre></a>
+</div><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Documentazione sull'automazione ONTAP"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/index.html">
+        Documentazione sull'automazione ONTAP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Note di rilascio"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Note di rilascio</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Novità"
+      data-li-level="2#" 
+      class="  active "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/rn/whats_new.html">
+        Novità
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Limitazioni note"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/rn/known_limitations.html">
+        Limitazioni note
+      </a></li><li 
+      data-pdf-exists="false" 
+      data-pdf-filename="Note di rilascio di ONTAP"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508">
+        Note di rilascio di ONTAP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Inizia subito"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="/it-it/ontap-automation/getting_started_with_the_rest_api.html">
+        <div class="na-navbar-padding"> Inizia subito</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Comprendere le opzioni di automazione"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/get-started/ontap_automation_options.html">
+        Comprendere le opzioni di automazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prepararsi a utilizzare l'API REST"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/get-started/prepare.html">
+        Prepararsi a utilizzare l'API REST
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Recuperare la versione del software del cluster"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/get-started/retrieve_cluster_software_version.html">
+        Recuperare la versione del software del cluster
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="La prima chiamata API"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/get-started/first_call.html">
+        La prima chiamata API
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="API REST di ONTAP"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> API REST di ONTAP</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Dettagli sull'implementazione REST"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Dettagli sull'implementazione REST</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Base REST per i web Services"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/rest/rest_web_services_foundation.html">
+        Base REST per i web Services
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Versione dell'API REST di ONTAP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/rest/rest_api_versioning.html">
+        Versione dell'API REST di ONTAP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Come accedere all'API REST"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/rest/access_rest_api.html">
+        Come accedere all'API REST
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Caratteristiche operative di base"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/rest/operational_characteristics.html">
+        Caratteristiche operative di base
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Variabili di input"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/rest/input_variables.html">
+        Variabili di input
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Interpretare una risposta API"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/rest/interpret_api_response.html">
+        Interpretare una risposta API
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Elaborazione asincrona utilizzando l'oggetto lavoro"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/rest/asynchronous_processing.html">
+        Elaborazione asincrona utilizzando l'oggetto lavoro
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Considerazioni aggiuntive"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Considerazioni aggiuntive</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Riferimenti e accesso agli oggetti"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/rest/object_references_and_access.html">
+        Riferimenti e accesso agli oggetti
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Utenti di ONTAPI API e CLI ONTAP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/rest/users_ontapi_api_ontap_cli.html">
+        Utenti di ONTAPI API e CLI ONTAP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Accedere all'interfaccia utente di ONTAP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/rest/access_ontap_cli.html">
+        Accedere all'interfaccia utente di ONTAP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Metriche delle performance per le risorse di storage"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/rest/performance_metrics.html">
+        Metriche delle performance per le risorse di storage
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Sicurezza RBAC"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Sicurezza RBAC</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Panoramica"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/rest/rbac_overview.html">
+        Panoramica
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Lavorare con ruoli e utenti"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/rest/rbac_roles_users.html">
+        Lavorare con ruoli e utenti
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Definizioni di ruoli di esempio"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/rest/rbac_sample_roles.html">
+        Definizioni di ruoli di esempio
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Creare un utente con un ruolo"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/rest/rbac_wf_create_user.html">
+        Creare un utente con un ruolo
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Riepilogo delle risorse RIMANENTI"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Riepilogo delle risorse RIMANENTI</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Panoramica"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/resources/overview_categories.html">
+        Panoramica
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Applicazione"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/resources/application.html">
+        Applicazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cloud"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/resources/cloud.html">
+        Cloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cluster"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/resources/cluster.html">
+        Cluster
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Servizi di nome"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/resources/name_services.html">
+        Servizi di nome
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NAS"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/resources/nas.html">
+        NAS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NDMP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/resources/ndmp.html">
+        NDMP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Networking"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/resources/networking.html">
+        Networking
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NVMe"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/resources/nvme.html">
+        NVMe
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Archivio di oggetti"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/resources/object_store.html">
+        Archivio di oggetti
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SAN"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/resources/san.html">
+        SAN
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Sicurezza"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/resources/security.html">
+        Sicurezza
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SnapLock"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/resources/snaplock.html">
+        SnapLock
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SnapMirror"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/resources/snapmirror.html">
+        SnapMirror
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Storage"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/resources/storage.html">
+        Storage
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Supporto"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/resources/support.html">
+        Supporto
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SVM"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/resources/svm.html">
+        SVM
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Flussi di lavoro"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Flussi di lavoro</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Preparati a utilizzare i flussi di lavoro"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/workflows/prepare_workflows.html">
+        Preparati a utilizzare i flussi di lavoro
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Workflow 1 - Aggiorna il contatto del cluster e controlla lo stato"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/workflows/wf_1_update_cluster_contact.html">
+        Workflow 1 - Aggiorna il contatto del cluster e controlla lo stato
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestisci ONTAP con REST API"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Gestisci ONTAP con REST API</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Notifiche di eventi EMS"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/manage/ems-rest-api.html">
+        Notifiche di eventi EMS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Autorizzazioni DACL e SACL"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/manage/dacl-sacl-rest-api.html">
+        Autorizzazioni DACL e SACL
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Libreria client Python"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Libreria client Python</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Panoramica"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/python/overview_pcl.html">
+        Panoramica
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Preparatevi a utilizzare la libreria client Python"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/python/prepare_pcl.html">
+        Preparatevi a utilizzare la libreria client Python
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Script per recuperare la configurazione del cluster"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/python/script_retrieve_cluster_configuration.html">
+        Script per recuperare la configurazione del cluster
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Riferimento API"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/reference/api_reference.html">
+        Riferimento API
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Tecnologie di automazione"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Tecnologie di automazione</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ONTAP e Ansible"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/automate/ontap_ansible.html">
+        ONTAP e Ansible
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Blog di automazione"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/automate/blogs.html">
+        Blog di automazione
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Migrare all'API REST"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Migrare all'API REST</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Non abilitazione di ONTAPI"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/migrate/overview.html">
+        Non abilitazione di ONTAPI
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ONTAPI per il mapping REST"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/migrate/mapping.html">
+        ONTAPI per il mapping REST
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Contatori delle performance"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/migrate/performance-counters.html">
+        Contatori delle performance
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Tool e software"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/migrate/software.html">
+        Tool e software
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Articoli del blog"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/migrate/blogs.html">
+        Articoli del blog
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Ulteriori informazioni"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/additional/get_more_information.html">
+        Ulteriori informazioni
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Note legali"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/ontap-automation/legal-notices.html">
+        Note legali
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
+
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <div class="ie-utility">
+  <button id="btn-sidebar-expand" onclick="showSidebar()"><img src="/it-it/ontap-automation/images/expand.png" alt="Espandi pannello di navigazione"></button>
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+
+        
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/it-it/ontap-family/">ONTAP</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/it-it/ontap-automation/">ONTAP&nbsp;Automation</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/it-it/ontap-automation/images/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> La versione in lingua italiana fornita proviene da una traduzione automatica. Per eventuali incoerenze, fare riferimento alla versione in lingua inglese. </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Novità dell&#8217;API REST ONTAP e dell&#8217;automazione</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2023-05-23 14:46:20 +0000">05/23/2023</time>
+    
+  
+
+<span>Collaboratori
+</span>
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>NetApp aggiorna periodicamente l&#8217;API REST di ONTAP per offrire nuove funzionalità, miglioramenti e correzioni di bug.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ontap-9-13-1">ONTAP 9.13.1</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ONTAP 9.13.1 continua ad espandere le funzionalità dell&#8217;API REST di ONTAP con oltre due dozzine di nuove chiamate API. Questi endpoint supportano le nuove funzionalità di ONTAP e i miglioramenti alle funzionalità esistenti. Questa release si concentra sui miglioramenti alla sicurezza, alla gestione delle risorse, alle opzioni di configurazione SVM avanzate e alle metriche delle performance.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Tagging delle risorse</dt>
+<dd>
+<p>È possibile utilizzare i tag per raggruppare le risorse API REST. Questa operazione può essere eseguita per associare risorse correlate all&#8217;interno di un progetto o di un gruppo organizzativo specifico. L&#8217;utilizzo dei tag può aiutare a organizzare e tenere traccia delle risorse in modo più efficace.</p>
+</dd>
+<dt class="hdlist1">Gruppi di coerenza</dt>
+<dd>
+<p>ONTAP 9.13.1 continua ad espandere la disponibilità dei dati dei contatori delle performance. Ora puoi accedere a questo tipo di informazioni statistiche per tenere traccia delle performance storiche e della capacità dei gruppi di coerenza. Inoltre, sono stati inclusi miglioramenti che consentono di configurare e gestire le relazioni padre-figlio tra i gruppi di coerenza.</p>
+</dd>
+<dt class="hdlist1">Configurazione DNS per SVM</dt>
+<dd>
+<p>Gli endpoint DNS esistenti sono stati ampliati per consentire l&#8217;esecuzione della configurazione del server e del dominio DNS per le singole SVM.</p>
+</dd>
+<dt class="hdlist1">Configurazione del ruolo EMS</dt>
+<dd>
+<p>La funzionalità di supporto EMS esistente è stata ampliata per consentire la gestione dei ruoli e la configurazione del controllo degli accessi assegnata ai ruoli. In questo modo è possibile limitare o filtrare gli eventi e i messaggi in base alla configurazione del ruolo.</p>
+</dd>
+<dt class="hdlist1">Sicurezza</dt>
+<dd>
+<p>È possibile utilizzare l&#8217;API REST per configurare i profili TOTP (Time-Based One-Time Password) per gli account che accedono a ONTAP utilizzando SSH. Inoltre, gli endpoint del gestore delle chiavi sono stati ampliati per fornire un&#8217;operazione di ripristino da un server di gestione delle chiavi specificato.</p>
+</dd>
+<dt class="hdlist1">Configurazione CIFS per SVM</dt>
+<dd>
+<p>Gli endpoint CIFS esistenti sono stati ampliati per consentire l&#8217;aggiornamento della configurazione di una SVM specifica.</p>
+</dd>
+<dt class="hdlist1">Regole del bucket S3</dt>
+<dd>
+<p>Gli endpoint del bucket S3 esistenti sono stati ampliati per includere una definizione di regola. Ogni regola è un elenco di oggetti e definisce l&#8217;insieme di azioni da eseguire su un oggetto all&#8217;interno del bucket. Nel complesso, queste regole consentono di gestire meglio il ciclo di vita dei bucket S3.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ontap-9-12-1">ONTAP 9.12.1</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ONTAP 9.12.1 continua ad espandere le funzionalità dell&#8217;API REST di ONTAP con oltre quaranta nuove chiamate API. Questi endpoint supportano le nuove funzionalità di ONTAP e i miglioramenti alle funzionalità esistenti. Questa versione si concentra sui miglioramenti alla sicurezza e alle funzionalità NAS.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Miglioramenti della sicurezza</dt>
+<dd>
+<p>Amazon Web Services include un servizio di gestione delle chiavi che fornisce storage sicuro per chiavi e altri segreti. È possibile accedere a questo servizio tramite l&#8217;API REST per consentire a ONTAP di memorizzare in modo sicuro le proprie chiavi di crittografia nel cloud. Inoltre, è possibile creare ed elencare le chiavi di autenticazione utilizzate con NetApp Storage Encryption.</p>
+</dd>
+<dt class="hdlist1">Active Directory</dt>
+<dd>
+<p>È possibile gestire gli account Active Directory definiti per un cluster ONTAP. Ciò include la creazione di nuovi account, nonché la visualizzazione, l&#8217;aggiornamento e l&#8217;eliminazione degli account.</p>
+</dd>
+<dt class="hdlist1">Criteri di gruppo CIFS</dt>
+<dd>
+<p>L&#8217;API REST è stata migliorata per supportare la creazione e la gestione delle policy di gruppo CIFS. Le informazioni di configurazione sono disponibili e amministrate tramite oggetti di policy di gruppo che vengono applicati a tutte le SVM o a specifiche SVM.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ontap-9-11-1">ONTAP 9.11.1</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ONTAP 9.11.1 continua ad espandere le funzionalità dell&#8217;API REST di ONTAP con quasi un centinaio di nuove chiamate API. Questi endpoint supportano le nuove funzionalità di ONTAP e i miglioramenti alle funzionalità esistenti. Questa release si concentra sul supporto della migrazione dei clienti all&#8217;API REST ONTAP dall&#8217;API Data ONTAP (ONTAPI o ZAPI).</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">RBAC granulare</dt>
+<dd>
+<p>La funzionalità RBAC (Role-Based Access Control) di ONTAP è stata migliorata per fornire una granularità aggiuntiva. È possibile utilizzare i ruoli tradizionali o creare nuovi ruoli personalizzati in base alle esigenze tramite l&#8217;API REST. Ogni ruolo è associato a uno o più privilegi, ciascuno dei quali identifica una chiamata API REST o un comando CLI insieme al livello di accesso. Sono disponibili nuovi livelli di accesso per i ruoli REST, ad esempio <code>read_create</code> e. <code>read_modify</code>. Questo miglioramento fornisce la parità con l&#8217;API Data ONTAP (ONTAPI o ZAPI) e supporta la migrazione dei clienti all&#8217;API REST. Vedere <a href="../rest/rbac_overview.html">"Sicurezza RBAC"</a> per ulteriori informazioni.</p>
+</dd>
+<dt class="hdlist1">Contatori delle performance</dt>
+<dd>
+<p>Le precedenti release di ONTAP hanno mantenuto informazioni statistiche sulle caratteristiche operative del sistema. Con la versione 9.11.1, queste informazioni sono state migliorate e sono ora disponibili tramite l&#8217;API REST. Un amministratore o un processo automatizzato può accedere ai dati per determinare le performance del sistema. Le informazioni statistiche, gestite dal sottosistema di gestione dei contatori, vengono presentate in un formato di database utilizzando tabelle e righe. Questo miglioramento avvicina l&#8217;API REST ONTAP alla parità con l&#8217;API Data ONTAP (ONTAPI o ZAPI).</p>
+</dd>
+<dt class="hdlist1">Gestione degli aggregati</dt>
+<dd>
+<p>La gestione degli aggregati di storage ONTAP è stata migliorata. È possibile utilizzare gli endpoint REST aggiornati per spostare gli aggregati online e offline e gestire le parti di ricambio.</p>
+</dd>
+<dt class="hdlist1">Funzionalità della subnet IP</dt>
+<dd>
+<p>La funzionalità di rete ONTAP è stata ampliata per includere il supporto per le subnet IP. L&#8217;API REST consente di accedere alla configurazione e alla gestione delle subnet IP all&#8217;interno di un cluster ONTAP.</p>
+</dd>
+<dt class="hdlist1">Verifica di più amministratori</dt>
+<dd>
+<p>La funzione di verifica di più amministratori fornisce un framework di autorizzazione flessibile per proteggere l&#8217;accesso ai comandi o alle operazioni ONTAP. È possibile definire regole che identificano i comandi con restrizioni. Quando un utente richiede l&#8217;accesso a un comando specifico, l&#8217;approvazione può essere concessa da più amministratori di ONTAP, a seconda dei casi.</p>
+</dd>
+<dt class="hdlist1">Miglioramenti di SnapMirror</dt>
+<dd>
+<p>La funzionalità di SnapMirror è stata migliorata in diverse aree, tra cui la pianificazione. La parità di relazione SnapVault è stata aggiunta in una relazione DP con ONTAP 9.11.1. Inoltre, la funzione di accelerazione disponibile con L&#8217;API REST ha raggiunto la parità con l&#8217;API Data ONTAP (ONTAPI o ZAPI). A questo scopo, è disponibile il supporto per la creazione e la gestione di copie snapshot in blocco.</p>
+</dd>
+<dt class="hdlist1">Pool di storage</dt>
+<dd>
+<p>Sono stati aggiunti diversi endpoint per fornire l&#8217;accesso ai pool di storage ONTAP. È incluso il supporto per la creazione e l&#8217;elenco dei pool di storage in un cluster, nonché per l&#8217;aggiornamento e l&#8217;eliminazione di pool specifici in base all&#8217;ID.</p>
+</dd>
+<dt class="hdlist1">Supporto della cache dei name Services</dt>
+<dd>
+<p>I name service ONTAP sono stati migliorati per supportare il caching, migliorando le performance e la resilienza. È ora possibile accedere alla configurazione della cache dei name service tramite l&#8217;API REST. Le impostazioni possono essere applicate a più livelli, tra cui host, utenti unix, gruppi unix e netgroup.</p>
+</dd>
+<dt class="hdlist1">Tool di reporting ONTAPI</dt>
+<dd>
+<p>Il tool di reporting ONTAPI aiuta clienti e partner a identificare l&#8217;utilizzo di ONTAPI nel proprio ambiente. Oltre al software Python, il NetApp Lab on Demand offre anche un video e un supporto in evoluzione. Questo tool fornisce un&#8217;altra risorsa durante la migrazione da ONTAPI all&#8217;API REST di ONTAP.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ontap-9-10-1">ONTAP 9.10.1</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ONTAP 9.10.1 continua ad espandere le funzionalità dell&#8217;API REST di ONTAP. Sono stati aggiunti oltre cento nuovi endpoint per supportare le nuove funzionalità di ONTAP e i miglioramenti alle funzionalità esistenti. Di seguito viene presentato un riepilogo dei miglioramenti apportati all&#8217;API REST.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Gruppo di coerenza dell&#8217;applicazione</dt>
+<dd>
+<p>Un gruppo di coerenza è un insieme di volumi raggruppati quando si eseguono determinate operazioni, ad esempio uno snapshot. Questa funzionalità estende la stessa coerenza del crash e l&#8217;integrità dei dati implicita con operazioni a volume singolo in un insieme di volumi. È utile per applicazioni di workload multi-volume di grandi dimensioni.</p>
+</dd>
+<dt class="hdlist1">Migrazione SVM</dt>
+<dd>
+<p>È possibile migrare una SVM da un cluster di origine a un cluster di destinazione. I nuovi endpoint offrono un controllo completo, inclusa la possibilità di sospendere, riprendere, recuperare lo stato e interrompere un&#8217;operazione di migrazione.</p>
+</dd>
+<dt class="hdlist1">Cloning e gestione dei file</dt>
+<dd>
+<p>La clonazione e la gestione dei file a livello di volume sono state migliorate. I nuovi endpoint REST supportano le operazioni di spostamento, copia e divisione dei file.</p>
+</dd>
+<dt class="hdlist1">Controllo S3 migliorato</dt>
+<dd>
+<p>Il controllo degli eventi S3 è un miglioramento della sicurezza che consente di tenere traccia e registrare determinati eventi S3. È possibile impostare un selettore di eventi di audit S3 per SVM per bucket.</p>
+</dd>
+<dt class="hdlist1">Difesa ransomware</dt>
+<dd>
+<p>ONTAP rileva i file potenzialmente contenenti una minaccia ransomware. È possibile recuperare un elenco di questi file sospetti e rimuoverli da un volume.</p>
+</dd>
+<dt class="hdlist1">Miglioramenti di sicurezza vari</dt>
+<dd>
+<p>Esistono diversi miglioramenti generali alla sicurezza che espandono i protocolli esistenti e introducono nuove funzionalità. Sono stati apportati miglioramenti a IPSEC, gestione delle chiavi, configurazione SSH e permessi dei file.</p>
+</dd>
+<dt class="hdlist1">Domini CIFS e gruppi locali</dt>
+<dd>
+<p>È stato aggiunto il supporto per i domini CIFS a livello di cluster e SVM. È possibile recuperare la configurazione del dominio, nonché creare e rimuovere i domain controller preferiti.</p>
+</dd>
+<dt class="hdlist1">Analisi dei volumi estesa</dt>
+<dd>
+<p>Le metriche e le analisi dei volumi sono state ampliate attraverso endpoint aggiuntivi per supportare file, directory e utenti top.</p>
+</dd>
+<dt class="hdlist1">Miglioramenti del supporto</dt>
+<dd>
+<p>Il supporto è stato migliorato grazie a diverse nuove funzionalità. L&#8217;aggiornamento automatico consente di mantenere aggiornati i sistemi ONTAP scaricando e applicando gli aggiornamenti software più recenti. È inoltre possibile recuperare e gestire i core dump di memoria generati da un nodo.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ontap-9-9-1">ONTAP 9.9.1</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ONTAP 9.9.1 continua ad espandere le funzionalità dell&#8217;API REST di ONTAP. Esistono nuovi endpoint API per le funzionalità ONTAP esistenti, tra cui set di porte SAN e sicurezza delle directory dei file VServer. Inoltre, gli endpoint sono stati aggiunti per supportare le nuove funzionalità e i miglioramenti di ONTAP 9.9.1. E la relativa documentazione è stata migliorata. Di seguito viene presentato un riepilogo dei miglioramenti.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Mappatura di ONTAPI all&#8217;API REST di ONTAP 9</dt>
+<dd>
+<p>Per facilitare la transizione del codice di automazione ONTAP all&#8217;API REST, NetApp fornisce la documentazione di mappatura API. Questo riferimento include un elenco di chiamate ONTAPI e l&#8217;equivalente API REST per ciascuna. Il documento di mappatura è stato aggiornato per includere i nuovi endpoint API di ONTAP 9.9.1. Vedere <a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2876895" target="_blank" rel="noopener">"ONTAPI per il mapping API REST"</a> per ulteriori informazioni.</p>
+</dd>
+<dt class="hdlist1">Endpoint API per le nuove funzionalità principali di ONTAP 9.9.1</dt>
+<dd>
+<p>AlL&#8217;API REST è stato aggiunto il supporto per le nuove funzionalità di ONTAP 9.9.1 non disponibili tramite l&#8217;API ONTAPI. Include il supporto per igroups nidificati e Google Cloud Key Management Services.</p>
+</dd>
+<dt class="hdlist1">Supporto migliorato per la transizione A REST da ONTAPI</dt>
+<dd>
+<p>Un numero maggiore di chiamate ONTAPI legacy ora dispone di equivalenti API REST corrispondenti. Ciò include utenti e gruppi Unix locali, gestione della sicurezza dei file NTFS senza la necessità di un client, set di porte SAN e attributi di spazio dei volumi. Queste modifiche sono incluse anche nella documentazione aggiornata di ONTAPI to REST mapping.</p>
+</dd>
+<dt class="hdlist1">Documentazione online migliorata</dt>
+<dd>
+<p>La pagina di riferimento della documentazione online di ONTAP ora include etichette che indicano la release di ONTAP al momento dell&#8217;introduzione di ciascun endpoint O parametro REST, incluse le nuove versioni di ONTAP 9.9.1.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ontap-9-8">ONTAP 9.8</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ONTAP 9.8 espande notevolmente la portata e la profondità dell&#8217;API REST di ONTAP. Include diverse nuove funzionalità che migliorano la tua capacità di automatizzare l&#8217;implementazione e la gestione dei sistemi storage ONTAP. Inoltre, è stato migliorato il supporto per la transizione A REST dall&#8217;API ONTAPI legacy.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Mappatura di ONTAPI all&#8217;API REST di ONTAP 9</dt>
+<dd>
+<p>Per aggiornare l&#8217;automazione ONTAPI, NetApp fornisce un elenco di chiamate ONTAPI che richiedono uno o più parametri di input, oltre a una mappatura di tali chiamate alla chiamata API REST ONTAP 9 equivalente. Vedere <a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2874886" target="_blank" rel="noopener">"ONTAPI per il mapping API REST"</a> per ulteriori informazioni.</p>
+</dd>
+<dt class="hdlist1">Endpoint API per le nuove funzionalità principali di ONTAP 9.8</dt>
+<dd>
+<p>Il supporto per le nuove funzionalità principali di ONTAP 9.8 non disponibili tramite ONTAPI è stato aggiunto all&#8217;API REST. Ciò include il supporto API REST per bucket e servizi ONTAP S3, continuità aziendale SnapMirror e analisi del file system.</p>
+</dd>
+<dt class="hdlist1">Supporto esteso per una maggiore sicurezza</dt>
+<dd>
+<p>La sicurezza è stata migliorata grazie al supporto di diversi servizi e protocolli, tra cui Azure Key Vault, Google Cloud Key Management Services, IPSec e richieste di firma del certificato.</p>
+</dd>
+<dt class="hdlist1">Miglioramenti per migliorare la semplicità</dt>
+<dd>
+<p>ONTAP 9.8 offre flussi di lavoro più efficienti e moderni utilizzando l&#8217;API REST. Ad esempio, gli aggiornamenti del firmware oneclick sono ora disponibili per diversi tipi di firmware.</p>
+</dd>
+<dt class="hdlist1">Documentazione online migliorata</dt>
+<dd>
+<p>La pagina della documentazione online di ONTAP ora include etichette che indicano la release di ONTAP in cui sono stati introdotti ciascun endpoint O parametro REST, inclusi quelli nuovi nel 9.8.</p>
+</dd>
+<dt class="hdlist1">Supporto migliorato per la transizione A REST da ONTAPI</dt>
+<dd>
+<p>Più chiamate ONTAPI legacy ora hanno equivalenti API REST corrispondenti. È inoltre disponibile una documentazione che consente di identificare l&#8217;endpoint REST da utilizzare al posto di una chiamata ONTAPI esistente.</p>
+</dd>
+<dt class="hdlist1">Metriche delle performance estese</dt>
+<dd>
+<p>Le metriche delle performance per L&#8217;API REST sono state ampliate per includere diversi nuovi oggetti di storage e di rete.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ontap-9-7">ONTAP 9.7</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ONTAP 9.7 estende l&#8217;ambito funzionale dell&#8217;API REST di ONTAP introducendo tre nuove categorie di risorse, ciascuna con diversi endpoint REST:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>NDMP</p>
+</li>
+<li>
+<p>Archivio di oggetti</p>
+</li>
+<li>
+<p>SnapLock</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>ONTAP 9.7 introduce inoltre uno o più nuovi endpoint REST in diverse categorie di risorse esistenti:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cluster</p>
+</li>
+<li>
+<p>NAS</p>
+</li>
+<li>
+<p>Networking</p>
+</li>
+<li>
+<p>NVMe</p>
+</li>
+<li>
+<p>SAN</p>
+</li>
+<li>
+<p>Sicurezza</p>
+</li>
+<li>
+<p>Storage</p>
+</li>
+<li>
+<p>Supporto</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ontap-9-6">ONTAP 9.6</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ONTAP 9.6 estende notevolmente il supporto delle API REST introdotto originariamente in ONTAP 9.4. L&#8217;API REST di ONTAP 9.6 supporta la maggior parte delle attività di configurazione e amministrazione di ONTAP.</p>
+</div>
+<div class="paragraph">
+<p>Le API REST in ONTAP 9.6 includono le seguenti aree chiave e molte altre:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Configurazione del cluster</p>
+</li>
+<li>
+<p>Configurazione del protocollo</p>
+</li>
+<li>
+<p>Provisioning</p>
+</li>
+<li>
+<p>Monitoraggio delle performance</p>
+</li>
+<li>
+<p>Protezione dei dati</p>
+</li>
+<li>
+<p>Gestione dei dati consapevole dell&#8217;applicazione</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/copyright/">© 2023 NetApp, Inc.</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Condizioni per l'utilizzo</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Direttiva sulla privacy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Direttiva sui Cookie</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Impostazioni cookie</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a target="_self" href="javascript:netapp_mailto()">Invia feedback su questa pagina</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/ontap-automation/images/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/ontap-automation/images/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/ontap-automation/images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/ontap-automation/images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/ontap-automation/images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/ontap-automation/images/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/ontap-automation/images/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/it-it/ontap-automation/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/it-it/ontap-automation/js/prism.js'></script>
+      <script type="text/javascript" src='/it-it/ontap-automation/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/it-it/ontap-automation/js/tabbed-blocks.js'></script>
+    <script src='/it-it/ontap-automation/js/sidebar.js'></script>
+  </body></html>
