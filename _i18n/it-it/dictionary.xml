@@ -1013,7 +1013,6 @@
   <block id="ad647e4ae904c7ed54ee93040d8298c7" category="cell">Inferiore a.</block>
   <block id="cedf8da05466bb54708268b3c694a78f" category="cell">&gt;</block>
   <block id="05824b7be006782aaefd1fdb97c71e06" category="cell">Maggiore di</block>
-  <block id="a7eeaea90b4e8312b88abcd178019929" category="cell">&lt;=</block>
   <block id="28d1141142e2cbb29e657b69a044ddf4" category="cell">Minore o uguale a.</block>
   <block id="3a1e9b87c94b54dec1202b5ca6539806" category="cell">&gt;=</block>
   <block id="798fe01fcb2754a295b6937ed885a69a" category="cell">Maggiore o uguale a.</block>
@@ -1055,7 +1054,6 @@
   <block id="d803d2dd2f39605b0bc879d0532fc5ba" category="paragraph">Il numero di oggetti effettivamente restituiti può essere inferiore al massimo effettivo, in base al vincolo relativo al numero di oggetti e al numero totale di oggetti nel sistema.</block>
   <block id="2dadc767979da8ab1576ee0aa8da5e21" category="list-text">Restringimento del set di risultati</block>
   <block id="317480d31248a2b7b399c7ddbecbf74a" category="list-text">Se necessario, è possibile combinare questi due parametri con altri parametri di query per restringere il set di risultati. Ad esempio, quanto segue restituisce fino a 10 eventi ems generati dopo il tempo specificato:</block>
-  <block id="89163f6e2498a9f894e7813e6de46b08" category="paragraph"><block ref="3a4009b6b07614ee155d4af5ecfaf8bc" prefix="" category="inline-code"></block></block>
   <block id="5394a0e51a0e30e195e0299ede162a02" category="paragraph">È possibile inviare più richieste per scorrere gli oggetti. Ogni successiva chiamata API deve utilizzare un nuovo valore temporale basato sull'ultimo evento dell'ultimo set di risultati.</block>
   <block id="050a8c11f48cd555f6e5e6bab96225d6" category="section-title">Proprietà delle dimensioni</block>
   <block id="721165b216d0f852ad3d9fd6e430dbe1" category="paragraph">I valori di input utilizzati con alcune chiamate API e alcuni parametri di query sono numerici. Invece di fornire un numero intero in byte, è possibile utilizzare un suffisso come mostrato nella tabella seguente.</block>
@@ -1629,4 +1627,6 @@
   <block id="e6b088db24ebe67ed0e9567d309387ec" category="sidebar">Flussi di lavoro</block>
   <block id="57bf92c591d867814abf9287e2781651" category="sidebar">Workflow 1 - Aggiorna il contatto del cluster e controlla lo stato</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novità</block>
+  <block id="9d755089336a033163e3d2d980b0a0c6" category="cell">&lt;=</block>
+  <block id="e62ced77ec600a0a48c6c84c38cf0e4e" category="paragraph"><block ref="b53150fedbbf0bd1cbc9f3f68a84f43c" prefix="" category="inline-code"></block></block>
 </blocks>

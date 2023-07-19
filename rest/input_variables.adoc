@@ -180,7 +180,7 @@ Il numero di oggetti effettivamente restituiti può essere inferiore al massimo 
 Restringimento del set di risultati:: Se necessario, è possibile combinare questi due parametri con altri parametri di query per restringere il set di risultati. Ad esempio, quanto segue restituisce fino a 10 eventi ems generati dopo il tempo specificato:
 +
 --
-`time=> 2018-04-04T15:41:29.140265Z&max_records=10`
+`time\=> 2018-04-04T15:41:29.140265Z&max_records=10`
 
 È possibile inviare più richieste per scorrere gli oggetti. Ogni successiva chiamata API deve utilizzare un nuovo valore temporale basato sull'ultimo evento dell'ultimo set di risultati.
 
