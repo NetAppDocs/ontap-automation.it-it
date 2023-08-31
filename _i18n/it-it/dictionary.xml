@@ -1663,7 +1663,6 @@
   <block id="fe675d9d322274e9cc5a016dc13952d0" category="paragraph">Un'altra opzione quando si utilizza Curl è rimuovere l'intestazione Authorization e utilizzare invece il parametro curl *user*. Ad esempio:</block>
   <block id="2ce89c4ab048c9d719169c11cda31579" category="paragraph"><block ref="784832b5a8f97e143e4744b38ce2ea72" prefix="" category="inline-code"></block></block>
   <block id="64f444a853187a8c5bb3d8507d2ba64f" category="paragraph">È necessario sostituire le credenziali appropriate per l'ambiente in uso. Quando si esegue il comando curl con questo parametro, viene generata l'intestazione Authorization.</block>
-  <block id="76b8f173097880ead5a0f4cfd6e0618c" category="section-title">Usare esempi di curl con la shell Bash</block>
   <block id="70ce4cad9d30893dd103460ed8538167" category="paragraph">Se si utilizzano direttamente gli esempi di curl del flusso di lavoro, è necessario aggiornare le variabili che contengono con i valori appropriati per l'ambiente in uso. Potete modificare manualmente gli esempi o affidarvi alla shell Bash per eseguire la sostituzione come descritto di seguito.</block>
   <block id="f2e6cc557c48559ec2b9ae2a12ddd1c6" category="admonition">Un vantaggio dell'utilizzo di Bash è che è possibile impostare i valori delle variabili una volta in una sessione di shell invece di una volta per comando curl.</block>
   <block id="1e5ad8f157b0c54185ce7c5af4fe8bbd" category="list-text">Aprire la shell Bash fornita con Linux o un sistema operativo simile.</block>
@@ -1676,10 +1675,8 @@
   <block id="ba73b1e2f51518a93f594eedbae7551e" category="doc">Aggiornare il contatto del cluster e confermare lo stato del lavoro</block>
   <block id="9c06a14d4914d8244b17d64ba72bb24b" category="paragraph">Questo flusso di lavoro aggiorna le informazioni di contatto del cluster. Poiché la richiesta viene elaborata in modo asincrono, viene illustrato anche come determinare se il processo in background associato è stato completato correttamente.</block>
   <block id="8d14eea70d7cb75d7edf6e297701e7c1" category="section-title">Passaggio 1: Aggiornare le informazioni di contatto del quadro strumenti</block>
-  <block id="5b65398d9afd1a14a452f4645c7fb774" category="paragraph">È possibile effettuare una chiamata API per aggiornare le informazioni di contatto.</block>
   <block id="aeeec844965e3df4410c1eb088d94a03" category="paragraph-title">Metodo HTTP ed endpoint</block>
   <block id="0b0231c1815d06ad4701a091ce91a740" category="paragraph">Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.</block>
-  <block id="75e17ff813d0ed4dba4fcb32abc673e6" category="paragraph">Viene restituito l'identificatore per l'oggetto lavoro. Salvare il valore ID per utilizzarlo nel passo successivo come variabile $JOB_ID.</block>
   <block id="8bcf2b807fe961fb45913f99dea0b662" category="section-title">Passo 2: Recupero dello stato del lavoro</block>
   <block id="be81401da9da70cf197e1449ca61043d" category="paragraph">È necessario recuperare lo stato del processo per determinare se la richiesta asincrona è stata completata correttamente.</block>
   <block id="4044a674901deb07947f235775f9654d" category="paragraph">Il valore di stato e gli altri campi sono inclusi nell'oggetto lavoro restituito.</block>
@@ -1696,7 +1693,6 @@
   <block id="66c1b4c7f3dc385b68a9fa903ccd016d" category="cell">Query</block>
   <block id="a734854ee8bdd547b3a1a8eeee4f56a8" category="cell">Selezionare i valori che si desidera restituire. Alcuni esempi sono<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block> e.<block ref="2af72f100c356273d46284f6fd1dfc08" prefix=" " category="inline-code"></block>.</block>
   <block id="d68c817e523bebfd3bb5d6e6aed3c2f7" category="paragraph-title">Esempio Curl: Recupero delle informazioni di contatto del cluster</block>
-  <block id="defb04d386d33eda3cf981695c9da0e8" category="paragraph">In questo esempio viene illustrato come recuperare un singolo campo. Per ottenere l'intera configurazione del cluster, è necessario rimuovere<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> parametro di query.</block>
   <block id="361f902ffbf6412778b4224d2f0f31a2" category="section-title">Variabili di percorso</block>
   <block id="847793b45951d6e2be78711a2dcc9cbc" category="paragraph">Il percorso dell'endpoint utilizzato con ogni chiamata API REST può includere vari identificatori. Ciascun ID corrisponde a una specifica istanza di risorsa. Alcuni esempi comprendono ID del cluster e ID SVM.</block>
   <block id="cca8864630faf59781a9627c4ff42b91" category="list-text">L'autenticazione di base deve essere impostata con il nome utente e la password codificati come stringa base64. Ad esempio:</block>
@@ -1706,4 +1702,15 @@
   <block id="a9cf0528ce80a52d0d018708afdefd2b" category="sidebar">Ottenere la configurazione del cluster</block>
   <block id="64893f12dbe0e133d03e0bed1c70559e" category="sidebar">Aggiornare il contatto del cluster</block>
   <block id="8dba8e84622ab6bad2deffab01006636" category="sidebar">List SVM (Elenca SVM</block>
+  <block id="c17ef84c021b2307b064e8e24b8013a6" category="paragraph">Puoi eseguire un semplice comando curl per iniziare a utilizzare l'API REST di ONTAP e confermarne la disponibilità.</block>
+  <block id="a98b00db4ce1fec40c21222810430c05" category="section-title">Esempi di input JSON</block>
+  <block id="09e5af60e7e961d326ecb94915481554" category="paragraph">Alcune delle chiamate API REST, ad esempio quelle che utilizzano POST o PATCH, richiedono l'input JSON per il corpo della richiesta. Gli esempi di input JSON sono presentati separatamente dagli esempi di arricciatura per chiarezza. È possibile utilizzare gli esempi di input JSON con una delle tecniche descritte di seguito.</block>
+  <block id="4d8521855bcfebae2c0518f634b5dcbd" category="paragraph-title">Salva su file locale</block>
+  <block id="399feb8e89d476ceeca1f9a576fb97ef" category="paragraph">È possibile copiare l'esempio JSON in un file e salvarlo localmente. Il comando curl si riferisce al file utilizzando il<block ref="c579f384f53351a66c689bf14353d49c" prefix=" " category="inline-code"></block> parametro con il valore che indica il nome del file con un<block ref="518ed29525738cebdac49c49e60ea9d3" prefix=" " category="inline-code"></block> prefisso.</block>
+  <block id="4ee40cd4d378b7de61905cb45f1009f5" category="paragraph-title">Incollare nel terminale dopo l'esempio di arricciatura</block>
+  <block id="d44e4ebc435b8a720eca9d2dce5b7c87" category="paragraph">Per prima cosa è necessario copiare e incollare l'esempio di arricciatura nella shell del terminale. Quindi modificare l'esempio per rimuovere completamente<block ref="c579f384f53351a66c689bf14353d49c" prefix=" " category="inline-code"></block> parametro alla fine e sostituirlo con l'attrezzo<block ref="3165aa3b2ee77197f8cfd2cc80c7278f" prefix=" " category="inline-code"></block> parametro. Infine, copiare e incollare nell'esempio JSON in modo che segua il comando curl e il parametro aggiornato.</block>
+  <block id="12c6401fb02cab85d072b4b981f50e87" category="section-title">Uso degli esempi con Bash</block>
+  <block id="b5cda5e8b7bc8b7e8457fef21d91230b" category="paragraph">È possibile eseguire una chiamata API per aggiornare le informazioni di contatto del cluster.</block>
+  <block id="a8a1e002536d347b924b548b0ac40eaa" category="paragraph">L'oggetto lavoro viene restituito. È necessario salvare l'identificatore del processo per utilizzarlo nella fase successiva come variabile $JOB_ID.</block>
+  <block id="8c95ed01afcec406b4d0570ec3d3ff18" category="paragraph">In questo esempio viene illustrato come recuperare un singolo campo. Per ottenere l'intero oggetto e la configurazione del cluster, è necessario rimuovere l'<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> parametro di query.</block>
 </blocks>

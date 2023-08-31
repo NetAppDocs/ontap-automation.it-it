@@ -20,7 +20,7 @@ Questo flusso di lavoro aggiorna le informazioni di contatto del cluster. Poich�
 
 == Passaggio 1: Aggiornare le informazioni di contatto del quadro strumenti
 
-È possibile effettuare una chiamata API per aggiornare le informazioni di contatto.
+È possibile eseguire una chiamata API per aggiornare le informazioni di contatto del cluster.
 
 .Metodo HTTP ed endpoint
 Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
@@ -53,9 +53,9 @@ curl --location --include \
 }
 ----
 .Esempio di output JSON
-Viene restituito l'identificatore per l'oggetto lavoro. Salvare il valore ID per utilizzarlo nel passo successivo come variabile $JOB_ID.
+L'oggetto lavoro viene restituito. È necessario salvare l'identificatore del processo per utilizzarlo nella fase successiva come variabile $JOB_ID.
 
-[source, json]
+[listing]
 ----
 { "job": {
     "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",

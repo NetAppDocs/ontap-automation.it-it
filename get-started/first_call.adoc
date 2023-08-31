@@ -14,7 +14,7 @@ summary: 'Puoi eseguire un comando curl per iniziare a utilizzare l"API REST di 
 
 
 [role="lead"]
-Puoi eseguire un comando curl per iniziare a utilizzare l'API REST di ONTAP e confermarne la disponibilità.
+Puoi eseguire un semplice comando curl per iniziare a utilizzare l'API REST di ONTAP e confermarne la disponibilità.
 
 .Prima di iniziare
 Oltre alla disponibilità dell'utilità Curl sulla workstation, è necessario disporre di quanto segue:

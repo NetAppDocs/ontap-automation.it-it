@@ -92,6 +92,18 @@ Ecco alcune delle parole chiave variabili più comuni. Questo elenco non è esau
 |===
 
 
+=== Esempi di input JSON
+
+Alcune delle chiamate API REST, ad esempio quelle che utilizzano POST o PATCH, richiedono l'input JSON per il corpo della richiesta. Gli esempi di input JSON sono presentati separatamente dagli esempi di arricciatura per chiarezza. È possibile utilizzare gli esempi di input JSON con una delle tecniche descritte di seguito.
+
+.Salva su file locale
+È possibile copiare l'esempio JSON in un file e salvarlo localmente. Il comando curl si riferisce al file utilizzando il `--data` parametro con il valore che indica il nome del file con un `@` prefisso.
+
+.Incollare nel terminale dopo l'esempio di arricciatura
+Per prima cosa è necessario copiare e incollare l'esempio di arricciatura nella shell del terminale. Quindi modificare l'esempio per rimuovere completamente `--data` parametro alla fine e sostituirlo con l'attrezzo `--data-raw` parametro. Infine, copiare e incollare nell'esempio JSON in modo che segua il comando curl e il parametro aggiornato.
+
+
+
 == Opzioni di autenticazione
 
 Il metodo di autenticazione principale disponibile per l'API REST tramite ONTAP 9.13.1 è l'autenticazione di base.
@@ -130,7 +142,7 @@ Un'altra opzione quando si utilizza Curl è rimuovere l'intestazione Authorizati
 
 
 
-== Usare esempi di curl con la shell Bash
+== Uso degli esempi con Bash
 
 Se si utilizzano direttamente gli esempi di curl del flusso di lavoro, è necessario aggiornare le variabili che contengono con i valori appropriati per l'ambiente in uso. Potete modificare manualmente gli esempi o affidarvi alla shell Bash per eseguire la sostituzione come descritto di seguito.
 

@@ -37,7 +37,7 @@ Oltre ai parametri comuni a tutte le chiamate REST API, nell'esempio curl in que
 | campi | Query | No | Selezionare i valori che si desidera restituire. Alcuni esempi sono `contact` e. `version`. 
 |===
 .Esempio Curl: Recupero delle informazioni di contatto del cluster
-In questo esempio viene illustrato come recuperare un singolo campo. Per ottenere l'intera configurazione del cluster, è necessario rimuovere `fields` parametro di query.
+In questo esempio viene illustrato come recuperare un singolo campo. Per ottenere l'intero oggetto e la configurazione del cluster, è necessario rimuovere l' `fields` parametro di query.
 
 [source, curl]
 ----
