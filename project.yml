@@ -32,7 +32,7 @@ homepage:
     - title: Opzioni di automazione ONTAP
       url: "/get-started/ontap_automation_options.html"
     - title: Prepararsi a utilizzare l'API REST
-      url: "/get-started/prepare.html"
+      url: "/get-started/prepare_rest.html"
     - title: La prima chiamata API
       url: "/get-started/first_call.html"
   - title: API REST di ONTAP

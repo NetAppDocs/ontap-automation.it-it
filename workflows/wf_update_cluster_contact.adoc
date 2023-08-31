@@ -1,0 +1,114 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_update_cluster_contact.html 
+keywords: workflow, update cluster, cluster contact, job, job state 
+summary: Questo flusso di lavoro aggiorna le informazioni di contatto del cluster. Poiché la richiesta viene elaborata in modo asincrono, illustra anche come determinare se il processo in background viene completato correttamente. 
+---
+= Aggiornare il contatto del cluster e confermare lo stato del lavoro
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Questo flusso di lavoro aggiorna le informazioni di contatto del cluster. Poiché la richiesta viene elaborata in modo asincrono, viene illustrato anche come determinare se il processo in background associato è stato completato correttamente.
+
+
+
+== Passaggio 1: Aggiornare le informazioni di contatto del quadro strumenti
+
+È possibile effettuare una chiamata API per aggiornare le informazioni di contatto.
+
+.Metodo HTTP ed endpoint
+Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
+
+[cols="25,75"]
+|===
+| Metodo HTTP | Percorso 
+
+
+| PATCH | /cluster 
+|===
+.Tipo di elaborazione
+Asincrono
+
+.Esempio di arricciamento
+[source, curl]
+----
+curl --location --include \
+--request PATCH "https://$FQDN_IP/api/cluster" \
+--header "Content-Type: application/json" \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Esempio di input JSON
+[source, json]
+----
+{
+  "contact": "support@company-demo.com"
+}
+----
+.Esempio di output JSON
+Viene restituito l'identificatore per l'oggetto lavoro. Salvare il valore ID per utilizzarlo nel passo successivo come variabile $JOB_ID.
+
+[source, json]
+----
+{ "job": {
+    "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+      }
+    }
+  }
+}
+----
+
+
+== Passo 2: Recupero dello stato del lavoro
+
+È necessario recuperare lo stato del processo per determinare se la richiesta asincrona è stata completata correttamente.
+
+.Metodo HTTP ed endpoint
+Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
+
+[cols="25,75"]
+|===
+| Metodo HTTP | Percorso 
+
+
+| OTTIENI | /cluster/jobs/{uuid} 
+|===
+.Tipo di elaborazione
+Sincrono
+
+.Esempio di arricciamento
+[source, curl]
+----
+curl --location --include \
+--request GET "https://$FQDN_IP/api/cluster/$JOB_ID" \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Esempio di output JSON
+Il valore di stato e gli altri campi sono inclusi nell'oggetto lavoro restituito.
+
+[listing]
+----
+{
+  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+  "description": "PATCH /api/cluster",
+  "state": "success",
+  "message": "success",
+  "code": 0,
+  "_links": {
+    "self": {
+      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+    }
+  }
+}
+----

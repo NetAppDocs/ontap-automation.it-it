@@ -2,7 +2,13 @@
 section: workflows
 title: Flussi di lavoro
 entries:
-- title: Preparati a utilizzare i flussi di lavoro
-  url: "/workflows/prepare_workflows.html"
-- title: Workflow 1 - Aggiorna il contatto del cluster e controlla lo stato
-  url: "/workflows/wf_1_update_cluster_contact.html"
+- title: Cluster
+  entries:
+  - title: Ottenere la configurazione del cluster
+    url: "/workflows/wf_get_cluster.html"
+  - title: Aggiornare il contatto del cluster
+    url: "/workflows/wf_update_cluster_contact.html"
+- title: SVM
+  entries:
+  - title: List SVM (Elenca SVM
+    url: "/workflows/wf_list_svms.html"

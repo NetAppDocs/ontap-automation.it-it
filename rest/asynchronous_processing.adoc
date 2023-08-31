@@ -78,5 +78,5 @@ stati del terminale::
 
 
 .Informazioni correlate
-* link:../workflows/wf_1_update_cluster_contact.html["Workflow 1: Aggiornamento del contatto del cluster e verifica dello stato del lavoro"]
+* link:../workflows/wf_update_cluster_contact.html["Aggiornare il contatto del cluster e confermare lo stato del lavoro"]
 
