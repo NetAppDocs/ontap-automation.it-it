@@ -38,8 +38,9 @@ Asincrono
 .Esempio di arricciamento
 [source, curl]
 ----
-curl --location --include \
---request PATCH "https://$FQDN_IP/api/cluster" \
+curl --request PATCH \
+--location "https://$FQDN_IP/api/cluster" \
+--include \
 --header "Content-Type: application/json" \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
@@ -89,8 +90,9 @@ Sincrono
 .Esempio di arricciamento
 [source, curl]
 ----
-curl --location --include \
---request GET "https://$FQDN_IP/api/cluster/$JOB_ID" \
+curl --request GET \
+--location "https://$FQDN_IP/api/cluster/jobs/$JOB_ID" \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 ----
@@ -112,3 +114,8 @@ Il valore di stato e gli altri campi sono inclusi nell'oggetto lavoro restituito
   }
 }
 ----
+
+
+== Fase 3: Confermare le informazioni di contatto del quadro strumenti
+
+Eseguire il flusso di lavoro link:../workflows/wf_get_cluster.html["Ottenere la configurazione del cluster"]. Impostare `fields` parametro query a. `contact`.
