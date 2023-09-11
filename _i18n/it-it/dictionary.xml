@@ -1257,7 +1257,6 @@
   <block id="17332aa1fd5861b55b1cfe91240e73d1" category="doc">Introduzione all'API REST</block>
   <block id="1273c6d3912948b5c61164da6ba4c3ab" category="paragraph">Puoi iniziare rapidamente a utilizzare l'API REST di ONTAP e altre tecnologie di automazione. Dopo aver preparato e compreso un flusso di base di richiesta-risposta, è possibile eseguire una semplice chiamata API utilizzando curl. Questa preparazione fornisce l'introduzione e la prospettiva necessarie prima di utilizzare flussi di lavoro più complessi su un sistema live.</block>
   <block id="1b18b55a054bdd1b04a8c8f5c862bc4f" category="doc">Preparati a utilizzare i flussi di lavoro</block>
-  <block id="7de269085c4e23e4ff26c31b7122144d" category="summary">Questo flusso di lavoro aggiorna le informazioni di contatto del cluster. Poiché la richiesta viene elaborata in modo asincrono, illustra anche come determinare se il processo in background viene completato correttamente.</block>
   <block id="e95402dceacd5260b74e758bf2e748ef" category="cell">/cluster</block>
   <block id="11678e3d67c685db9322ab4433f227a6" category="paragraph-title">Tipo di elaborazione</block>
   <block id="288aae25bc408055f50c21c991903a44" category="paragraph">Asincrono</block>
@@ -1660,8 +1659,6 @@
   <block id="1eaec3fd5985d760443b0386d2ee593a" category="list-text">Premere *INVIO* per effettuare le seguenti operazioni:</block>
   <block id="198b3154f73c4a62a05f7a0089ea4f3a" category="list-text">Sostituire i valori della variabile impostati</block>
   <block id="9a6c9ba6963e8edb0564d74a05262568" category="list-text">Eseguire il comando curl</block>
-  <block id="ba73b1e2f51518a93f594eedbae7551e" category="doc">Aggiornare il contatto del cluster e confermare lo stato del lavoro</block>
-  <block id="9c06a14d4914d8244b17d64ba72bb24b" category="paragraph">Questo flusso di lavoro aggiorna le informazioni di contatto del cluster. Poiché la richiesta viene elaborata in modo asincrono, viene illustrato anche come determinare se il processo in background associato è stato completato correttamente.</block>
   <block id="8d14eea70d7cb75d7edf6e297701e7c1" category="section-title">Passaggio 1: Aggiornare le informazioni di contatto del quadro strumenti</block>
   <block id="aeeec844965e3df4410c1eb088d94a03" category="paragraph-title">Metodo HTTP ed endpoint</block>
   <block id="0b0231c1815d06ad4701a091ce91a740" category="paragraph">Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.</block>
@@ -1685,7 +1682,6 @@
   <block id="847793b45951d6e2be78711a2dcc9cbc" category="paragraph">Il percorso dell'endpoint utilizzato con ogni chiamata API REST può includere vari identificatori. Ciascun ID corrisponde a una specifica istanza di risorsa. Alcuni esempi comprendono ID del cluster e ID SVM.</block>
   <block id="cca8864630faf59781a9627c4ff42b91" category="list-text">L'autenticazione di base deve essere impostata con il nome utente e la password codificati come stringa base64. Ad esempio:</block>
   <block id="d4a75631c199e30063c5b55330d690dc" category="paragraph"><block ref="20e17731e08bc5284461439422e12e1a" prefix="" category="inline-code"></block>.</block>
-  <block id="8e69453af156d83ee85c0320efa52ea2" category="list-text"><block ref="8e69453af156d83ee85c0320efa52ea2" category="inline-link-macro-rx"></block></block>
   <block id="29ca978338507bc932aabe7888d4b362" category="list-text">Da ONTAP 9,6 a ONTAP 9.13.1</block>
   <block id="a9cf0528ce80a52d0d018708afdefd2b" category="sidebar">Ottenere la configurazione del cluster</block>
   <block id="64893f12dbe0e133d03e0bed1c70559e" category="sidebar">Aggiornare il contatto del cluster</block>
@@ -1715,4 +1711,8 @@
   <block id="cb607a6c7e4c50ffa4ecc75254227d82" category="list-text">Impostare i valori delle variabili inclusi nell'esempio di arricciatura che si desidera eseguire. Ad esempio:</block>
   <block id="88c3404621959196699b6d5e21481f01" category="section-title">Fase 3: Confermare le informazioni di contatto del quadro strumenti</block>
   <block id="d6e97a74db077b800b27092e142ea420" category="paragraph">Eseguire il flusso di lavoro <block ref="7fc6abcb7d64eb85778fdfad2da4ab1a" category="inline-link-macro-rx"></block>. Impostare<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> parametro query a.<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>.</block>
+  <block id="3522d2e743ab2fd440e2280ea09b6946" category="inline-link-macro">Aggiornare il contatto del cluster e confermare lo stato del lavoro</block>
+  <block id="3c2bc619ddaef1bedada529634c6826d" category="list-text"><block ref="3c2bc619ddaef1bedada529634c6826d" category="inline-link-macro-rx"></block></block>
+  <block id="1adca2e27b8e8a9864351adf6119bafb" category="summary">È possibile aggiornare le informazioni di contatto per un cluster. Poiché la richiesta viene elaborata in modo asincrono, questo flusso di lavoro illustra anche come determinare se il processo in background associato è stato completato correttamente.</block>
+  <block id="3a434b661b7a5e9113a6b4de74efe1a0" category="sidebar">Riepilogo delle risorse di RIPOSO</block>
 </blocks>
