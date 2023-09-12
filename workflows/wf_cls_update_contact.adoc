@@ -118,4 +118,4 @@ Il valore di stato e gli altri campi sono inclusi nell'oggetto lavoro restituito
 
 == Fase 3: Confermare le informazioni di contatto del quadro strumenti
 
-Eseguire il flusso di lavoro link:../workflows/wf_get_cluster.html["Ottenere la configurazione del cluster"]. Impostare `fields` parametro query a. `contact`.
+Eseguire il flusso di lavoro link:../workflows/wf_cls_get_cluster.html["Ottenere la configurazione del cluster"]. Impostare `fields` parametro query a. `contact`.
