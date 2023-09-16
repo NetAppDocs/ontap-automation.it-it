@@ -2,6 +2,8 @@
 section: workflows
 title: Flussi di lavoro
 entries:
+- title: Preparati a utilizzare i flussi di lavoro
+  url: "/workflows/prepare_workflows.html"
 - title: Cluster
   entries:
   - title: Ottenere la configurazione del cluster

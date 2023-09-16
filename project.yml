@@ -28,11 +28,9 @@ homepage:
   - title: Inizia subito
     links:
     - title: Note di rilascio
-      url: "/rn/whats_new.html"
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
     - title: Opzioni di automazione ONTAP
       url: "/get-started/ontap_automation_options.html"
-    - title: Prepararsi a utilizzare l'API REST
-      url: "/get-started/prepare_rest.html"
     - title: La prima chiamata API
       url: "/get-started/first_call.html"
   - title: API REST di ONTAP
@@ -63,10 +61,10 @@ homepage:
       url: "/migrate/performance-counters.html"
     - title: Articoli del blog
       url: "/migrate/blogs.html"
-  - title: Più risorse
+  - title: Conoscenza e supporto
     links:
-    - title: Ulteriori informazioni
-      url: "/additional/get_more_information.html"
+    - title: Risorse aggiuntive
+      url: "/additional/resources.html"
     - title: DevNet di NetApp
       url: https://devnet.netapp.com/restapi.php
     - title: Documenti di ONTAP 9
