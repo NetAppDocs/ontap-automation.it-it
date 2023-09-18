@@ -6,10 +6,6 @@ entries:
   entries:
   - title: Base REST per i web Services
     url: "/rest/rest_web_services_foundation.html"
-  - title: Versione dell'API REST di ONTAP
-    url: "/rest/rest_api_versioning.html"
-  - title: Come accedere all'API REST
-    url: "/rest/access_rest_api.html"
   - title: Caratteristiche operative di base
     url: "/rest/operational_characteristics.html"
   - title: Variabili di input

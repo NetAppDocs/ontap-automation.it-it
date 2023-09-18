@@ -945,11 +945,6 @@
   <block id="51a9e3c779f1be0a43354b1da5831ba0" category="cell">È possibile creare un ruolo tradizionale.</block>
   <block id="2dcd39fd89691d20d107d37e822309c0" category="section-title">Precisione del percorso di accesso</block>
   <block id="8dcea28ae0e36ecb9fb7a7682e6c8323" category="paragraph">Il percorso di accesso definito per un ruolo REST si basa su un endpoint REST. Il percorso di accesso per un ruolo tradizionale si basa su un comando CLI o su una directory di comandi. Inoltre, è possibile includere un parametro di query opzionale con un ruolo tradizionale per limitare ulteriormente l'accesso in base ai valori dei parametri del comando.</block>
-  <block id="a131529b4b9e76bc39353ef1aa209dd9" category="summary">All'API REST inclusa in ONTAP 9 viene assegnato un numero di versione indipendente dal numero di release di ONTAP. È necessario conoscere la versione dell'API inclusa nella release di ONTAP e il modo in cui questo potrebbe influire sull'utilizzo dell'API.</block>
-  <block id="645796c14f90a49c10fe89ef0d9036f0" category="doc">Versione dell'API REST di ONTAP</block>
-  <block id="8797a71e8a89cb9c915f588f435aa882" category="admonition">Tutte le versioni di ONTAP 9 utilizzano la stessa versione dell'API REST.</block>
-  <block id="d4b36e25c7ff304278d8f8203382ad65" category="list-text">Versione 1</block>
-  <block id="fa229fc458ab35ecd4519d4dcca0e7bb" category="list-text"><block ref="fa229fc458ab35ecd4519d4dcca0e7bb" category="inline-link-macro-rx"></block></block>
   <block id="fc004b0a2e525fdc279e93342807a662" category="summary">È possibile controllare la modalità di elaborazione di una chiamata API attraverso parametri e variabili impostati nella richiesta HTTP.</block>
   <block id="ee083ff11ffc430b7230624e8985e88c" category="doc">Variabili di input che controllano una richiesta API</block>
   <block id="957a8c35c28e967701ff975f1d7182d5" category="section-title">Metodi HTTP</block>
@@ -1666,7 +1661,6 @@
   <block id="847793b45951d6e2be78711a2dcc9cbc" category="paragraph">Il percorso dell'endpoint utilizzato con ogni chiamata API REST può includere vari identificatori. Ciascun ID corrisponde a una specifica istanza di risorsa. Alcuni esempi comprendono ID del cluster e ID SVM.</block>
   <block id="cca8864630faf59781a9627c4ff42b91" category="list-text">L'autenticazione di base deve essere impostata con il nome utente e la password codificati come stringa base64. Ad esempio:</block>
   <block id="d4a75631c199e30063c5b55330d690dc" category="paragraph"><block ref="20e17731e08bc5284461439422e12e1a" prefix="" category="inline-code"></block>.</block>
-  <block id="29ca978338507bc932aabe7888d4b362" category="list-text">Da ONTAP 9,6 a ONTAP 9.13.1</block>
   <block id="a9cf0528ce80a52d0d018708afdefd2b" category="sidebar">Ottenere la configurazione del cluster</block>
   <block id="64893f12dbe0e133d03e0bed1c70559e" category="sidebar">Aggiornare il contatto del cluster</block>
   <block id="8dba8e84622ab6bad2deffab01006636" category="sidebar">List SVM (Elenca SVM</block>
@@ -1682,7 +1676,6 @@
   <block id="39b13b297edf030e2a6f8316d1a33f56" category="paragraph">È necessario conoscere la struttura e il formato dei flussi di lavoro prima di utilizzarli con una distribuzione ONTAP in tempo reale.</block>
   <block id="0ee204047e3ff10a0e6d606b38224615" category="paragraph">Un flusso di lavoro può contenere un solo passaggio. Questi _flussi di lavoro a fase singola_ sono formattati in modo leggermente diverso rispetto ai flussi di lavoro che contengono più passaggi. Ad esempio, il nome dell'operazione esplicita viene rimosso. L'azione o l'operazione deve essere chiara in base al titolo del flusso di lavoro.</block>
   <block id="8d197ea17b19bf5b877d0bca6b13aa1c" category="paragraph">È possibile accedere all'API REST ONTAP direttamente tramite curl o un linguaggio di programmazione. In questo caso, l'URL di base è diverso dall'URL utilizzato quando si accede alla documentazione online di ONTAP o a Gestione sistema.</block>
-  <block id="96dc946163c536a828ef3f6ac5ab199d" category="paragraph">Vedere <block ref="fd12ec3737d055cdf76a7f06b5b60e9a" category="inline-link-macro-rx"></block> per ulteriori informazioni.</block>
   <block id="8b601595dec3f885a40ef9fec71f259d" category="paragraph">Se sono necessari parametri aggiuntivi per una specifica chiamata API REST, essi sono inclusi nella sezione *parametri di input aggiuntivi per l'esempio curl* per ogni flusso di lavoro.</block>
   <block id="dc9f325cca41d07c0fa65042753d1c30" category="paragraph">I valori ID e le altre variabili utilizzate con gli esempi di flusso di lavoro sono opachi e possono variare con ogni cluster ONTAP. Per migliorare la leggibilità degli esempi, non vengono utilizzati i valori effettivi. Vengono utilizzate invece le variabili. Questo approccio, basato su un formato coerente e su un insieme di nomi riservati, presenta diversi vantaggi, tra cui:</block>
   <block id="5fdcf5dc19660a9231d7bb52846ce0da" category="paragraph">Ecco alcune delle parole chiave variabili più comuni. Questo elenco non è esaustivo e, se necessario, vengono utilizzate variabili aggiuntive. Il loro significato dovrebbe essere ovvio in base al contesto.</block>
@@ -1703,4 +1696,5 @@
   <block id="d70430e3ce6fd2f61524c5b7b9d27cb4" category="list-text"><block ref="d70430e3ce6fd2f61524c5b7b9d27cb4" category="inline-link-rx"></block></block>
   <block id="3f5e5352c860872dbfb2b2a52bd08d4c" category="paragraph">Note sulla versione di ONTAP 9 con informazioni sulla versione corrente.</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conoscenza e supporto</block>
+  <block id="f792317fd7e11e74c29e5d363e4e430d" category="paragraph">Vedere <block ref="431fa54c68c6c490a4d44973df3ba937" category="inline-link-macro-rx"></block> per ulteriori informazioni.</block>
 </blocks>
