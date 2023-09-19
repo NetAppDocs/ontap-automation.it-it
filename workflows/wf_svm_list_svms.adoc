@@ -21,10 +21,10 @@ Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
 
 [cols="25,75"]
 |===
-| Metodo HTTP | OTTIENI 
+| Metodo HTTP | Percorso 
 
 
-| OTTIENI | /svm/svm 
+| OTTIENI | /api/svm/svm 
 |===
 .Esempio di arricciamento
 [source, curl]

@@ -30,7 +30,7 @@ Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
 | Metodo HTTP | Percorso 
 
 
-| PATCH | /cluster 
+| PATCH | /api/cluster 
 |===
 .Tipo di elaborazione
 Asincrono
@@ -82,7 +82,7 @@ Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
 | Metodo HTTP | Percorso 
 
 
-| OTTIENI | /cluster/jobs/{uuid} 
+| OTTIENI | /api/cluster/jobs/{uuid} 
 |===
 .Tipo di elaborazione
 Sincrono

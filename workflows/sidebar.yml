@@ -10,6 +10,20 @@ entries:
     url: "/workflows/wf_cls_get_cluster.html"
   - title: Aggiornare il contatto del cluster
     url: "/workflows/wf_cls_update_contact.html"
+- title: RBAC
+  entries:
+  - title: Preparati all'utilizzo del RBAC
+    url: "/workflows/wf_rbac_prepare.html"
+  - title: Creare ruoli
+    entries:
+    - title: Limita le operazioni sul volume delle SVM
+      url: "/workflows/wf_rbac_limit_svm.html"
+    - title: Protezione dei dati abilitata
+      url: "/workflows/wf_rbac_data_protection.html"
+    - title: Consenti generazione report ONTAP
+      url: "/workflows/wf_rbac_ontap_reports.html"
+  - title: Creare un utente con un ruolo
+    url: "/workflows/wf_rbac_user_role.html"
 - title: SVM
   entries:
   - title: List SVM (Elenca SVM

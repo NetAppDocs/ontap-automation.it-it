@@ -1,0 +1,115 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_rbac_limit_svm.html 
+keywords:  
+summary: 'Puoi definire un ruolo per limitare l"amministrazione del volume storage all"interno di una SVM.' 
+---
+= Limitare l'accesso alle operazioni dei volumi SVM
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puoi definire un ruolo per limitare l'amministrazione del volume storage all'interno di una SVM.
+
+.Questo flusso di lavoro
+Viene dapprima creato un ruolo tradizionale per consentire inizialmente l'accesso a tutte le principali funzioni di amministrazione dei volumi, ad eccezione del cloning. Il ruolo viene definito con le seguenti caratteristiche:
+
+* È in grado di eseguire tutte le operazioni dei volumi CRUD, tra cui Get, create, Modify ed Delete
+* Impossibile creare un clone del volume
+
+
+È quindi possibile aggiornare il ruolo in base alle esigenze. In questo flusso di lavoro, il ruolo viene modificato nel secondo passaggio per consentire all'utente di creare un clone del volume.
+
+
+
+== Fase 1: Creare il ruolo
+
+Puoi emettere una chiamata API per creare il ruolo RBAC.
+
+.Metodo HTTP ed endpoint
+Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
+
+[cols="25,75"]
+|===
+| Metodo HTTP | Percorso 
+
+
+| POST | /api/security/ruoli 
+|===
+.Esempio di arricciamento
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Esempio di input JSON
+[source, curl]
+----
+{
+  "name": "role1",
+  "owner": {
+    "name": "cluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      { "path": "volume create", "access": "all" },
+      { "path": "volume delete", "access": "all" }
+    ]
+}
+----
+
+
+== Passaggio 2: Aggiornare il ruolo
+
+È possibile eseguire una chiamata API per aggiornare il ruolo esistente.
+
+.Metodo HTTP ed endpoint
+Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
+
+[cols="25,75"]
+|===
+| Metodo HTTP | Percorso 
+
+
+| POST | /api/security/ruoli 
+|===
+.Parametri di input aggiuntivi per esempi di arricciatura
+Oltre ai parametri comuni a tutte le chiamate REST API, nell'esempio curl in questo passo vengono utilizzati anche i seguenti parametri.
+
+[cols="25,10,10,55"]
+|===
+| Parametro | Tipo | Obbligatorio | Descrizione 
+
+
+| $SVM_ID | Percorso | Sì | UUID della SVM che contiene la definizione del ruolo. 
+
+
+| $NOME_RUOLO | Percorso | Sì | Nome del ruolo all'interno della SVM da aggiornare. 
+|===
+.Esempio di arricciamento
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Esempio di input JSON
+[source, curl]
+----
+{
+  "path": "volume clone",
+  "access": "all"
+}
+----

@@ -21,10 +21,10 @@ Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
 
 [cols="25,75"]
 |===
-| Metodo HTTP | OTTIENI 
+| Metodo HTTP | Percorso 
 
 
-| OTTIENI | /cluster 
+| OTTIENI | /api/cluster 
 |===
 .Parametri di input aggiuntivi per esempi di arricciatura
 Oltre ai parametri comuni a tutte le chiamate REST API, nell'esempio curl in questo passo vengono utilizzati anche i seguenti parametri.
