@@ -17,6 +17,9 @@ summary: Prima di utilizzare i flussi di lavoro ONTAP con una distribuzione live
 È necessario conoscere la struttura e il formato dei flussi di lavoro prima di utilizzarli con una distribuzione ONTAP in tempo reale.
 
 
+TIP: È necessario assicurarsi che la versione ONTAP supporti tutte le chiamate API nei flussi di lavoro che si intende utilizzare. Vedere link:../reference/api_reference.html["Riferimento API"] per ulteriori informazioni.
+
+
 
 == Introduzione
 

@@ -1688,7 +1688,6 @@
   <block id="18a5ea643c715c0e45aa53077e8f1429" category="cell">Nome del ruolo all'interno della SVM da aggiornare.</block>
   <block id="4fa346713b0e13aa5afd8dc51d0ddecb" category="section-title">Passaggio 6: Creare un utente</block>
   <block id="3c597ed3165c87f6539fd81a53a11876" category="paragraph">Eseguire la seguente chiamata API REST per creare un account utente. Il ruolo *dprole1* creato in precedenza è associato al nuovo utente.</block>
-  <block id="a2268d991f8aa28dc9e9d9d830cfcd50" category="admonition">È possibile includere l'utente senza un ruolo. In questo caso sarà necessario modificare l'utente per assegnare un ruolo.</block>
   <block id="e3abdda2fcce71a97b7507b852418cf4" category="doc">Consente la generazione di rapporti ONTAP</block>
   <block id="c6ef9b731f6fad8f77a915b2ed739e76" category="paragraph">È possibile creare un ruolo REST per fornire agli utenti la possibilità di generare report ONTAP.</block>
   <block id="fddc78544f7292e6a6fd31d26110db0d" category="paragraph">Il ruolo creato viene definito con le seguenti caratteristiche:</block>
@@ -1710,4 +1709,13 @@
   <block id="79a64e91efbdc6837abaf1d324269070" category="sidebar">Limita le operazioni sul volume delle SVM</block>
   <block id="5379ed2904fea688a27b53224909e1fe" category="sidebar">Protezione dei dati abilitata</block>
   <block id="58bd5f4d333ce0475b1c1a65bffe5bda" category="sidebar">Consenti generazione report ONTAP</block>
+  <block id="0819bf309b404c2690cae22900701126" category="admonition">È possibile creare l'utente senza un ruolo. In questo caso, all'utente viene assegnato un ruolo predefinito (uno dei due<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> oppure<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block>) A seconda che l'utente sia definito con cluster o ambito SVM. Sarà necessario modificare l'utente per assegnare un ruolo diverso.</block>
+  <block id="d5e0a7e21dd7c4bd9ee909a636487786" category="summary">È possibile elencare i certificati installati nel cluster ONTAP. È possibile eseguire questa operazione per verificare se un determinato certificato è disponibile o per ottenere l'ID di un certificato specifico per recuperare l'intero certificato.</block>
+  <block id="85dc6bfe81f58a9d2d9fdae56a1e1032" category="doc">Elencare i certificati</block>
+  <block id="b6902213d797ad7a6157aee6a1fc91fb" category="paragraph">È possibile elencare i certificati installati nel cluster ONTAP. È possibile eseguire questa operazione per verificare se un determinato certificato è disponibile o per ottenere l'ID di un certificato specifico.</block>
+  <block id="b98bcec013a122e0040cd6f6e8f3de6a" category="cell">/api/sicurezza/certificati</block>
+  <block id="1f1b6cbe92673a03d06060259142dbc4" category="listing-title">Esempio Curl: Restituire tre certificati</block>
+  <block id="cf441294e2d78d04b4374f90141413f6" category="admonition">È necessario assicurarsi che la versione ONTAP supporti tutte le chiamate API nei flussi di lavoro che si intende utilizzare. Vedere <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> per ulteriori informazioni.</block>
+  <block id="010b2cb4a9a7014437b7b05617f3e98e" category="sidebar">Certificati e chiavi</block>
+  <block id="3002e63504efe4acf7cd736f92c22ec0" category="sidebar">Elenca certificati</block>
 </blocks>

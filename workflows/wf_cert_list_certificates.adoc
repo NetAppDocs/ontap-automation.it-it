@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_cert_list_certificates.html 
+keywords: workflow, list certificates 
+summary: 'È possibile elencare i certificati installati nel cluster ONTAP. È possibile eseguire questa operazione per verificare se un determinato certificato è disponibile o per ottenere l"ID di un certificato specifico per recuperare l"intero certificato.' 
+---
+= Elencare i certificati
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile elencare i certificati installati nel cluster ONTAP. È possibile eseguire questa operazione per verificare se un determinato certificato è disponibile o per ottenere l'ID di un certificato specifico.
+
+.Metodo HTTP ed endpoint
+Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
+
+[cols="25,75"]
+|===
+| Metodo HTTP | Percorso 
+
+
+| OTTIENI | /api/sicurezza/certificati 
+|===
+.Esempio Curl: Restituire tre certificati
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/security/certificates?max_records=3" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Esempio di output JSON
+[listing]
+----
+{
+  "records": [
+    {
+      "uuid": "dad822c2-573c-11ee-a310-005056aecc29",
+      "name": "vs0_17866DB5C933E2EA",
+      "_links": {
+        "self": {
+          "href": "/api/security/certificates/dad822c2-573c-11ee-a310-005056aecc29"
+        }
+      }
+    },
+    {
+      "uuid": "7d8e5570-573c-11ee-a310-005056aecc29",
+      "name": "BuypassClass3RootCA",
+      "_links": {
+        "self": {
+          "href": "/api/security/certificates/7d8e5570-573c-11ee-a310-005056aecc29"
+        }
+      }
+    },
+    {
+      "uuid": "7dbb2191-573c-11ee-a310-005056aecc29",
+      "name": "EntrustRootCertificationAuthority",
+      "_links": {
+        "self": {
+          "href": "/api/security/certificates/7dbb2191-573c-11ee-a310-005056aecc29"
+        }
+      }
+    }
+  ],
+  "num_records": 3,
+  "_links": {
+    "self": {
+      "href": "/api/security/certificates?max_records=3"
+    },
+    "next": {
+      "href": "/api/security/certificates?start.svm_id=sti214nscluster-1&start.uuid=7dbb2191-573c-11ee-a310-005056aecc29&max_records=3"
+    }
+  }
+}
+
+----

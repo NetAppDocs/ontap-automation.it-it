@@ -40,7 +40,7 @@ Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
 ----
 curl --request GET \
 --location "https://$FQDN_IP/api/svm/svms?order_by=name" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 ----
@@ -68,7 +68,7 @@ Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
 ----
 curl --request GET \
 --location "https://$FQDN_IP/api/security/accounts?owner.name=dmp" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 ----
@@ -96,7 +96,7 @@ Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
 ----
 curl --request GET \
 --location "https://$FQDN_IP/api/security/roles?owner.name=dmp" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput
@@ -125,7 +125,7 @@ Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
 ----
 curl --request POST \
 --location "https://$FQDN_IP/api/security/roles" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput
@@ -180,8 +180,8 @@ Oltre ai parametri comuni a tutte le chiamate REST API, nell'esempio curl in que
 [source, curl]
 ----
 curl --request POST \
---location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
--- include \
+--location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/privileges" \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput
@@ -204,7 +204,7 @@ Eseguire di nuovo il passaggio 3 per visualizzare il nuovo ruolo. È inoltre pos
 Eseguire la seguente chiamata API REST per creare un account utente. Il ruolo *dprole1* creato in precedenza è associato al nuovo utente.
 
 
-TIP: È possibile includere l'utente senza un ruolo. In questo caso sarà necessario modificare l'utente per assegnare un ruolo.
+TIP: È possibile creare l'utente senza un ruolo. In questo caso, all'utente viene assegnato un ruolo predefinito (uno dei due `admin` oppure `vsadmin`) A seconda che l'utente sia definito con cluster o ambito SVM. Sarà necessario modificare l'utente per assegnare un ruolo diverso.
 
 .Metodo HTTP ed endpoint
 Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
@@ -221,7 +221,7 @@ Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
 ----
 curl --request POST \
 --location "https://$FQDN_IP/api/security/accounts" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput

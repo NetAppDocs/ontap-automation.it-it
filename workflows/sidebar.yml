@@ -4,6 +4,10 @@ title: Flussi di lavoro
 entries:
 - title: Preparati a utilizzare i flussi di lavoro
   url: "/workflows/prepare_workflows.html"
+- title: Certificati e chiavi
+  entries:
+  - title: Elenca certificati
+    url: "/workflows/wf_cert_list_certificates.html"
 - title: Cluster
   entries:
   - title: Ottenere la configurazione del cluster
