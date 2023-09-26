@@ -1711,11 +1711,11 @@
   <block id="58bd5f4d333ce0475b1c1a65bffe5bda" category="sidebar">Consenti generazione report ONTAP</block>
   <block id="0819bf309b404c2690cae22900701126" category="admonition">È possibile creare l'utente senza un ruolo. In questo caso, all'utente viene assegnato un ruolo predefinito (uno dei due<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> oppure<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block>) A seconda che l'utente sia definito con cluster o ambito SVM. Sarà necessario modificare l'utente per assegnare un ruolo diverso.</block>
   <block id="d5e0a7e21dd7c4bd9ee909a636487786" category="summary">È possibile elencare i certificati installati nel cluster ONTAP. È possibile eseguire questa operazione per verificare se un determinato certificato è disponibile o per ottenere l'ID di un certificato specifico per recuperare l'intero certificato.</block>
-  <block id="85dc6bfe81f58a9d2d9fdae56a1e1032" category="doc">Elencare i certificati</block>
   <block id="b6902213d797ad7a6157aee6a1fc91fb" category="paragraph">È possibile elencare i certificati installati nel cluster ONTAP. È possibile eseguire questa operazione per verificare se un determinato certificato è disponibile o per ottenere l'ID di un certificato specifico.</block>
   <block id="b98bcec013a122e0040cd6f6e8f3de6a" category="cell">/api/sicurezza/certificati</block>
   <block id="1f1b6cbe92673a03d06060259142dbc4" category="listing-title">Esempio Curl: Restituire tre certificati</block>
   <block id="cf441294e2d78d04b4374f90141413f6" category="admonition">È necessario assicurarsi che la versione ONTAP supporti tutte le chiamate API nei flussi di lavoro che si intende utilizzare. Vedere <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> per ulteriori informazioni.</block>
   <block id="010b2cb4a9a7014437b7b05617f3e98e" category="sidebar">Certificati e chiavi</block>
   <block id="3002e63504efe4acf7cd736f92c22ec0" category="sidebar">Elenca certificati</block>
+  <block id="b74cf40de9fee3f0ba4a3b37a59ed082" category="doc">Elencare i certificati installati</block>
 </blocks>
