@@ -26,6 +26,16 @@ Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
 
 | OTTIENI | /api/sicurezza/certificati 
 |===
+.Parametri di input aggiuntivi per esempi di arricciatura
+Oltre ai parametri comuni a tutte le chiamate REST API, nell'esempio curl in questo passo vengono utilizzati anche i seguenti parametri.
+
+[cols="25,10,10,55"]
+|===
+| Parametro | Tipo | Obbligatorio | Descrizione 
+
+
+| max_records | Query | No | Specificare il numero di record che si desidera restituire. 
+|===
 .Esempio Curl: Restituire tre certificati
 [source, curl]
 ----

@@ -1520,7 +1520,6 @@
   <block id="16761f90ea92726a06e16dfb23549c0a" category="sidebar">DevNet di NetApp</block>
   <block id="98bf123aa3933daaa4019109c98c08eb" category="sidebar">Documenti di ONTAP 9</block>
   <block id="34a5cab8543c50812e1e9045207ef342" category="sidebar">Documenti ONTAP Select</block>
-  <block id="d1b92a4930d50c6ed1038655db0d2684" category="sidebar">Tutta la documentazione del prodotto ONTAP</block>
   <block id="466b9c64436468f52860809312c8a835" category="sidebar">Comprendere le opzioni di automazione</block>
   <block id="5201581c33f8ca3c8850ac4a788dbda3" category="sidebar">Recuperare la versione del software del cluster</block>
   <block id="5f6e122585e52ed38be95d84c84f7806" category="sidebar">Tecnologie di automazione</block>
@@ -1718,4 +1717,6 @@
   <block id="010b2cb4a9a7014437b7b05617f3e98e" category="sidebar">Certificati e chiavi</block>
   <block id="3002e63504efe4acf7cd736f92c22ec0" category="sidebar">Elenca certificati</block>
   <block id="b74cf40de9fee3f0ba4a3b37a59ed082" category="doc">Elencare i certificati installati</block>
+  <block id="f69688cd7802eb62a67f6a56384b3d93" category="cell">max_records</block>
+  <block id="09548bddb5b6b060a8ff9db149caf9b5" category="cell">Specificare il numero di record che si desidera restituire.</block>
 </blocks>
