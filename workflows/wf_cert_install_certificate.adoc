@@ -1,0 +1,87 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_cert_install_certificate.html 
+keywords: workflow, install certificate, x509, x.509 
+summary: 'Puoi installare un certificato X,509 firmato nel cluster ONTAP. Questa operazione può essere eseguita durante la configurazione di una funzione o di un protocollo ONTAP che richiede un"autenticazione avanzata.' 
+---
+= Installare un certificato
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puoi installare un certificato X,509 firmato nel cluster ONTAP. Questa operazione può essere eseguita durante la configurazione di una funzione o di un protocollo ONTAP che richiede un'autenticazione avanzata.
+
+.Prima di iniziare
+È necessario disporre del certificato che si desidera installare. Assicurarsi inoltre che tutti i certificati intermedi siano installati secondo necessità.
+
+
+CAUTION: Prima di utilizzare gli esempi di input JSON riportati di seguito, assicurarsi di aggiornare `public_certificate` con il certificato dell'ambiente.
+
+
+
+== Passaggio 1: Installazione del certificato
+
+È possibile eseguire una chiamata API per installare il certificato.
+
+.Metodo HTTP ed endpoint
+Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
+
+[cols="25,75"]
+|===
+| Metodo HTTP | Percorso 
+
+
+| POST | /api/sicurezza/certificati 
+|===
+.Esempio Curl: Installare un certificato CA principale a livello di cluster
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/certificates" \
+--include \
+--header "Content-Type: application/json" \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Esempio di input JSON
+[source, json]
+----
+{
+    "type": "server_ca",
+    "public_certificate":
+    "-----BEGIN CERTIFICATE-----
+MIID0TCCArkCFGYdznvTVvaY1VZPNfy4yCCyPph6MA0GCSqGSIb3DQEBCwUAMIGk
+MQswCQYDVQQGEwJVUzELMAkGA1UECAwCTkMxDDAKBgNVBAcMA1JUUDEWMBQGA1UE
+CgwNT05UQVAgRXhhbXBsZTETMBEGA1UECwwKT05UQVAgOS4xNDEcMBoGA1UEAwwT
+Ki5vbnRhcC1leGFtcGxlLmNvbTEvMC0GCSqGSIb3DQEJARYgZGF2aWQucGV0ZXJz
+b25Ab250YXAtZXhhbXBsZS5jb20wHhcNMjMxMDA1MTUyOTE4WhcNMjQxMDA0MTUy
+OTE4WjCBpDELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAk5DMQwwCgYDVQQHDANSVFAx
+FjAUBgNVBAoMDU9OVEFQIEV4YW1wbGUxEzARBgNVBAsMCk9OVEFQIDkuMTQxHDAa
+BgNVBAMMEyoub250YXAtZXhhbXBsZS5jb20xLzAtBgkqhkiG9w0BCQEWIGRhdmlk
+LnBldGVyc29uQG9udGFwLWV4YW1wbGUuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOC
+AQ8AMIIBCgKCAQEAxQgy8mhb1Jhkf0D/MBodpzgW0aSp2jGbWJ+Zv2G8BXkp1762
+dPHRkv1hnx9JvwkK4Dba05GiCiD5t3gjH/jUQMSFb+VwDbVmubVFnXjkm/4Q7sea
+tMtA/ZpQdZbQFZ5RKtdWz7dzzPYEl2x8Q1Jc8Kh7NxERNMtgupGWZZn7mfXKYr4O
+N/+vgahIhDibS8YK5rf1w6bfmrik9E2D+PEab9DX/1DL5RX4tZ1H2OkyN2UxoBR6
+Fq7l6n1Hi/5yR0Oi1xStN6sO7EPoGak+KSlK41q+EcIKRo0bP4mEQp8WMjJuiTkb
+5MmeYoIpWEUgJK7S0M6Tp/3bTh2CST3AWxiNxQIDAQABMA0GCSqGSIb3DQEBCwUA
+A4IBAQABfBqOuROmYxdfrj93OyIiRoDcoMzvo8cHGNUsuhnlBDnL2O3qhWEs97s0
+mIy6zFMGnyNYa0t4i1cFsGDKP/JuljmYHjvv+2lHWnxHjTo7AOQCnXmQH5swoDbf
+o1Vjqz8Oxz+PRJ+PA3dF5/8zqaAR6QreAN/iFR++6nUq1sbbM7w03tthBVMgo/h1
+E9I2jVOZsqMFujm2CYfMs4XkZtrYmN6nZA8JcUpDjIWcAVbQYurMnna9r42oS3GB
+WB/FE9n+P+FfJyHJ93KGcCXbH5RF2pi3wLlHilbvVuCjLRrhJ8U20I5mZoiXvABc
+IpYuBcuKXLwAarhDEacXttVjC+Bq
+-----END CERTIFICATE-----"
+}
+----
+
+
+== Passaggio 2: Verificare che il certificato sia stato installato
+
+Eseguire il flusso di lavoro link:../workflows/wf_cert_list_certificates.html["Elencare i certificati installati"] e verificare che il certificato sia disponibile.
