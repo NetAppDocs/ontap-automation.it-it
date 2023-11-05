@@ -1095,13 +1095,10 @@
   <block id="ca5aea2c13440a3ecc9b8840e770344f" category="inline-link-macro">Riepilogo delle risorse RIMANENTI</block>
   <block id="424fc80aa929edad9729b9b006049584" category="paragraph">La pagina della documentazione online API di ONTAP fornisce un punto di accesso quando si utilizza un browser Web. Oltre a fornire un metodo per eseguire direttamente singole chiamate API, la pagina include una descrizione dettagliata dell'API, inclusi i parametri di input e altre opzioni per ciascuna chiamata. Le chiamate API sono organizzate in categorie funzionali. Vedere <block ref="b04c0c0415c8329423a4dc5d04335c63" category="inline-link-macro-rx"></block> per ulteriori informazioni.</block>
   <block id="af945751c0efb1d33830b48e2e17c2e6" category="paragraph">Il formato dell'URL utilizzato per accedere alla pagina della documentazione relativa alla versione più recente dell'API è:</block>
-  <block id="5577746582bcb9358092e3471e9dbcbb" category="paragraph"><block ref="64baf5b68009adfd742e090cc99cca9d" prefix="" category="inline-code"></block></block>
   <block id="26af4f060203125bc0739a38e9ddfa2b" category="section-title">Software e tool personalizzati</block>
   <block id="6e70b7cc1cd3e6a65b37dbcdde8ecd4a" category="paragraph">È possibile accedere all'API ONTAP utilizzando uno dei diversi linguaggi e tool di programmazione. Le scelte più popolari includono Python, Java, Curl e PowerShell. Un programma, uno script o uno strumento che utilizza l'API agisce come un client di servizi Web REST. L'utilizzo di un linguaggio di programmazione consente una comprensione più approfondita dell'API e offre l'opportunità di automatizzare l'amministrazione di ONTAP.</block>
   <block id="9670d5b867b93341fdec8b7aadfdba79" category="paragraph">Il formato dell'URL di base utilizzato per accedere direttamente alla versione più recente dell'API è:</block>
-  <block id="eb58b311b3cd61c57c1148d0c5ba0129" category="paragraph"><block ref="44358b16e5bf8ae53005ffa8233bc55a" prefix="" category="inline-code"></block></block>
   <block id="433c12a33fdba27dd646123b380a2c4e" category="paragraph">Per accedere a una versione API specifica in cui sono supportate più versioni, il formato dell'URL è:</block>
-  <block id="8b27cc8fdbb4b1dea164580b7fa49b37" category="paragraph"><block ref="b1a74a394cef9d41c5a45a7ba9074068" prefix="" category="inline-code"></block></block>
   <block id="5c1a8f35406088e0d21c8beb1a46d2c4" category="summary">Representational state Transfer (REST) è uno stile per la creazione di applicazioni web distribuite. Utilizza protocolli e standard mainstream per fornire una base flessibile per l'amministrazione dei cluster ONTAP.</block>
   <block id="8ed6428212b41847f33c5db651c2aa70" category="doc">Base REST per i web Services</block>
   <block id="c0aefd46729e17daeac7adf6c79cc100" category="paragraph">Representational state Transfer (REST) è uno stile per la creazione di applicazioni web distribuite. Quando viene applicato alla progettazione di un'API di servizi Web, stabilisce un insieme di tecnologie per esporre le risorse basate su server e gestirne gli stati. Utilizza protocolli e standard mainstream per fornire una base flessibile per l'amministrazione dei cluster ONTAP.</block>
@@ -1729,4 +1726,7 @@
   <block id="f6c0383d899dc40b8c8d016d4b5f85de" category="section-title">Passaggio 2: Verificare che il certificato sia stato installato</block>
   <block id="5b3cfccbac20b0363f1d4e2d4431ab0e" category="paragraph">Eseguire il flusso di lavoro <block ref="cf365ce6cd35c6dbd8b87fe3303f2226" category="inline-link-macro-rx"></block> e verificare che il certificato sia disponibile.</block>
   <block id="1346018f60bf3711f3e704204dc2db96" category="sidebar">Installa certificato</block>
+  <block id="453c37c8e9a76deb2b13d5a2c2c4be7b" category="paragraph"><block ref="71e2add861ef98d4019f3cebd53921c4" prefix="" category="inline-code"></block></block>
+  <block id="c22e9379c891fca636de58b50cf46bc3" category="paragraph"><block ref="e27598c7184d00cb3ee9f87da21a55c5" prefix="" category="inline-code"></block></block>
+  <block id="adbde3ab61ea5b6041902022caaaeddc" category="paragraph"><block ref="c07b7bd445e059f84d0bc076867fcd31" prefix="" category="inline-code"></block></block>
 </blocks>

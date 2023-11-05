@@ -40,7 +40,7 @@ La pagina della documentazione online API di ONTAP fornisce un punto di accesso 
 
 Il formato dell'URL utilizzato per accedere alla pagina della documentazione relativa alla versione più recente dell'API è:
 
-`https://<cluster_mgmt_ip_address>/docs/api`
+`\https://<cluster_mgmt_ip_address>/docs/api`
 
 
 
@@ -50,8 +50,8 @@ Il formato dell'URL utilizzato per accedere alla pagina della documentazione rel
 
 Il formato dell'URL di base utilizzato per accedere direttamente alla versione più recente dell'API è:
 
-`https://<cluster_mgmt_ip_address>/api`
+`\https://<cluster_mgmt_ip_address>/api`
 
 Per accedere a una versione API specifica in cui sono supportate più versioni, il formato dell'URL è:
 
-`https://<cluster_mgmt_ip_address>/api/v1`
+`\https://<cluster_mgmt_ip_address>/api/v1`
