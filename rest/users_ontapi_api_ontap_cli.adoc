@@ -47,7 +47,7 @@ La disponibilità delle API SnapDiff nelle release di ONTAP viene definita come 
 * ONTAP 9.10.1: Solo v3 (solo API REST)
 
 
-Per ulteriori informazioni, consultare link:../rn/whats_new.html["Note di rilascio di ONTAP"].
+Per ulteriori informazioni, consultare https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Note di rilascio di ONTAP"^].
 
 .Informazioni correlate
 * link:../rest/input_variables.html["Variabili di input che controllano una richiesta API"]
