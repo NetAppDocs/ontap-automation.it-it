@@ -35,10 +35,10 @@ Una porta Ethernet è un endpoint di rete fisico o virtuale. Le porte possono es
 È possibile utilizzare gli endpoint API REST del fabric Fibre Channel (FC) per recuperare informazioni sulla rete FC. Ciò include le connessioni tra il cluster ONTAP e il fabric FC, gli switch che compongono il fabric e le zone dello zoneset attivo. Questo tipo di risorsa è stato introdotto con ONTAP 9.11.
 
 .Interfacce Fibre Channel
-Un'interfaccia Fibre Channel è un endpoint logico associato a una SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.8.
+Un'interfaccia Fibre Channel è un endpoint logico associato a una SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9,6 e aggiornato con ONTAP 9,8. Il supporto per il recupero dei dati delle metriche di performance è stato aggiunto con ONTAP 9,14.
 
 .Porte Fibre Channel
-Una porta Fibre Channel è un adattatore fisico su un nodo ONTAP utilizzato per il collegamento alla rete Fibre Channel. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.8.
+Una porta Fibre Channel è un adattatore fisico su un nodo ONTAP utilizzato per il collegamento alla rete Fibre Channel. Questo tipo di risorsa è stato introdotto con ONTAP 9,6 e aggiornato con ONTAP 9,8. Il supporto per il recupero dei dati delle metriche di performance è stato aggiunto con ONTAP 9,14.
 
 .Proxy HTTP
 È possibile configurare un proxy HTTP per una SVM o un IPSpace del cluster. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.

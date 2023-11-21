@@ -46,6 +46,9 @@ Questo set di chiamate API consente di utilizzare il vault delle chiavi Azure pe
 .Certificati
 Le chiamate API possono essere utilizzate per installare, visualizzare ed eliminare i certificati utilizzati da ONTAP. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
 
+.Cisco Duo
+Duo fornisce l'autenticazione a due fattori per gli accessi SSH. Puoi configurare Duo per il funzionamento a livello di cluster ONTAP o SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9,14.
+
 .Sicurezza del cluster
 È possibile recuperare i dettagli della protezione a livello di cluster e aggiornare alcuni parametri. Questo tipo di risorsa è stato introdotto con ONTAP 9.7 e aggiornato con ONTAP 9.8.
 
@@ -71,7 +74,7 @@ Questi endpoint consentono di recuperare e aggiornare le configurazioni per i ke
 Un gestore delle chiavi consente ai moduli client all'interno di ONTAP di memorizzare chiavi in modo sicuro. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato per ONTAP 9.7. C'era un altro aggiornamento con ONTAP 9.12 per supportare le chiavi di autenticazione. Con ONTAP 9.13 è stata aggiunta una funzionalità di ripristino.
 
 .Negozi chiave
-Un archivio chiavi descrive il tipo di gestore delle chiavi. Questo tipo di risorsa è stato utilizzato per la prima volta in ONTAP 9.10.
+Un archivio chiavi descrive il tipo di gestore delle chiavi. Questo tipo di risorsa è nuovo in ONTAP 9,10. Con ONTAP 9,14 sono stati aggiunti altri endpoint che supportano il controllo avanzato.
 
 .Autenticazione LDAP
 Queste chiamate API vengono utilizzate per recuperare e gestire la configurazione del server LDAP del cluster. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
@@ -91,6 +94,9 @@ La possibilità per più amministratori di approvare l'accesso migliora la sicur
 
 .Autenticazione NIS
 Queste impostazioni vengono utilizzate per recuperare e gestire la configurazione del server NIS del cluster. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+
+.OAuth 2,0
+Open Authorization (OAuth 2,0) è un framework basato su token che può essere utilizzato per limitare l'accesso alle risorse di storage ONTAP. È possibile utilizzarlo con client che accedono a ONTAP tramite l'API REST. La configurazione può essere eseguita con qualsiasi interfaccia amministrativa di ONTAP, inclusa l'API REST. Questo tipo di risorsa è stato introdotto con ONTAP 9,14.
 
 .Autenticazione della password
 Include la chiamata API utilizzata per modificare la password di un account utente. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.

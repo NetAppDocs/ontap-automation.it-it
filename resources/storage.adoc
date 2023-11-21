@@ -55,6 +55,9 @@ Porte di storage del cluster. Questo tipo di risorse è stato introdotto con ONT
 .Policy DI QOS
 Configurazione della policy di qualità del servizio. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
 
+.Opzioni di QOS
+Gli endpoint sono stati introdotti per consentire il recupero e l'impostazione delle opzioni QOS per il cluster. Ad esempio, è possibile riservare una percentuale delle risorse di elaborazione del sistema disponibili per le attività in background. Questo tipo di risorsa è stato introdotto con ONTAP 9,14.
+
 .Carichi di lavoro QOS
 Un carico DI lavoro QOS rappresenta un oggetto storage monitorato dalla QOS. È possibile recuperare i flussi DI lavoro QOS. Questo tipo di risorsa è stato introdotto con ONTAP 9.10.
 

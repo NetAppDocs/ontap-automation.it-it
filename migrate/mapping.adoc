@@ -18,6 +18,7 @@ L'API REST di ONTAP include funzionalità equivalenti a ONTAPI nella maggior par
 
 La documentazione di mappatura API dipende dalla versione di ONTAP:
 
+* https://docs.netapp.com/us-en/ontap-restmap-9141["ONTAP 9.14.1"^]
 * https://docs.netapp.com/us-en/ontap-restmap-9131["ONTAP 9.13.1"^]
 * https://docs.netapp.com/us-en/ontap-restmap-9121["ONTAP 9.12.1"^]
 * https://docs.netapp.com/us-en/ontap-restmap-9111["ONTAP 9.11.1"^]

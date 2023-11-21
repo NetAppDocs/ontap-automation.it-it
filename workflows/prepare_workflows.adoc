@@ -109,7 +109,7 @@ Per prima cosa è necessario copiare e incollare l'esempio Curl in una shell ter
 
 == Opzioni di autenticazione
 
-Il metodo di autenticazione principale disponibile per l'API REST tramite ONTAP 9.13.1 è l'autenticazione di base.
+La tecnica di autenticazione principale disponibile per l'API REST è l'autenticazione di base HTTP. A partire da ONTAP 9,14, è inoltre possibile utilizzare il framework Open Authorization (OAuth 2,0) con autenticazione e autorizzazione basate su token.
 
 
 
@@ -142,6 +142,30 @@ Un'altra opzione quando si utilizza Curl è rimuovere l'intestazione Authorizati
 `--user username:password`
 
 È necessario sostituire le credenziali appropriate per l'ambiente in uso. Le credenziali non sono codificate in base64. Quando si esegue il comando curl con questo parametro, la stringa viene codificata e l'intestazione Authorization viene generata per l'utente.
+
+
+
+=== OAuth 2,0
+
+Quando si utilizza OAuth 2,0, è necessario richiedere un token di accesso da un server di autorizzazione esterno e includerlo in ogni richiesta HTTP. I passaggi di base di alto livello sono descritti di seguito. Vedere anche https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html["Panoramica dell'implementazione di ONTAP OAuth 2,0"^] Per ulteriori informazioni su OAuth 2,0 e su come utilizzarlo con ONTAP.
+
+.Prepara il tuo ambiente ONTAP
+Prima di utilizzare l'API REST per accedere a ONTAP, è necessario preparare e configurare l'ambiente ONTAP. Ad un livello elevato, i passaggi includono:
+
+* Identificare le risorse e i client protetti da ONTAP
+* Esaminare il ruolo REST ONTAP esistente e le definizioni utente
+* Installare e configurare il server di autorizzazione
+* Progettare e configurare le definizioni di autorizzazione client
+* Configurare ONTAP e attivare OAuth 2,0
+
+
+.Richiedere un token di accesso
+Con ONTAP e il server di autorizzazione definiti e attivi, è possibile effettuare una chiamata API REST utilizzando un token OAuth 2,0. Il primo passaggio consiste nel richiedere un token di accesso al server di autorizzazione. Questa operazione viene eseguita al di fuori di ONTAP utilizzando una delle diverse tecniche basate sul server. ONTAP non rilascia token di accesso né esegue il reindirizzamento.
+
+.Creare l'intestazione della richiesta HTTP
+Dopo aver ottenuto un token di accesso, è possibile creare un'intestazione di autorizzazione e includerla con le richieste HTTP. Indipendentemente dal fatto che si utilizzi curl o un linguaggio di programmazione per accedere all'API REST, è necessario includere l'intestazione con ogni richiesta del client. È possibile costruire l'intestazione come segue:
+
+`Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSld ...`
 
 
 

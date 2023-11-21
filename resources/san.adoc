@@ -20,7 +20,7 @@ summary: È possibile utilizzare queste chiamate API per gestire le risorse SAN.
 Gli accessi Fibre Channel rappresentano le connessioni formate dagli iniziatori Fibre Channel che hanno effettuato l'accesso a ONTAP. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
 
 .Servizi Fibre Channel Protocol
-Un servizio Fibre Channel Protocol (FCP) definisce le proprietà di una destinazione Fibre Channel per una SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.7.
+Un servizio Fibre Channel Protocol (FCP) definisce le proprietà di una destinazione Fibre Channel per una SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.7. Il supporto per il recupero dei dati delle metriche di performance è stato aggiunto con ONTAP 9,14.
 
 .Alias WWPN Fibre Channel
 Un nome di porta universale (WWPN) è un valore a 64 bit che identifica in modo univoco una porta Fibre Channel. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
@@ -30,11 +30,14 @@ Un gruppo di iniziatori (igroup) è una raccolta di WWPN Fibre Channel (World Wi
 
 gli igroups nidificati sono una nuova funzionalità di ONTAP 9.9 e il supporto è stato aggiunto anche all'API REST. Questo tipo di risorsa REST è stato introdotto con ONTAP 9.9.
 
+.Iniziatori
+Un iniziatore è un nome di porta universale (WWPN) Fibre Channel (FC), un nome qualificato iSCSI (IQN) o un iSCSI EUI (Extended Unique Identifier) che identifica un endpoint host. È possibile recuperare gli initiator per il cluster o una SVM specifica. Questo tipo di risorsa è stato introdotto con ONTAP 9,14.
+
 .Credenziali iSCSI
 L'oggetto credenziali iSCSI contiene credenziali di autenticazione utilizzate da un iniziatore e da ONTAP. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
 
 .Servizi iSCSI
-Un servizio iSCSI definisce le proprietà della destinazione iSCSI per una SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.7.
+Un servizio iSCSI definisce le proprietà della destinazione iSCSI per una SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.7. Il supporto per il recupero dei dati delle metriche di performance è stato aggiunto con ONTAP 9,14.
 
 .Sessioni iSCSI
 Una sessione iSCSI è una o più connessioni TCP che collegano un iniziatore iSCSI con una destinazione iSCSI. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
@@ -49,7 +52,7 @@ Una mappa LUN è un'associazione tra un LUN e un gruppo iniziatore. Questo tipo 
 I nodi di reporting sono i nodi del cluster da cui vengono annunciati i percorsi di rete verso un LUN mappato utilizzando i protocolli SAN come parte della funzione SLM (Selective LUN map) di ONTAP. I nuovi endpoint consentono di aggiungere, rimuovere e rilevare i nodi di reporting di una mappa LUN. Questo tipo di risorsa è stato introdotto con ONTAP 9.10.
 
 .LUN
-Un LUN è la rappresentazione logica dello storage in una SAN (Storage Area Network). Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.7.
+Un LUN è la rappresentazione logica dello storage in una SAN (Storage Area Network). Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.7. Il supporto per il recupero dei dati delle metriche di performance è stato aggiunto con ONTAP 9,14.
 
 .Set di porte
 Un set di porte è un insieme di interfacce di rete Fibre Channel o iSCSI associate a _portset_ Storage VM. Sebbene questa funzionalità sia già stata utilizzata con le versioni precedenti di ONTAP, il supporto è stato aggiunto all'API REST. Questo tipo di risorsa REST è stato introdotto con ONTAP 9.9.

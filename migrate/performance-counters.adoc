@@ -100,6 +100,7 @@ NetApp offre un supporto completo per la migrazione del codice di automazione da
 
 Consultare la documentazione di mappatura appropriata in base alla release di ONTAP in uso:
 
+* https://docs.netapp.com/us-en/ontap-pcmap-9141/["Mappatura del contatore delle prestazioni ONTAP 9.14.1"^]
 * https://docs.netapp.com/us-en/ontap-pcmap-9131/["Mappatura dei contatori delle performance di ONTAP 9.13.1"^]
 * https://docs.netapp.com/us-en/ontap-pcmap-9121/["Mappatura dei contatori delle performance di ONTAP 9.12.1"^]
 * https://docs.netapp.com/us-en/ontap-pcmap-9111/["Mappatura dei contatori delle performance di ONTAP 9.11.1"^]

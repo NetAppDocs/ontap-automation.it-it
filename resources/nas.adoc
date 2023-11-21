@@ -85,6 +85,9 @@ I motori FPolicy consentono di identificare i server esterni che ricevono le not
 .Eventi FPolicy
 La configurazione che identifica la modalità di monitoraggio dell'accesso ai file e gli eventi generati. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
 
+.Archivio persistente FPolicy
+È possibile configurare e amministrare un archivio permanente per la configurazione e gli eventi di ONTAP FPolicy. Ciascuna SVM può disporre di un unico archivio persistente condiviso per le diverse policy all'interno della SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9,14.
+
 .Policy FPolicy
 Un container per gli elementi del framework FPolicy, inclusi motori ed eventi FPolicy. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
 
