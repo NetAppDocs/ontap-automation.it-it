@@ -80,10 +80,6 @@
   <block id="9526c4af8cb7f4cacf6131573eda8be8" category="paragraph-title">Documentazione e risorse aggiuntive</block>
   <block id="eed64ccdcc26c24adc6af0459bcbd582" category="paragraph">Consulta la _NetApp Developer Network_ per i link alla documentazione e ad altre risorse.</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="list-title">Informazioni correlate</block>
-  <block id="5f6bf2fac8af69fcf38f9b1b785e910e" category="inline-link">PyPI: NetApp ONTAP 9.13.1</block>
-  <block id="1d6690c7f751b90aee685c57c28ea355" category="list-text"><block ref="1d6690c7f751b90aee685c57c28ea355" category="inline-link-rx"></block></block>
-  <block id="19a9062545fe4aec02e4bb9d69d9e65d" category="inline-link">Documentazione NetApp PCL per 9.13.1</block>
-  <block id="99984697846692a3881d97799a42681d" category="list-text"><block ref="99984697846692a3881d97799a42681d" category="inline-link-rx"></block></block>
   <block id="b597994ba1223810c3ac8977cffacb37" category="inline-link">Rete di sviluppatori NetApp: API RESTful di ONTAP</block>
   <block id="6228139d56297e6f87b517feae45bc99" category="list-text"><block ref="6228139d56297e6f87b517feae45bc99" category="inline-link-rx"></block></block>
   <block id="5d715f632f7a3e61ffcbef7a0fab4e08" category="summary">È possibile utilizzare queste chiamate API per gestire lo storage fisico e logico.</block>
@@ -1763,4 +1759,6 @@
   <block id="f393f584e27f669b011040984c1c9496" category="inline-link">Mappatura del contatore delle prestazioni ONTAP 9.14.1</block>
   <block id="49ffd7a8d8266844e2ec7c32f18e5cb1" category="list-text"><block ref="49ffd7a8d8266844e2ec7c32f18e5cb1" category="inline-link-rx"></block></block>
   <block id="61a5cb9aa0d74d026e5b2a2811ac5856" category="list-text"><block ref="61a5cb9aa0d74d026e5b2a2811ac5856" category="inline-link-rx"></block></block>
+  <block id="2cea11979f1d383a5921860d201ed868" category="inline-link">PyPI: NetApp ONTAP 9.14.1</block>
+  <block id="90412d82652a0008df94a427a205c033" category="list-text"><block ref="90412d82652a0008df94a427a205c033" category="inline-link-rx"></block></block>
 </blocks>
