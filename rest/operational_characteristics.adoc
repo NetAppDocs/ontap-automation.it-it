@@ -69,7 +69,7 @@ Elaborazione asincrona:: Se una richiesta asincrona è valida, ONTAP crea un'att
 Le richieste che utilizzano i metodi POST, PATCH ed ELIMINAZIONE sono progettate per essere eseguite in modo asincrono se si prevede che il completamento delle richieste richiederà più di due secondi.
 
 
-NOTE: Il `return_timeout` Il parametro query è disponibile con le chiamate API asincrone e può convertire una chiamata asincrona in modo sincrono. Fare riferimento a. `How asynchronous processing works using the Job object` per ulteriori informazioni.
+NOTE: Il `return_timeout` Il parametro query è disponibile con le chiamate API asincrone e può convertire una chiamata asincrona in modo sincrono. Fare riferimento a. link:../rest/asynchronous_processing.html["Elaborazione asincrona utilizzando l'oggetto Job"] per ulteriori informazioni.
 
 --
 

@@ -16,6 +16,8 @@ entries:
     url: "/workflows/wf_cls_get_cluster.html"
   - title: Aggiornare il contatto del cluster
     url: "/workflows/wf_cls_update_contact.html"
+  - title: Recupera istanza lavoro
+    url: "/workflows/wf_jobs_get_job.html"
 - title: RBAC
   entries:
   - title: Preparati all'utilizzo del RBAC

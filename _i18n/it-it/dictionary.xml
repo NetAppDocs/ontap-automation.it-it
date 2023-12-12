@@ -1050,7 +1050,6 @@
   <block id="97fc3d9385e39e5a8a5a53f93c073517" category="list-text">Elaborazione asincrona</block>
   <block id="7191f1887421328b513e89d8e5db7cf6" category="list-text">Se una richiesta asincrona è valida, ONTAP crea un'attività in background per elaborare la richiesta e un oggetto di lavoro per ancorare l'attività. Lo stato 202 HTTP viene restituito al chiamante insieme all'oggetto lavoro. Per determinare l'esito positivo o negativo finale, è necessario recuperare lo stato del lavoro.</block>
   <block id="026d032072959df5e7c61af10bdc9924" category="paragraph">Le richieste che utilizzano i metodi POST, PATCH ed ELIMINAZIONE sono progettate per essere eseguite in modo asincrono se si prevede che il completamento delle richieste richiederà più di due secondi.</block>
-  <block id="48d8b5f7a9deedfd0fd5dd40310c83a5" category="admonition">Il<block ref="25da76d23d15f841b09a860ea321146d" prefix=" " category="inline-code"></block> Il parametro query è disponibile con le chiamate API asincrone e può convertire una chiamata asincrona in modo sincrono. Fare riferimento a.<block ref="6d9e60d71e6ca21dbbaae6a56595b33f" prefix=" " category="inline-code"></block> per ulteriori informazioni.</block>
   <block id="a0c340ff7c895ce6a1d571f1f55df890" category="paragraph">La sicurezza fornita con L'API REST si basa principalmente sulle funzionalità di sicurezza esistenti disponibili con ONTAP. L'API utilizza la seguente protezione:</block>
   <block id="14a55e8a26db2705a0ffd20ba0427338" category="list-text">Transport Layer Security</block>
   <block id="234b7702b17d750d0199947820d83481" category="list-text">Autenticazione del client</block>
@@ -1580,8 +1579,6 @@
   <block id="aeeec844965e3df4410c1eb088d94a03" category="paragraph-title">Metodo HTTP ed endpoint</block>
   <block id="0b0231c1815d06ad4701a091ce91a740" category="paragraph">Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.</block>
   <block id="8bcf2b807fe961fb45913f99dea0b662" category="section-title">Passo 2: Recupero dello stato del lavoro</block>
-  <block id="be81401da9da70cf197e1449ca61043d" category="paragraph">È necessario recuperare lo stato del processo per determinare se la richiesta asincrona è stata completata correttamente.</block>
-  <block id="4044a674901deb07947f235775f9654d" category="paragraph">Il valore di stato e gli altri campi sono inclusi nell'oggetto lavoro restituito.</block>
   <block id="1e6808f43cf2da1acd44c6e982792490" category="summary">È possibile elencare le Storage Virtual Machine (SVM) definite all'interno di un cluster ONTAP. Queste operazioni possono essere eseguite per trovare l'identificatore di una SVM specifica o per assicurare l'unicità del nome prima di creare una nuova SVM.</block>
   <block id="8febb780900dedf3c9e7802be64e20b8" category="doc">Elencare le SVM</block>
   <block id="a3d2e020750395446da7d89e6da9765d" category="summary">È possibile recuperare la configurazione per un cluster ONTAP che include campi specifici. Questa operazione può essere eseguita durante la valutazione dello stato del cluster o prima di aggiornare la configurazione.</block>
@@ -1606,7 +1603,6 @@
   <block id="4ee40cd4d378b7de61905cb45f1009f5" category="paragraph-title">Incollare nel terminale dopo l'esempio di arricciatura</block>
   <block id="12c6401fb02cab85d072b4b981f50e87" category="section-title">Uso degli esempi con Bash</block>
   <block id="b5cda5e8b7bc8b7e8457fef21d91230b" category="paragraph">È possibile eseguire una chiamata API per aggiornare le informazioni di contatto del cluster.</block>
-  <block id="a8a1e002536d347b924b548b0ac40eaa" category="paragraph">L'oggetto lavoro viene restituito. È necessario salvare l'identificatore del processo per utilizzarlo nella fase successiva come variabile $JOB_ID.</block>
   <block id="8c95ed01afcec406b4d0570ec3d3ff18" category="paragraph">In questo esempio viene illustrato come recuperare un singolo campo. Per ottenere l'intero oggetto e la configurazione del cluster, è necessario rimuovere l'<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> parametro di query.</block>
   <block id="e84f1016162859b425bf19a20c585781" category="paragraph"><block ref="0073b77e7a081cdc093bac4d7301bcd9" prefix="" category="inline-code"></block></block>
   <block id="39b13b297edf030e2a6f8316d1a33f56" category="paragraph">È necessario conoscere la struttura e il formato dei flussi di lavoro prima di utilizzarli con una distribuzione ONTAP in tempo reale.</block>
@@ -1623,9 +1619,6 @@
   <block id="8bf3778ef40518b21cade909ac39bb88" category="paragraph">È necessario sostituire le credenziali appropriate per l'ambiente in uso. Le credenziali non sono codificate in base64. Quando si esegue il comando curl con questo parametro, la stringa viene codificata e l'intestazione Authorization viene generata per l'utente.</block>
   <block id="cb607a6c7e4c50ffa4ecc75254227d82" category="list-text">Impostare i valori delle variabili inclusi nell'esempio di arricciatura che si desidera eseguire. Ad esempio:</block>
   <block id="88c3404621959196699b6d5e21481f01" category="section-title">Fase 3: Confermare le informazioni di contatto del quadro strumenti</block>
-  <block id="3522d2e743ab2fd440e2280ea09b6946" category="inline-link-macro">Aggiornare il contatto del cluster e confermare lo stato del lavoro</block>
-  <block id="3c2bc619ddaef1bedada529634c6826d" category="list-text"><block ref="3c2bc619ddaef1bedada529634c6826d" category="inline-link-macro-rx"></block></block>
-  <block id="1adca2e27b8e8a9864351adf6119bafb" category="summary">È possibile aggiornare le informazioni di contatto per un cluster. Poiché la richiesta viene elaborata in modo asincrono, questo flusso di lavoro illustra anche come determinare se il processo in background associato è stato completato correttamente.</block>
   <block id="3a434b661b7a5e9113a6b4de74efe1a0" category="sidebar">Riepilogo delle risorse di RIPOSO</block>
   <block id="3cf1284c45d0adfeed6003bf3d9bfe2e" category="paragraph">Eseguire il flusso di lavoro <block ref="f8ef83534bba2e0fcad9a980050577d2" category="inline-link-macro-rx"></block>. Impostare<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> parametro query a.<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>.</block>
   <block id="8cd58c89ff3d51a256ecfe3fe8bab20f" category="doc">Risorse aggiuntive</block>
@@ -1761,4 +1754,14 @@
   <block id="61a5cb9aa0d74d026e5b2a2811ac5856" category="list-text"><block ref="61a5cb9aa0d74d026e5b2a2811ac5856" category="inline-link-rx"></block></block>
   <block id="2cea11979f1d383a5921860d201ed868" category="inline-link">PyPI: NetApp ONTAP 9.14.1</block>
   <block id="90412d82652a0008df94a427a205c033" category="list-text"><block ref="90412d82652a0008df94a427a205c033" category="inline-link-rx"></block></block>
+  <block id="e696d796f06ca3cca4df2aa968f7d80c" category="admonition">Il<block ref="25da76d23d15f841b09a860ea321146d" prefix=" " category="inline-code"></block> Il parametro query è disponibile con le chiamate API asincrone e può convertire una chiamata asincrona in modo sincrono. Fare riferimento a. <block ref="3d4ef1c177baef5f85bab307e88d3980" category="inline-link-macro-rx"></block> per ulteriori informazioni.</block>
+  <block id="1dc5084911d3204af98942fa6d181c14" category="list-text"><block ref="1dc5084911d3204af98942fa6d181c14" category="inline-link-macro-rx"></block></block>
+  <block id="0014615eb6ce34daf3cb39048cc454d3" category="inline-link-macro">Recupera istanza lavoro</block>
+  <block id="d9571b4cf6afe329f62b4dd6681a09a9" category="list-text"><block ref="d9571b4cf6afe329f62b4dd6681a09a9" category="inline-link-macro-rx"></block></block>
+  <block id="906818e5b125ce2384a19c0fa11a2ee9" category="summary">È possibile aggiornare le informazioni di contatto per un cluster. Poiché la richiesta viene elaborata in modo asincrono, è necessario anche determinare se il processo in background associato è stato completato correttamente.</block>
+  <block id="492fdcd87814cf3c979a27709fc29350" category="paragraph">Viene restituito un oggetto lavoro. È necessario salvare l'identificatore del lavoro per utilizzarlo nel passo successivo.</block>
+  <block id="09cf9d79ed6060f492a0048bf0b86f96" category="paragraph">Eseguire il flusso di lavoro <block ref="d9571b4cf6afe329f62b4dd6681a09a9" category="inline-link-macro-rx"></block> e confermare<block ref="9ed39e2ea931586b6a985a6942ef573e" prefix=" " category="inline-code"></block> il valore è<block ref="260ca9dd8a4577fc00b7bd5810298076" prefix=" " category="inline-code"></block>.</block>
+  <block id="7eb5ea99f4c7bd16c8867413d8a273bf" category="summary">È possibile recuperare l'istanza di un processo ONTAP specifico. In genere, questa operazione viene eseguita per determinare se il processo e l'operazione associata sono stati completati correttamente.</block>
+  <block id="05535988b76700172a5beb898c23b17d" category="admonition">È necessario l'UUID dell'oggetto lavoro, che in genere viene fornito dopo l'emissione di una richiesta asincrona. Inoltre, rivedere <block ref="3d4ef1c177baef5f85bab307e88d3980" category="inline-link-macro-rx"></block> Prima di lavorare con i job interni di ONTAP.</block>
+  <block id="faec30107399ded67748fbc85ea21f3f" category="paragraph">Il valore di stato e gli altri campi sono inclusi nell'oggetto lavoro restituito. Il lavoro in questo esempio è stato eseguito come parte dell'aggiornamento di un cluster ONTAP.</block>
 </blocks>

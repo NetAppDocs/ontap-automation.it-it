@@ -78,5 +78,6 @@ stati del terminale::
 
 
 .Informazioni correlate
-* link:../workflows/wf_cls_update_contact.html["Aggiornare il contatto del cluster e confermare lo stato del lavoro"]
+* link:../workflows/wf_cls_update_contact.html["Aggiornare il contatto del cluster"]
+* link:../workflows/wf_jobs_get_job.html["Recupera istanza lavoro"]
 
