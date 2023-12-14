@@ -108,9 +108,6 @@ Oltre a una corrispondenza esatta, sono disponibili altri operatori per restitui
 | >= | Maggiore o uguale a. 
 
 
-| AGGIORNARE | Oppure 
-
-
 | ! | Non uguale a. 
 
 
