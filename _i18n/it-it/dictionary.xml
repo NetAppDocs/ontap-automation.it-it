@@ -959,9 +959,6 @@
   <block id="973ab3cad185dec8eac7662330e49f1c" category="paragraph">Il contenuto del corpo della richiesta varia in base alla chiamata specifica. Il corpo della richiesta HTTP è costituito da uno dei seguenti elementi:</block>
   <block id="b86f5c6ed2b7d52e2940495dc8a984f4" category="list-text">Oggetto JSON con variabili di input</block>
   <block id="ac860c2e604ebd01436860da72828954" category="section-title">Filtraggio degli oggetti</block>
-  <block id="0438b035fcfcfd3b3c333dd8d993e532" category="paragraph">Quando si esegue una chiamata API che utilizza GET, è possibile limitare o filtrare gli oggetti restituiti in base a qualsiasi attributo. Ad esempio, è possibile specificare un valore esatto da associare:</block>
-  <block id="1fc998fba92eac6c354078a63d749232" category="paragraph"><block ref="9f076f2b1cbf046a6f73c579be1c3ca0" prefix="" category="inline-code"></block></block>
-  <block id="7d306d43ad9025b540f138ad516bc09f" category="paragraph">Oltre a una corrispondenza esatta, sono disponibili altri operatori per restituire un set di oggetti su un intervallo di valori. L'API REST di ONTAP supporta gli operatori di filtraggio mostrati nella tabella seguente.</block>
   <block id="e1b3ec89ead7f83a9245ed5c9cacfdbf" category="cell">Operatore</block>
   <block id="43ec3e5dee6e706af7766fffea512721" category="cell">=</block>
   <block id="495c04002891bebf41bc3b56507f6d6b" category="cell">Uguale a.</block>
@@ -1768,7 +1765,6 @@
   <block id="0b741905860f34a10d74010f462f6dab" category="paragraph-title">Parametri di input aggiuntivi per gli esempi Curl</block>
   <block id="8ad1007adda12ebaacc83f24d677e5e6" category="paragraph">Oltre ai parametri comuni a tutte le chiamate API REST, negli esempi di curl vengono utilizzati anche i seguenti parametri.</block>
   <block id="dfcd3526cb1256fb8b0242048ce8f6fe" category="cell">Restituire un elenco limitato dei valori di configurazione pertinenti.</block>
-  <block id="c7d3a12d9cd219818b942ce7b79635d9" category="listing-title">Esempio di curl: Restituisce tutte le LIF con i valori di configurazione predefiniti</block>
   <block id="533043f9cd78f3216839a884ba0b162b" category="listing-title">Esempio Curl: Restituisce tutte le LIF con quattro valori di configurazione specifici</block>
   <block id="5060abb5e8980122d0dc1c35e9f85efd" category="doc">Elencare i dischi</block>
   <block id="9e414eeae313ebca6ec1a78d41b6aa68" category="paragraph">È possibile recuperare un elenco di dischi nel cluster. Questa operazione può essere eseguita per individuare una o più unità di riserva da utilizzare come parte della creazione di un aggregato.</block>
@@ -1777,4 +1773,32 @@
   <block id="6e5a184a338e990223b90751d5dce3fa" category="cell">Consentono di identificare i dischi di riserva disponibili per i nuovi aggregati.</block>
   <block id="9c049e1832aad88667dcc17e261acc9c" category="listing-title">Esempio di arricciatura: Restituire tutti i dischi</block>
   <block id="2f16f01d47fc5581920b2b69e5a6cdc2" category="listing-title">Esempio di arricciatura: Restituire i dischi di ricambio</block>
+  <block id="2a11f21f5d4741d58b7d14923d4e08f9" category="doc">Elencare gli account</block>
+  <block id="4394c7ebecc609175a50f72d74a0557f" category="paragraph">È possibile recuperare un elenco degli account. Questa operazione può essere eseguita per valutare l'ambiente di protezione o prima di creare un nuovo account.</block>
+  <block id="47a8ff2921d745ff1e85c78a7811f188" category="doc">Elenca gli aggregati</block>
+  <block id="490c2fcb0f7a2efc0e882e344265c316" category="paragraph">È possibile recuperare un elenco di aggregati nel cluster. Questa operazione può essere eseguita per la valutazione dell'utilizzo e delle prestazioni.</block>
+  <block id="6edce6e6c5993cbcc3356de83eed68df" category="cell">node.name</block>
+  <block id="586ba6b164fb68d2e277e5509c3d920e" category="cell">Può essere utilizzato per identificare il nodo a cui è collegato ciascun aggregato.</block>
+  <block id="d77215a29f7c4c57074e8278a01cb44d" category="listing-title">Esempio di curl: Restituisce tutti gli aggregati con i valori di configurazione predefiniti</block>
+  <block id="3d13cd0551da6b0edbb329a4192f28a3" category="listing-title">Esempio Curl: Restituisce tutti gli aggregati con un valore di configurazione specifico</block>
+  <block id="902758a99886ee9a4b12dd38cc667f95" category="doc">List the IP interfaces (Elenca interfacce</block>
+  <block id="1220a442fc15fd5c171980b6a6315040" category="listing-title">Esempio di curl: Restituisce tutte le LIF con i valori di configurazione predefiniti</block>
+  <block id="36e958b717916175c77e1c0a9bd8a51d" category="doc">Elencare i dischi</block>
+  <block id="c4acc246007fa7e427ad78bab2246d93" category="cell">$JOB_ID</block>
+  <block id="e62ba1f7e88de861aba828d64f793b2f" category="cell">Necessario per identificare il lavoro richiesto.</block>
+  <block id="542fcd84c10c6cf94d17a2aec683b3f3" category="paragraph">Quando si esegue una chiamata API con il metodo GET, è possibile limitare o filtrare gli oggetti restituiti in base a qualsiasi attributo utilizzando un parametro di query.</block>
+  <block id="955b7d9243f52aec4fa2071a7e7ad288" category="paragraph-title">Analisi e interpretazione dei parametri di query</block>
+  <block id="9450bd9053706a256157ab8cc92adf52" category="paragraph">Una serie di uno o più parametri può essere aggiunta alla stringa URL che inizia dopo<block ref="d1457b72c3fb323a2671125aef3eab5d" prefix=" " category="inline-code"></block> carattere. Se viene fornito più di un parametro, i parametri di query vengono suddivisi in base a.<block ref="c2249209343ab488c055da76368f04a0" prefix=" " category="inline-code"></block> carattere. Ciascun tasto e valore nel parametro vengono suddivisi in<block ref="43ec3e5dee6e706af7766fffea512721" prefix=" " category="inline-code"></block> carattere.</block>
+  <block id="95fa08f73714767c61e4cea7b8a20379" category="paragraph">Ad esempio, è possibile specificare un valore esatto da corrispondere utilizzando il segno di uguale:</block>
+  <block id="74f6abd0177ccf8e12b99c549ea3b6d9" category="paragraph"><block ref="be5382cb5b9ec38c8c64155f50b2673c" prefix="" category="inline-code"></block></block>
+  <block id="3d0d077df6fbc6a8dacd58d0e3a43157" category="paragraph">Per una query più complessa, l'operatore aggiuntivo viene posizionato dopo il segno di uguale. Ad esempio, per selezionare l'insieme di oggetti in base a un campo specifico maggiore o uguale a un valore, la query sarà:</block>
+  <block id="1b978b08d514ad8048572a85cc260aaa" category="paragraph"><block ref="5ab924ec7238940346c80a48f8d1f72a" prefix="" category="inline-code"></block></block>
+  <block id="a2d3029446b19abc06285a2799e13be1" category="paragraph-title">Filtraggio degli operatori</block>
+  <block id="13b6a9b0d5425b920127d4f9acaf22a8" category="paragraph">Oltre agli esempi forniti in precedenza, sono disponibili operatori aggiuntivi per restituire oggetti su un intervallo di valori. Nella tabella seguente è riportato un riepilogo degli operatori di filtraggio supportati dall'API REST ONTAP.</block>
+  <block id="d67829f213cbca0faa82b58361450353" category="paragraph-title">Esempi di flusso di lavoro</block>
+  <block id="dc131215a5de282bcdc24d4b9a1a79c0" category="paragraph">Di seguito sono riportati alcuni esempi dei flussi di lavoro delle API REST in questo sito.</block>
+  <block id="2a47586adb0d57af3895f5a0dd2cebc4" category="list-text"><block ref="2a47586adb0d57af3895f5a0dd2cebc4" category="inline-link-macro-rx"></block></block>
+  <block id="b9fa03b6deb6ff800a98be430195fdf0" category="paragraph">Filtro basato su<block ref="9ed39e2ea931586b6a985a6942ef573e" prefix=" " category="inline-code"></block> variabile per selezionare i dischi di riserva.</block>
+  <block id="a095881e994974280881b1e5dd2a89a9" category="sidebar">Elenca account</block>
+  <block id="075cb19bc679ad9261b9031c5f0c7d2f" category="sidebar">Elenca gli aggregati</block>
 </blocks>

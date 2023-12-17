@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: workflows/wf_stor_list_disks.html 
 keywords: workflow, storage, disks, list disks 
-summary:  
+summary: È possibile recuperare un elenco di dischi nel cluster. Questa operazione può essere eseguita per individuare una o più unità di riserva da utilizzare come parte della creazione di un aggregato. 
 ---
 = Elencare i dischi
 :hardbreaks:

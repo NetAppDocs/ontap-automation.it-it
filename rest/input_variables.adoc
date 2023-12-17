@@ -83,13 +83,28 @@ Il contenuto del corpo della richiesta varia in base alla chiamata specifica. Il
 
 == Filtraggio degli oggetti
 
-Quando si esegue una chiamata API che utilizza GET, è possibile limitare o filtrare gli oggetti restituiti in base a qualsiasi attributo. Ad esempio, è possibile specificare un valore esatto da associare:
+Quando si esegue una chiamata API con il metodo GET, è possibile limitare o filtrare gli oggetti restituiti in base a qualsiasi attributo utilizzando un parametro di query.
 
-`<field>=<query value>`
+.Analisi e interpretazione dei parametri di query
+Una serie di uno o più parametri può essere aggiunta alla stringa URL che inizia dopo `?` carattere. Se viene fornito più di un parametro, i parametri di query vengono suddivisi in base a. `&` carattere. Ciascun tasto e valore nel parametro vengono suddivisi in `=` carattere.
 
-Oltre a una corrispondenza esatta, sono disponibili altri operatori per restituire un set di oggetti su un intervallo di valori. L'API REST di ONTAP supporta gli operatori di filtraggio mostrati nella tabella seguente.
+Ad esempio, è possibile specificare un valore esatto da corrispondere utilizzando il segno di uguale:
+
+`<field>=<value>`
+
+Per una query più complessa, l'operatore aggiuntivo viene posizionato dopo il segno di uguale. Ad esempio, per selezionare l'insieme di oggetti in base a un campo specifico maggiore o uguale a un valore, la query sarà:
+
+`<field>\=>=<value>`
+
+.Filtraggio degli operatori
+Oltre agli esempi forniti in precedenza, sono disponibili operatori aggiuntivi per restituire oggetti su un intervallo di valori. Nella tabella seguente è riportato un riepilogo degli operatori di filtraggio supportati dall'API REST ONTAP.
+
+
+NOTE: Tutti i campi non impostati sono generalmente esclusi dalle query corrispondenti.
 
 |===
+
+
 | Operatore | Descrizione 
 
 
@@ -115,8 +130,14 @@ Oltre a una corrispondenza esatta, sono disponibili altri operatori per restitui
 |===
 È inoltre possibile restituire un insieme di oggetti in base all'impostazione o meno di un campo specifico mediante l' `null` parola chiave o relativa negazione `!null` come parte della query.
 
+.Esempi di flusso di lavoro
+Di seguito sono riportati alcuni esempi dei flussi di lavoro delle API REST in questo sito.
 
-NOTE: Tutti i campi non impostati sono generalmente esclusi dalle query corrispondenti.
+* link:../workflows/wf_stor_list_disks.html["Elencare i dischi"]
++
+Filtro basato su `state` variabile per selezionare i dischi di riserva.
+
+
 
 
 

@@ -32,6 +32,16 @@ Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
 .Tipo di elaborazione
 Sincrono
 
+.Parametri di input aggiuntivi per gli esempi Curl
+Oltre ai parametri comuni a tutte le chiamate API REST, negli esempi di curl vengono utilizzati anche i seguenti parametri.
+
+[cols="25,10,10,55"]
+|===
+| Parametro | Tipo | Obbligatorio | Descrizione 
+
+
+| $JOB_ID | Percorso | Sì | Necessario per identificare il lavoro richiesto. 
+|===
 .Esempio di arricciamento
 [source, curl]
 ----
