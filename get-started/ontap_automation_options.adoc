@@ -29,7 +29,7 @@ NOTE: L'API ONTAPI, nota anche come SDK per la gestione della rete o ZAPI, è la
 
 == Adattare il codice ONTAPI legacy per utilizzare REST
 
-Se si dispone di codice esistente che utilizza l'API ONTAPI, NetApp fornisce il supporto per la conversione del codice in modo da utilizzare la nuova API REST ONTAP. Vedere https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["ONTAPI per LE informazioni di mappatura API REST"^] Per informazioni sul mapping delle chiamate ONTAPI alle chiamate API REST equivalenti.
+Se si dispone di codice esistente che utilizza l'API ONTAPI, NetApp fornisce il supporto per la conversione del codice in modo da utilizzare la nuova API REST ONTAP. Vedere link:../migrate/mapping.html["ONTAPI per il mapping API REST"] Per informazioni sul mapping delle chiamate ONTAPI alle chiamate API REST equivalenti.
 
 
 
