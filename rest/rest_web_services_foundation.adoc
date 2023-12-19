@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/rest_web_services_foundation.html 
-keywords: REST, web services 
-summary: 'Representational state Transfer (REST) è uno stile per la creazione di applicazioni web distribuite. Utilizza protocolli e standard mainstream per fornire una base flessibile per l"amministrazione dei cluster ONTAP.' 
+keywords: REST, web services, transaction, API transaction, request, response 
+summary: 'Representational state Transfer (REST) è uno stile per la creazione di applicazioni web distribuite. Quando viene applicato alla progettazione di un"API di servizi Web, stabilisce un insieme di tecnologie per esporre le risorse basate su server e gestirne gli stati. Utilizza protocolli e standard mainstream per fornire una base flessibile per l"amministrazione dei cluster ONTAP.' 
 ---
 = Base REST per i web Services
 :hardbreaks:
@@ -52,3 +52,28 @@ HTTP (Hypertext Transfer Protocol) è il protocollo utilizzato dal client e dal 
 == Formattazione JSON
 
 Sebbene le informazioni possano essere strutturate e trasferite tra un client e un server di servizi Web in diversi modi, l'opzione più diffusa è JavaScript Object Notation (JSON). JSON è uno standard di settore per la rappresentazione di semplici strutture di dati in testo normale e viene utilizzato per trasferire informazioni di stato che descrivono le risorse. L'API REST di ONTAP utilizza JSON per formattare i dati trasportati nel corpo di ogni richiesta e risposta HTTP.
+
+
+
+== Tipica transazione di API REST
+
+Ogni transazione API è costituita da una richiesta HTTP e dalla risposta associata. Questa illustrazione mostra come recuperare la versione del software ONTAP utilizzato dal cluster.
+
+image:rest_call_01.png["Immagine di una semplice chiamata API REST"]
+
+.Richiesta HTTP
+La richiesta inviata dal client al server è costituita dai seguenti elementi:
+
+* OTTIENI verbo
+* Percorso URL del cluster
+* Parametro query (campi)
+* Intestazioni delle richieste, inclusa l'autorizzazione
+
+
+.Risposta HTTP
+La risposta inviata dal server al client è costituita dai seguenti elementi:
+
+* Codice di stato 200
+* Intestazioni delle risposte
+* Corpo di risposta contenente la versione del software del cluster
+
