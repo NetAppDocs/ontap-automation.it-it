@@ -51,5 +51,5 @@ Per ulteriori informazioni, consultare https://library.netapp.com/ecm/ecm_downlo
 
 .Informazioni correlate
 * link:../rest/input_variables.html["Variabili di input che controllano una richiesta API"]
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["ONTAPI per LE informazioni di mappatura API REST"^]
+* link:../migrate/mapping.html["ONTAPI per il mapping API REST"]
 
