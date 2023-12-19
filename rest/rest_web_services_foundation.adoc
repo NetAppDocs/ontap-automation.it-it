@@ -10,7 +10,7 @@ summary: 'Representational state Transfer (REST) è uno stile per la creazione d
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

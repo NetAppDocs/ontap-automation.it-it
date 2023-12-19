@@ -41,7 +41,7 @@ La libreria client Python è un pacchetto che puoi utilizzare per scrivere scrip
 
 == Utilizzo di Ansible
 
-Ansible è uno strumento software open-source che supporta il provisioning, la gestione della configurazione e l'implementazione delle applicazioni. Dal suo rilascio e dalla successiva acquisizione da parte di RedHat, ha continuato a crescere in popolarità. NetApp offre moduli certificati Ansible che i clienti possono utilizzare per automatizzare l'amministrazione dei propri sistemi storage ONTAP. Per iniziare, consultare la documentazione di questo sito, tra cui link:../automate/ontap_ansible.html["Automazione ONTAP e Ansible"].
+Ansible è uno strumento software open-source che supporta il provisioning, la gestione della configurazione e l'implementazione delle applicazioni. Dal suo rilascio e dalla successiva acquisizione da parte di RedHat, ha continuato a crescere in popolarità. NetApp offre moduli certificati Ansible che i clienti possono utilizzare per automatizzare l'amministrazione dei propri sistemi storage ONTAP. Per iniziare, è necessario consultare la documentazione di questo sito.
 
 
 
