@@ -20,5 +20,5 @@ NetApp ha introdotto per la prima volta L'API REST con ONTAP 9.6. Da allora, l'A
 
 .Informazioni correlate
 * https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPC-00410 fine della disponibilità: ONTAPI"^]
-* https://devnet.netapp.com/restapi.php["DevNet di NetApp: API REST di ONTAP"^]
+* https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification["Domande frequenti sulla trasformazione delle API REST da ZAPI a ONTAP per CPC"^]
 

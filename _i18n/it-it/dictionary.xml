@@ -1213,8 +1213,6 @@
   <block id="89bbd9a5e14ece77e8729df33cc56559" category="paragraph">NetApp ha introdotto per la prima volta L'API REST con ONTAP 9.6. Da allora, l'API REST ha continuato a espandersi e maturare. Ora offre l'opzione preferita e strategica per l'automazione dell'amministrazione delle implementazioni ONTAP. Sono disponibili molte risorse e strumenti utili per supportare la migrazione.</block>
   <block id="d662068ac363663b595ce3a43cc70a12" category="inline-link">CPC-00410 fine della disponibilità: ONTAPI</block>
   <block id="4985f6980a34153c58b9f31390f6ce91" category="list-text"><block ref="4985f6980a34153c58b9f31390f6ce91" category="inline-link-rx"></block></block>
-  <block id="43b4a2745f58846c59587466ca441f41" category="inline-link">DevNet di NetApp: API REST di ONTAP</block>
-  <block id="d5925e110eea01252505453208400570" category="list-text"><block ref="d5925e110eea01252505453208400570" category="inline-link-rx"></block></block>
   <block id="40ccd15522e040a44684db0616c80933" category="summary">NetApp fornisce documentazione che descrive il mapping tra le chiamate ONTAPI e le chiamate API REST equivalenti.</block>
   <block id="b728900a222dcfb25f698d581d9e8863" category="paragraph">L'API REST di ONTAP include funzionalità equivalenti a ONTAPI nella maggior parte delle aree. NetApp fornisce documentazione che descrive il mapping tra le chiamate ONTAPI e le chiamate API REST equivalenti.</block>
   <block id="0b3de81010176abb2584daa05d6aa0c1" category="paragraph">La documentazione di mappatura API dipende dalla versione di ONTAP:</block>
@@ -1443,12 +1441,10 @@
   <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">Note di rilascio</block>
   <block id="0c5518b5db3a9e2425db3b5de6d30634" category="sidebar">Opzioni di automazione ONTAP</block>
   <block id="e78273b83daaaecb5744859fa531181b" category="sidebar">Dettagli sull'implementazione REST</block>
-  <block id="015f8c34f52b6ef8a3361958660f5e88" category="sidebar">Considerazioni aggiuntive</block>
   <block id="caea8340e2d186a540518d08602aa065" category="sidebar">Automazione</block>
   <block id="6e6432511bc053d1916f5f8f0915598d" category="sidebar">Migrare all'API REST</block>
   <block id="9e7684bc06c1628bc838239d69633ef1" category="sidebar">ONTAPI per il mapping REST</block>
   <block id="678330802b81d1f1d610daadb5e6f060" category="sidebar">Articoli del blog</block>
-  <block id="16761f90ea92726a06e16dfb23549c0a" category="sidebar">DevNet di NetApp</block>
   <block id="98bf123aa3933daaa4019109c98c08eb" category="sidebar">Documenti di ONTAP 9</block>
   <block id="34a5cab8543c50812e1e9045207ef342" category="sidebar">Documenti ONTAP Select</block>
   <block id="466b9c64436468f52860809312c8a835" category="sidebar">Comprendere le opzioni di automazione</block>
@@ -1789,4 +1785,7 @@
   <block id="16109e56f76ab0efaf7b92775cbe1b12" category="list-text">Questo video è disponibile anche tramite NetApp TV all'indirizzo <block ref="0fbd1fba292ef7e8dc7c843e65ec1153" category="inline-link-macro-rx"></block>.</block>
   <block id="c481c55f899fe826c43a53c975e485f0" category="list-text">Panoramica sui moduli certificati Ansible.</block>
   <block id="47df15a6cd9dfe893d2aabb6bbfb82d6" category="paragraph">Ansible è uno strumento software open-source che supporta il provisioning, la gestione della configurazione e l'implementazione delle applicazioni. Dal suo rilascio e dalla successiva acquisizione da parte di RedHat, ha continuato a crescere in popolarità. NetApp offre moduli certificati Ansible che i clienti possono utilizzare per automatizzare l'amministrazione dei propri sistemi storage ONTAP. Per iniziare, è necessario consultare la documentazione di questo sito.</block>
+  <block id="80ea4b005fd9d89a5db44b1a4c02962a" category="inline-link">Domande frequenti sulla trasformazione delle API REST da ZAPI a ONTAP per CPC</block>
+  <block id="383b172302e7a0ad8e5f63e801347592" category="list-text"><block ref="383b172302e7a0ad8e5f63e801347592" category="inline-link-rx"></block></block>
+  <block id="ef3f9b4af9353a465dd6a94d006c73a7" category="sidebar">Strumenti software</block>
 </blocks>
