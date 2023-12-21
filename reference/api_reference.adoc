@@ -52,7 +52,7 @@ Viene visualizzata la pagina della documentazione API ONTAP con le chiamate API 
 [role="lead"]
 È possibile accedere a una copia della documentazione di riferimento dell'API REST di ONTAP attraverso i collegamenti riportati di seguito. La documentazione di riferimento API è gestita dalla release di ONTAP.
 
-* https://docs.netapp.com/us-en/ontap-restapi-9141/["ONTAP 9.14.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi/["ONTAP 9.14.1"^]
 * https://docs.netapp.com/us-en/ontap-restapi-9131/["ONTAP 9.13.1"^]
 * https://docs.netapp.com/us-en/ontap-restapi-9121/["ONTAP 9.12.1"^]
 * https://docs.netapp.com/us-en/ontap-restapi-9111/["ONTAP 9.11.1"^]

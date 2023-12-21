@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: migrate/overview.html 
-keywords: ONTAPI, migrate, migrate to REST API 
-summary: 'Se si utilizza l"API ONTAPI, si consiglia di iniziare la migrazione all"API REST di ONTAP.' 
+keywords: ONTAPI, ONTAPI disablement, migrate, migrate to REST API 
+summary: 'L"interfaccia ONTAPI verrà disattivata nelle versioni future di ONTAP. Se si utilizza ONTAPI, è necessario pianificare la migrazione all"API REST di ONTAP.' 
 ---
 = Non abilitazione di ONTAPI
 :hardbreaks:
@@ -14,11 +14,10 @@ summary: 'Se si utilizza l"API ONTAPI, si consiglia di iniziare la migrazione al
 
 
 [role="lead"]
-L'API ONTAPI (ZAPI) è il set originale di chiamate proprietarie incluse nel software NetApp ONTAP per supportare l'automazione delle attività di gestione e amministrazione dello storage dei dati. L'interfaccia ONTAPI verrà disattivata nelle versioni future di ONTAP. Se si utilizza ONTAPI, è necessario pianificare la migrazione all'API REST di ONTAP.
-
-NetApp ha introdotto per la prima volta L'API REST con ONTAP 9.6. Da allora, l'API REST ha continuato a espandersi e maturare. Ora offre l'opzione preferita e strategica per l'automazione dell'amministrazione delle implementazioni ONTAP. Sono disponibili molte risorse e strumenti utili per supportare la migrazione.
+L'API ONTAPI (ZAPI) è l'insieme originale di chiamate proprietarie incluse nel software NetApp ONTAP. L'API viene fornita tramite Network Manageability SDK e supporta l'automazione delle attività di amministrazione e gestione dello storage dei dati. L'interfaccia ONTAPI verrà disattivata nelle versioni future di ONTAP. Se si utilizza ONTAPI, è necessario pianificare la migrazione all'API REST di ONTAP.
 
 .Informazioni correlate
+* link:../get-started/ontap_automation_options.html["Comprendere le opzioni di automazione di ONTAP"]
 * https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPC-00410 fine della disponibilità: ONTAPI"^]
 * https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification["Domande frequenti sulla trasformazione delle API REST da ZAPI a ONTAP per CPC"^]
 
