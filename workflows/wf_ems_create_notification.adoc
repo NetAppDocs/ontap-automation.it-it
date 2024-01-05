@@ -1,0 +1,156 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_ems_create_notification.html 
+keywords: support, ems, event management system, create ems, create ems notification 
+summary: È possibile utilizzare il seguente flusso di lavoro per creare una nuova destinazione di notifica EMS per ricevere i messaggi di evento selezionati. 
+---
+= Creare una notifica EMS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile utilizzare il seguente flusso di lavoro per creare una nuova destinazione di notifica EMS per ricevere i messaggi di evento selezionati.
+
+
+
+== Passaggio 1: Configurare le impostazioni di posta elettronica a livello di sistema
+
+È possibile effettuare la seguente chiamata API per configurare le impostazioni e-mail a livello di sistema.
+
+.Metodo HTTP ed endpoint
+Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
+
+[cols="25,75"]
+|===
+| Metodo HTTP | Percorso 
+
+
+| PATCH | /api/support/ems 
+|===
+.Tipo di elaborazione
+Sincrono
+
+.Parametri di input aggiuntivi per gli esempi Curl
+Oltre ai parametri comuni a tutte le chiamate API REST, negli esempi di curl vengono utilizzati anche i seguenti parametri.
+
+[cols="25,10,10,55"]
+|===
+| Parametro | Tipo | Obbligatorio | Descrizione 
+
+
+| mail_from | Query | Sì | Imposta `from` nel campo dei messaggi e-mail di notifica. 
+
+
+| mail_server | Query | Sì | Consente di configurare il server di posta SMTP di destinazione. 
+|===
+.Esempio di arricciamento
+[source, curl]
+----
+curl --request PATCH \
+--location "https://$FQDN_IP/api/support/ems?mail_from=administrator@mycompany.com&mail_server=mail@mycompany.com" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+
+
+== Passo 2: Definizione di un filtro dei messaggi
+
+È possibile effettuare una chiamata API per definire una regola di filtro corrispondente ai messaggi.
+
+.Metodo HTTP ed endpoint
+Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
+
+[cols="25,75"]
+|===
+| Metodo HTTP | Percorso 
+
+
+| POST | /api/support/ems/filters 
+|===
+.Tipo di elaborazione
+Sincrono
+
+.Parametri di input aggiuntivi per gli esempi Curl
+Oltre ai parametri comuni a tutte le chiamate API REST, negli esempi di curl vengono utilizzati anche i seguenti parametri.
+
+[cols="25,10,10,55"]
+|===
+| Parametro | Tipo | Obbligatorio | Descrizione 
+
+
+| Filtro | Corpo | Sì | Include i valori per la configurazione del filtro. 
+|===
+.Esempio di arricciamento
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/support/ems/filters" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Esempio di input JSON
+[source, json]
+----
+{
+  "name": "test-filter",
+  "rules.type": ["include"],
+  "rules.message_criteria.severities": ["emergency"]
+}
+----
+
+
+== Passo 3: Creazione di una destinazione di messaggio
+
+È possibile effettuare una chiamata API per creare una destinazione del messaggio.
+
+.Metodo HTTP ed endpoint
+Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
+
+[cols="25,75"]
+|===
+| Metodo HTTP | Percorso 
+
+
+| POST | /api/support/ems/destinations 
+|===
+.Tipo di elaborazione
+Sincrono
+
+.Parametri di input aggiuntivi per gli esempi Curl
+Oltre ai parametri comuni a tutte le chiamate API REST, negli esempi di curl vengono utilizzati anche i seguenti parametri.
+
+[cols="25,10,10,55"]
+|===
+| Parametro | Tipo | Obbligatorio | Descrizione 
+
+
+| Configurazione destinazione | Corpo | Sì | Include i valori per la destinazione dell'evento. 
+|===
+.Esempio di arricciamento
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/support/ems/destinations" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Esempio di input JSON
+[source, curl]
+----
+{
+  "name": "test-destination",
+  "type": "email",
+  "destination": "administrator@mycompany.com",
+  "filters.name": ["important-events"]
+}
+----
