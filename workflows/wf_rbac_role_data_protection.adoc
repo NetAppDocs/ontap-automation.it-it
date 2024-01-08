@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
-permalink: workflows/wf_rbac_data_protection.html 
-keywords:  
-summary: xxx 
+permalink: workflows/wf_rbac_role_data_protection.html 
+keywords: rbac, role, data protection, limited data protection 
+summary: Puoi fornire a un utente funzionalità di protezione dei dati limitate. 
 ---
 = Attivare l'amministrazione della protezione dei dati
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: xxx
 
 
 [role="lead"]
-In alcune situazioni, è possibile fornire a un utente funzionalità di protezione dei dati limitate.
+Puoi fornire a un utente funzionalità di protezione dei dati limitate.
 
 .Questo flusso di lavoro
 Il ruolo tradizionale creato viene definito con le seguenti caratteristiche:

@@ -23,7 +23,6 @@ NOTE: È possibile accedere al contenuto di riferimento API online nel sistema O
 
 == Accedere alla pagina di documentazione dell'API ONTAP
 
-[role="lead"]
 È possibile accedere alla pagina della documentazione online dell'API ONTAP nel sistema ONTAP locale.
 
 .Prima di iniziare
@@ -49,7 +48,6 @@ Viene visualizzata la pagina della documentazione API ONTAP con le chiamate API 
 
 == Accedere a una copia della documentazione di riferimento dell'API REST di ONTAP
 
-[role="lead"]
 È possibile accedere a una copia della documentazione di riferimento dell'API REST di ONTAP attraverso i collegamenti riportati di seguito. La documentazione di riferimento API è gestita dalla release di ONTAP.
 
 * https://docs.netapp.com/us-en/ontap-restapi/["ONTAP 9.14.1"^]
