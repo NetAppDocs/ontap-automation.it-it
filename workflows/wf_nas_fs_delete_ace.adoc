@@ -18,7 +18,7 @@ summary: 'È possibile eliminare una voce di controllo dell"accesso esistente (A
 
 
 
-== Passaggio 1: Applicare le nuove autorizzazioni
+== Passaggio 1: Eliminare l'ACE
 
 .Metodo HTTP ed endpoint
 Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
