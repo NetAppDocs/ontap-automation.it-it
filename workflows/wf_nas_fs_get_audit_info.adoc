@@ -1,0 +1,132 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_nas_fs_get_audit_info.html 
+keywords: nas, file security, sacl, dacl, get auditing 
+summary: È possibile recuperare tutte le informazioni di controllo per un file o una cartella specifici. 
+---
+= Ottenere le informazioni di controllo per un file
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile recuperare le informazioni di controllo per un file o una cartella specifici.
+
+.Metodo HTTP ed endpoint
+Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
+
+[cols="25,75"]
+|===
+| Metodo HTTP | Percorso 
+
+
+| OTTIENI | /api/protocolli/file-security/permissions/{svm.uuid}/{path} 
+|===
+.Tipo di elaborazione
+Sincrono
+
+.Parametri di input aggiuntivi per esempi di arricciatura
+Oltre ai parametri comuni a tutte le chiamate REST API, nell'esempio curl in questo passo vengono utilizzati anche i seguenti parametri.
+
+[cols="25,10,10,55"]
+|===
+| Parametro | Tipo | Obbligatorio | Descrizione 
+
+
+| $SVM_ID | Percorso | Sì | UUUID della SVM che contiene il file. 
+
+
+| $PERCORSO_FILE | Percorso | Sì | Questo è il percorso del file o della cartella. 
+|===
+.Esempio di arricciamento
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/protocols/file-security/permissions/$SVM_ID/$FILE_PATH" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Esempio di output JSON
+[listing]
+----
+{
+  "svm": {
+    "uuid": "9479099d-5b9f-11eb-9c4e-0050568e8682",
+    "name": "vs1"
+  },
+  "path": "/parent",
+  "owner": "BUILTIN\\Administrators",
+  "group": "BUILTIN\\Administrators",
+  "control_flags": "0x8014",
+  "acls": [
+    {
+      "user": "BUILTIN\\Administrators",
+      "access": "access_allow",
+      "apply_to": {
+        "files": true,
+        "sub_folders": true,
+        "this_folder": true
+      },
+      "advanced_rights": {
+        "append_data": true,
+        "delete": true,
+        "delete_child": true,
+        "execute_file": true,
+        "full_control": true,
+        "read_attr": true,
+        "read_data": true,
+        "read_ea": true,
+        "read_perm": true,
+        "write_attr": true,
+        "write_data": true,
+        "write_ea": true,
+        "write_owner": true,
+        "synchronize": true,
+        "write_perm": true
+      },
+      "access_control": "file_directory"
+    },
+    {
+      "user": "BUILTIN\\Users",
+      "access": "access_allow",
+      "apply_to": {
+        "files": true,
+        "sub_folders": true,
+        "this_folder": true
+      },
+      "advanced_rights": {
+        "append_data": true,
+        "delete": true,
+        "delete_child": true,
+        "execute_file": true,
+        "full_control": true,
+        "read_attr": true,
+        "read_data": true,
+        "read_ea": true,
+        "read_perm": true,
+        "write_attr": true,
+        "write_data": true,
+        "write_ea": true,
+        "write_owner": true,
+        "synchronize": true,
+        "write_perm": true
+      },
+      "access_control": "file_directory"
+    }
+  ],
+  "inode": 64,
+  "security_style": "mixed",
+  "effective_style": "ntfs",
+  "dos_attributes": "10",
+  "text_dos_attr": "----D---",
+  "user_id": "0",
+  "group_id": "0",
+  "mode_bits": 777,
+  "text_mode_bits": "rwxrwxrwx"
+}
+----

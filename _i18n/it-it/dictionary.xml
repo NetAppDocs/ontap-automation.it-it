@@ -544,28 +544,8 @@
   <block id="bbada9713c694fc554c600df104fea52" category="paragraph">È possibile visualizzare e gestire le informazioni principali che descrivono file e volumi, come il tipo e la data di scadenza. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.</block>
   <block id="1e3a85ebb1c233113bf042fe963e7cf5" category="paragraph-title">Conservazione a fini giudiziari</block>
   <block id="c8affb4b638fb272e9f0ea2b1c6af6fe" category="paragraph">È possibile utilizzare queste chiamate API per gestire i file che fanno parte di un processo di contenzioso. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.</block>
-  <block id="31817b4bbc4ed43fb341069fc6561074" category="summary">È possibile gestire le autorizzazioni dei file DACL e SACL utilizzando l'API REST di ONTAP.</block>
-  <block id="c50ee9e545662286884e42e140649f09" category="doc">Gestire le autorizzazioni dei file DACL e SACL con l'API REST di ONTAP</block>
-  <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">qui</block>
-  <block id="7d455208ee42ecd7867fb39b027bcf1c" category="paragraph">ONTAP utilizza gli elenchi di controllo di accesso di sistema (SACL) e gli elenchi di controllo di accesso discrezionali (DACL) per assegnare le autorizzazioni agli oggetti file. A partire da ONTAP 9.9.1, l'API REST di ONTAP include gli endpoint per assegnare le autorizzazioni SACL e DACL per i file e automatizzare le autorizzazioni di sicurezza dei file. Ulteriori informazioni sulle opzioni per l'automazione delle autorizzazioni SACL e DACL prima di ONTAP 9.9.1<block ref="9cac8aefabbfb93ff43b7791e34383b9" category="inline-link-rx"></block>).</block>
-  <block id="bf2066acabfd343a809da20949dc54e0" category="paragraph">A partire da ONTAP 9.9.1, è possibile utilizzare una singola chiamata API REST al posto di più comandi CLI o chiamate ONTAPI. Gli esempi seguenti mostrano come utilizzare l'API REST di ONTAP per lavorare con le autorizzazioni dei file. In ogni esempio, assicurarsi di fornire i valori per le informazioni tra parentesi &lt;&gt; dove indicato.</block>
-  <block id="1099d399c75060b79e3ad383bf9aaaca" category="inline-link">Script Python</block>
-  <block id="52c2a6d4c018d7d1bf8a8eb602e46e7e" category="paragraph">È anche possibile fare riferimento a un esempio<block ref="0177ee26baf5ba4c15becf2582f3ab08" category="inline-link-rx"></block> Ciò dimostra come automatizzare una serie di attività correlate a SACL e DACL.</block>
-  <block id="19f7b4a4dbcb6361568e48dfa0435a6c" category="section-title">Visualizzare le autorizzazioni effettive</block>
-  <block id="428084c0000a04b8e91d28436016ef1a" category="paragraph">Utilizzando il<block ref="10ca8f3a322845a179c77613354efbfb" prefix=" " category="inline-code"></block> API Call, è possibile recuperare le autorizzazioni correnti per un file o una directory specifica.</block>
-  <block id="20090a7c19d3f16ea7ce066b8b9f031e" category="listing-title">Richiesta di esempio:</block>
-  <block id="8b395980037bcca82c69c1da89a28918" category="listing-title">Esempio di risposta</block>
-  <block id="ebc2d9d98f6a4f7b344429c8411e0dab" category="section-title">Visualizzare tutte le informazioni di controllo</block>
-  <block id="d2a0c57c327ad35c037b4e63fc912893" category="paragraph">Utilizzando il<block ref="d9b3c4d45827b05cc2283250a2b55db7" prefix=" " category="inline-code"></block> API Call, è possibile recuperare tutte le informazioni di controllo per un file o una directory specifica.</block>
-  <block id="62119ab02b7f5c5c6d8698c4ec962f3e" category="section-title">Applicare nuove autorizzazioni</block>
-  <block id="d56a84695518a1643241bb70bcfd22dc" category="paragraph">Utilizzando il<block ref="a95ea05e14cf8c1ce7a27fb68ac1e35e" prefix=" " category="inline-code"></block> API Call, è possibile applicare un nuovo descrittore di sicurezza a un file o a una directory.</block>
-  <block id="6f76c699e041eacfac4485d0f16323e1" category="listing-title">Richiesta di esempio</block>
   <block id="7d986aa6827f53816cefdf1f0049c38b" category="section-title">Aggiornare le informazioni del descrittore di protezione</block>
-  <block id="0b22253d9f6241bf0350ec66f24bfa31" category="paragraph">Utilizzando il<block ref="7f0547efd9d62d200175244f5e78183e" prefix=" " category="inline-code"></block> API Call, è possibile aggiornare informazioni specifiche sul descrittore di sicurezza per un file o una directory, come il proprietario primario, il gruppo o i flag di controllo.</block>
-  <block id="50c9441280e27d3ff54a612e499e063b" category="section-title">Eliminazione di una voce di controllo di accesso SACL/DACL (Access Control Entry) esistente</block>
-  <block id="d33bccaf67eae3c8f65c012f20973eba" category="paragraph">Utilizzando il<block ref="36ed5ccccb1cecc32688dfef7bb00977" prefix=" " category="inline-code"></block> API Call, è possibile eliminare un ACE esistente da un file per directory. Questo esempio propaga la modifica a qualsiasi oggetto figlio.</block>
   <block id="411009bbd509e2b00a1f4543b3c1ca74" category="section-title">API REST ONTAP e comandi CLI ONTAP</block>
-  <block id="931f6691d15d77b0e0fe9fc70de2b615" category="paragraph">L'API REST di ONTAP consente di automatizzare i flussi di lavoro con meno comandi rispetto all'interfaccia CLI di ONTAP per molte attività. Ad esempio, è possibile utilizzare un singolo metodo POST API per modificare un descrittore di protezione per un file, invece di utilizzare più comandi CLI. La seguente tabella mostra i comandi CLI necessari per completare le attività di autorizzazione del file system più comuni rispetto alle corrispondenti chiamate API REST:</block>
   <block id="de134183bea5df515a6756a539ce6f18" category="cell">CLI ONTAP</block>
   <block id="f778c6da6bf9a458b710a39182352949" category="cell"><block ref="10ca8f3a322845a179c77613354efbfb" prefix="" category="inline-code"></block></block>
   <block id="5f7113a4943de281bc5047f65e391330" category="paragraph"><block ref="e4718b80f339d75691ece513013d3541" prefix="" category="inline-code"></block></block>
@@ -581,12 +561,8 @@
   <block id="94e1cc167c8b21e2dee8ae6449422dc8" category="cell"><block ref="36ed5ccccb1cecc32688dfef7bb00977" prefix="" category="inline-code"></block></block>
   <block id="9a85c4ed4aea58b5cf2264e55823074c" category="list-text"><block ref="32b478a260a90a0150f84bc469ac640b" prefix="" category="inline-code"></block></block>
   <block id="7faf05b9e4d90529c54562f216bfb2d6" category="list-text"><block ref="8f7088b1308a9efa94a1fadb415a83fe" prefix="" category="inline-code"></block></block>
-  <block id="be37d97521654067f502ca21542fc23e" category="inline-link">ONTAP REST API DACL/SACL permissions esempio di script Python</block>
-  <block id="5085ad1bbb70dc377ddd4434496cf250" category="list-text"><block ref="5085ad1bbb70dc377ddd4434496cf250" category="inline-link-rx"></block></block>
   <block id="673cd1c7bc219dafd3ab44f7789c7963" category="inline-link">Gestione semplificata delle autorizzazioni di sicurezza dei file con le API REST di ONTAP</block>
   <block id="6f49384b8a99fec44a7cd1d6ed52add4" category="list-text"><block ref="6f49384b8a99fec44a7cd1d6ed52add4" category="inline-link-rx"></block></block>
-  <block id="e27a275b9610ff6148df553179ccf77f" category="inline-link">Utilizzo del pass-through CLI privato con l'API REST ONTAP (per le versioni di ONTAP precedenti alla versione 9.9.1)</block>
-  <block id="194ed1689d54a84f11e8266e9e92d197" category="list-text"><block ref="194ed1689d54a84f11e8266e9e92d197" category="inline-link-rx"></block></block>
   <block id="8b64f73d0c930b953467d71771168fcb" category="cell"><block ref="e6d3e2b20641c094d3561900f189ee36" prefix="" category="inline-code"></block></block>
   <block id="2130e4445c18121e61a0496381717d89" category="list-text"><block ref="11c37609eb90008bd36d83530ab47246" prefix="" category="inline-code"></block></block>
   <block id="b0f540062794ffac7297b2f00a005457" category="list-text"><block ref="64b1a654c15b96443ae00ee82d8ea7ad" prefix="" category="inline-code"></block></block>
@@ -1405,8 +1381,6 @@
   <block id="466b9c64436468f52860809312c8a835" category="sidebar">Comprendere le opzioni di automazione</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">Panoramica</block>
   <block id="8cd67c079826033809b33b6f3ac2da9a" category="sidebar">Script per recuperare la configurazione del cluster</block>
-  <block id="f543ca5c2e4e8371b14327b0c907dce3" category="sidebar">Gestisci ONTAP con REST API</block>
-  <block id="31be5a65a5bd0c7e64b5cc0f6b8790c7" category="sidebar">Autorizzazioni DACL e SACL</block>
   <block id="45cd4354f07a1ab359a1cc263ed79868" category="sidebar">Come accedere all'API REST</block>
   <block id="a02956d1e8bd45f8818a7c63426eceba" category="sidebar">Variabili di input</block>
   <block id="bbd1bf9de2e4077d7d60ab5cd0b761b0" category="sidebar">Interpretare una risposta API</block>
@@ -1808,4 +1782,38 @@
   <block id="a518180b1666983f22dffbfc9e53cab8" category="sidebar">Ottenere la configurazione EMS</block>
   <block id="0e0109505c34b65099fc5f28788f80c2" category="sidebar">Crea notifica EMS</block>
   <block id="62e79f1e2a16917d7b811343757eede5" category="summary">Puoi fornire a un utente funzionalità di protezione dei dati limitate.</block>
+  <block id="542f0dae2bb6d52eba2a6242f8f9bbb4" category="summary">È possibile recuperare le autorizzazioni effettive correnti per un file o una cartella specifici.</block>
+  <block id="ca8b310152c3cdbf0b209d0af018c2db" category="doc">Ottenere le autorizzazioni effettive per un file</block>
+  <block id="eb8b558a40765e93b8be653d5fb7656c" category="cell">/api/protocolli/file-security/effective-permissions/{svm.uuid}/{path}</block>
+  <block id="d4f560c2cc4c11c467693af3a4c697fb" category="cell">UUUID della SVM che contiene il file.</block>
+  <block id="a0da37dfc114065048cd3b5de2ff66a6" category="cell">$PERCORSO_FILE</block>
+  <block id="bae6d4bef4e1697b5dfae7f9202e2499" category="cell">Questo è il percorso del file o della cartella.</block>
+  <block id="6abb58e21232fa67ee94875bd5f72d26" category="summary">È possibile applicare un nuovo descrittore di protezione a un file o una cartella specifici.</block>
+  <block id="28a11b3673dcd0e091505156efd803f3" category="doc">Applicare nuove autorizzazioni a un file</block>
+  <block id="350becfaa43a05e99267c2c4700bf2f4" category="section-title">Passaggio 1: Applicare le nuove autorizzazioni</block>
+  <block id="a624b6656737d2c783691ba33fc23197" category="cell">/api/protocolli/file-security/permissions/{svm.uuid}/{path}</block>
+  <block id="db7bd3219c8001e5e6cdbc7e71916c02" category="summary">È possibile recuperare tutte le informazioni di controllo per un file o una cartella specifici.</block>
+  <block id="420c6b28da357f4a659ab47453e63f4e" category="doc">Ottenere le informazioni di controllo per un file</block>
+  <block id="0751d56a6f57c4680d1dfea528fbf8d3" category="paragraph">È possibile recuperare le informazioni di controllo per un file o una cartella specifici.</block>
+  <block id="59acc03c473e764ed04cb83fde18f389" category="summary">È possibile eliminare una voce di controllo dell'accesso esistente (ACE) da un file o una cartella specifici. La modifica si propaga a qualsiasi oggetto figlio.</block>
+  <block id="3560dff4f0f31db694c608a2ebc06e85" category="doc">Eliminare una voce di controllo degli accessi</block>
+  <block id="b49fb5134601d8312d76cc01166576a2" category="paragraph">È possibile eliminare una voce ACE (Access Control Entry) esistente da un file o una cartella specifici. La modifica si propaga a qualsiasi oggetto figlio.</block>
+  <block id="a2ec471f92f85173e4ba00d9da0db114" category="summary">È possibile aggiornare un descrittore di protezione specifico a un file o una cartella specifici, inclusi i flag del proprietario, del gruppo o del controllo principale.</block>
+  <block id="bb059379feb749c05906d3ac23b4816d" category="section-title">Passaggio 1: Aggiornare il descrittore di protezione</block>
+  <block id="698f9eb192e6aa6224d8848f98d6a530" category="summary">È possibile gestire le autorizzazioni e le policy di audit per i file disponibili nelle SVM all'interno di un cluster ONTAP.</block>
+  <block id="09cd38efbd2c8fdbc8c6175ec9176ea8" category="doc">Prepararsi a gestire la sicurezza dei file e le policy di controllo</block>
+  <block id="7e2e1102b90cfd81da1a2e5002c37c9c" category="paragraph">ONTAP utilizza gli elenchi di controllo di accesso di sistema (SACL) e gli elenchi di controllo di accesso discrezionali (DACL) per assegnare le autorizzazioni agli oggetti file. A partire da ONTAP 9,9.1, l'API REST include il supporto per la gestione delle autorizzazioni SACL e DACL. È possibile utilizzare l'API per automatizzare l'amministrazione delle autorizzazioni di protezione dei file. In molti casi è possibile utilizzare una singola chiamata API REST invece di più comandi CLI o chiamate ONTAPI (ZAPI).</block>
+  <block id="3c4e118c8471cd86da2e54560f34234b" category="admonition">Per le versioni ONTAP precedenti alla 9,9.1, è possibile automatizzare l'amministrazione delle autorizzazioni SACL e DACL utilizzando la funzione Passthrough CLI. Vedere <block ref="2827875b29ddc93c1111f4063df563c8" category="inline-link-macro-rx"></block> e.<block ref="cc458ed66c48b12b86281fe13e008c20" category="inline-link-rx"></block> per ulteriori informazioni.</block>
+  <block id="5a4c76b14341d9a5432b024437f965d1" category="paragraph">Sono disponibili diversi flussi di lavoro di esempio per illustrare come gestire i servizi di sicurezza dei file ONTAP utilizzando l'API REST. Prima di utilizzare i flussi di lavoro e di inviare una qualsiasi delle chiamate API REST, assicurarsi di riesaminarla <block ref="8db76eb28f35a2f0429c5f03bc9feadd" category="inline-link-macro-rx"></block>.</block>
+  <block id="f13ddbbf96dbd385b6b39bedaac4e6f7" category="inline-link">file_security_permissions.py</block>
+  <block id="b3b08c8a5c5a09ffbe1430bb1e019e74" category="paragraph">Se si utilizza Python, vedere anche lo script<block ref="3ccddfdb1872f5bc3b7f054cd270fc1b" category="inline-link-rx"></block> per esempi su come automatizzare alcune attività di protezione dei file.</block>
+  <block id="0207c62847caaa4c5ffaeaf4b00552d6" category="paragraph">Per molte attività, l'utilizzo dell'API REST ONTAP richiede un numero inferiore di chiamate rispetto ai comandi CLI o alle chiamate ONTAPI (ZAPI) di ONTAP equivalenti. La tabella seguente include un elenco di chiamate API e l'equivalente dei comandi CLI necessari per ciascuna attività.</block>
+  <block id="3d1a91a3f9c08c95df6cb1eff36db464" category="inline-link">Script Python che illustra le autorizzazioni dei file</block>
+  <block id="bd9e252fe191d999eeb79daa2d91b6a8" category="list-text"><block ref="bd9e252fe191d999eeb79daa2d91b6a8" category="inline-link-rx"></block></block>
+  <block id="0c30cc0a8be3231b1496649b8f111c07" category="list-text"><block ref="0c30cc0a8be3231b1496649b8f111c07" category="inline-link-rx"></block></block>
+  <block id="a58cf8beb5e4ede8e197f2cc371725fe" category="sidebar">Prepararsi a gestire la sicurezza dei file</block>
+  <block id="22b4fdae10b975d500f499f9cd7d2659" category="sidebar">Ottenere autorizzazioni efficaci</block>
+  <block id="f520e25b29f7e72fdce54450ea759fc8" category="sidebar">Ottenere informazioni sulla verifica</block>
+  <block id="a0b064f87e86d15d09bd439eeac8859d" category="sidebar">Applicare le autorizzazioni</block>
+  <block id="982b873024de716ae33d5ad3f5fc8e1a" category="sidebar">Aggiornare un descrittore di protezione</block>
 </blocks>
