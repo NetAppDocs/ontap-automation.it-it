@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: reference/api_reference.html 
-keywords: reference, API reference, ONTAP API documentation 
-summary: 'Il riferimento API contiene i dettagli relativi a tutte le chiamate API REST ONTAP, inclusi i metodi HTTP, i parametri di input e le risposte. Questo riferimento completo è utile quando si sviluppano applicazioni di automazione utilizzando l"API REST.' 
+keywords: reference, API reference, ONTAP API documentation, online reference, swagger 
+summary: 'Il riferimento API contiene dettagli sulle chiamate API REST ONTAP, inclusi i metodi HTTP, i parametri di input e le risposte. Questo riferimento completo è utile quando si sviluppano applicazioni di automazione utilizzando l"API REST.' 
 ---
 = Riferimento API
 :hardbreaks:
@@ -14,16 +14,33 @@ summary: 'Il riferimento API contiene i dettagli relativi a tutte le chiamate AP
 
 
 [role="lead"]
-Il riferimento API contiene i dettagli relativi a tutte le chiamate API REST ONTAP, inclusi i metodi HTTP, i parametri di input e le risposte. Questo riferimento completo è utile quando si sviluppano applicazioni di automazione utilizzando l'API REST.
+Il riferimento API contiene dettagli sulle chiamate API REST ONTAP, inclusi i metodi HTTP, i parametri di input e le risposte. Questo riferimento completo è utile quando si sviluppano applicazioni di automazione utilizzando l'API REST.
 
 
-NOTE: È possibile accedere al contenuto di riferimento API online nel sistema ONTAP locale o a una copia statica della documentazione gestita da NetApp.
+NOTE: È possibile accedere alla documentazione di riferimento dell'API REST da uno dei vari siti basati sulla release ONTAP. Una copia della documentazione equivalente è disponibile anche tramite l'interfaccia utente Swagger nel sistema ONTAP locale.
 
 
 
-== Accedere alla pagina di documentazione dell'API ONTAP
+== Accedi alla documentazione di riferimento dell'API ONTAP online
 
-È possibile accedere alla pagina della documentazione online dell'API ONTAP nel sistema ONTAP locale.
+È possibile accedere a una copia della documentazione di riferimento dell'API REST di ONTAP attraverso i collegamenti riportati di seguito. La documentazione viene mantenuta dalla versione ONTAP.
+
+* https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.14.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9131/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.13.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9121/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.12.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9111/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.11.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9101/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.10.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-991/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.9.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-98/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.8"^]
+* https://docs.netapp.com/us-en/ontap-restapi-97/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.7"^]
+* https://docs.netapp.com/us-en/ontap-restapi-96/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.6"^]
+
+
+
+
+== Accedere alla documentazione di riferimento dell'API ONTAP tramite l'interfaccia utente Swagger
+
+È possibile accedere alla documentazione dell'API REST ONTAP tramite l'interfaccia utente Swagger nel sistema ONTAP locale.
 
 .Prima di iniziare
 È necessario disporre di quanto segue:
@@ -43,23 +60,3 @@ Viene visualizzata la pagina della documentazione API ONTAP con le chiamate API 
 
 . Come esempio di una singola chiamata API, scorrere verso il basso fino alla categoria *cluster* e fare clic su *GET /cluster*.
 
-
-
-
-== Accedere a una copia della documentazione di riferimento dell'API REST di ONTAP
-
-È possibile accedere a una copia della documentazione di riferimento dell'API REST di ONTAP attraverso i collegamenti riportati di seguito. La documentazione di riferimento API è gestita dalla release di ONTAP.
-
-* https://docs.netapp.com/us-en/ontap-restapi/["ONTAP 9.14.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9131/["ONTAP 9.13.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9121/["ONTAP 9.12.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9111/["ONTAP 9.11.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9101/["ONTAP 9.10.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-991/["ONTAP 9.9.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-98/["ONTAP 9.8"^]
-* https://docs.netapp.com/us-en/ontap-restapi-97/["ONTAP 9.7"^]
-* https://docs.netapp.com/us-en/ontap-restapi-96/["ONTAP 9.6"^]
-
-
-.Informazioni correlate
-https://devnet.netapp.com/restapi.php["DevNet di NetApp: API REST di ONTAP"^]
