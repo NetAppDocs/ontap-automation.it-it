@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: get-started/labs.html 
+keywords:  
+summary:  
+---
+= Risorse di laboratorio di NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp fornisce un ambiente di Lab per il test dell'API REST ONTAP e di altre tecnologie di automazione correlate.
+
+Il https://labondemand.netapp.com["Lab on Demand"^] Disponibile per clienti e partner NetApp. È necessario disporre di credenziali valide per accedere e iniziare a utilizzare le risorse di laboratorio. È possibile cercare _REST_ o altre tecnologie nel laboratorio in base alle esigenze.
+
+Inoltre, rivedere https://github.com/NetApp/ontap-rest-python/tree/master/lod["Preparazione dell'esercitazione su richiesta per l'esecuzione degli script di esempio"^] per iniziare.

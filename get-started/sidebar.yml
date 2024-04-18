@@ -8,3 +8,5 @@ entries:
   url: "/get-started/access_rest_api.html"
 - title: La prima chiamata API
   url: "/get-started/first_call.html"
+- title: Risorse di laboratorio di NetApp
+  url: "/get-started/labs.html"

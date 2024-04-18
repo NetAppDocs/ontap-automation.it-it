@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: python/blogs_pcl.html 
+keywords: blogs, blog articles 
+summary: Ci sono diversi articoli di blog e video disponibili per aiutarti a capire meglio come utilizzare la libreria client Python. 
+---
+= Articoli del blog
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ci sono diversi articoli di blog disponibili per aiutarti a capire meglio come utilizzare la libreria client Python.
+
+.Semplifica il consumo delle API REST di ONTAP con la libreria client Python
+Questo blog fornisce una buona introduzione alle caratteristiche della libreria client Python di ONTAP.
+
+https://www.netapp.com/blog/simplify-ontap-rest-api-consumption["www.netapp.com/blog/simplify-ontap-rest-api-consumption"^]
+
+.Guida introduttiva alla libreria client Python con API REST ONTAP
+Si tratta di una serie di blog in tre parti che trattano maggiori dettagli sulla libreria client Python.
+
+Parte 1: https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt1["netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt1"^]
+
+Parte 2: https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt2["netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt2/"^]
+
+Parte 3: https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt3["netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt3"^]

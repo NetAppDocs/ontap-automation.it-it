@@ -26,7 +26,7 @@ A partire da ONTAP 9.6, ONTAP include un'API REST estesa che fornisce le basi pe
 È possibile accedere direttamente all'API REST di ONTAP utilizzando qualsiasi linguaggio di programmazione che supporti un client REST. Le lingue più diffuse includono Python, PowerShell e Java.
 
 .Migrazione del codice ONTAPI legacy per utilizzare REST
-L'API ONTAPI (ZAPI) è il set originale di chiamate proprietarie incluse nel software NetApp ONTAP per supportare l'automazione delle attività di gestione e amministrazione dello storage dei dati. L'interfaccia ONTAPI verrà disattivata nelle versioni future di ONTAP. Se si dispone di codice esistente che utilizza l'API ONTAPI, è necessario pianificare la migrazione da ONTAPI. NetApp fornisce supporto per la conversione del codice per utilizzare la nuova API REST ONTAP. Vedere link:../migrate/overview.html["Migrare all'API REST"] per ulteriori informazioni.
+L'API ONTAPI (ZAPI) è il set originale di chiamate proprietarie incluse nel software NetApp ONTAP per supportare l'automazione delle attività di gestione e amministrazione dello storage dei dati. L'interfaccia ONTAPI verrà disattivata nelle versioni future di ONTAP. Se si dispone di codice esistente che utilizza l'API ONTAPI, è necessario pianificare la migrazione da ONTAPI. NetApp fornisce supporto per la conversione del codice per utilizzare la nuova API REST ONTAP. Vedere link:../migrate/ontapi_disablement.html["Migrare all'API REST"] per ulteriori informazioni.
 
 
 
@@ -37,6 +37,9 @@ NetApp offre toolkit per i client che astraggono l'API REST di ONTAP e semplific
 .Libreria client Python
 La libreria client Python è un pacchetto che puoi utilizzare per scrivere script per accedere all'API REST di ONTAP. Fornisce supporto per diversi servizi sottostanti, tra cui gestione della connessione, elaborazione delle richieste asincrone e gestione delle eccezioni. Utilizzando la libreria client Python, puoi sviluppare rapidamente un codice solido per supportare i tuoi obiettivi di automazione ONTAP. Vedere link:../python/overview_pcl.html["Libreria client Python"] per ulteriori informazioni.
 
+.Toolkit PowerShell
+Puoi utilizzare il NetApp.ONTAP PowerShell Toolkit per automatizzare l'amministrazione di un cluster ONTAP da un host Windows. Vedere https://review.docs.netapp.com/us-en/ontap-automation_devnet-update/pstk/overview_pstk.html["Panoramica del PowerShell Toolkit"^] per ulteriori informazioni.
+
 
 
 == Framework di automazione
@@ -44,7 +47,7 @@ La libreria client Python è un pacchetto che puoi utilizzare per scrivere scrip
 Puoi creare e implementare codice di automazione utilizzando uno dei vari framework
 
 .Ansible
-Ansible è uno strumento software open-source che supporta il provisioning, la gestione della configurazione e l'implementazione delle applicazioni. Dal suo rilascio e dalla successiva acquisizione da parte di RedHat, ha continuato a crescere in popolarità. NetApp offre moduli certificati Ansible che i clienti possono utilizzare per automatizzare l'amministrazione dei propri sistemi storage ONTAP. Vedere link:../additional/resources.html["Risorse aggiuntive"] per ulteriori informazioni.
+Ansible è uno strumento software open-source che supporta il provisioning, la gestione della configurazione e l'implementazione delle applicazioni. Dal suo rilascio e dalla successiva acquisizione da parte di RedHat, ha continuato a crescere in popolarità. NetApp offre moduli certificati Ansible che i clienti possono utilizzare per automatizzare l'amministrazione dei propri sistemi storage ONTAP. Vedere link:../additional/learn_more.html["Scopri di più"] e. https://www.netapp.com/devops-solutions/ansible/["Soluzioni NetApp Ansible DevOps"^] per ulteriori informazioni.
 
 .Catalogo di automazione BlueXP
 NetApp https://console.bluexp.netapp.com/automationCatalog/["Catalogo di automazione BlueXP"^] È disponibile tramite l'interfaccia utente web BlueXP. Il catalogo fornisce accesso a soluzioni predisposte per l'installazione automatica e l'integrazione di ONTAP con altri prodotti. Vedere https://docs.netapp.com/us-en/netapp-automation/["Automazione di NetApp"^] per documentazione e ulteriori informazioni.

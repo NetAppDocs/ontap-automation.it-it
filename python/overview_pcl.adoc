@@ -19,5 +19,7 @@ La libreria client di NetApp ONTAP Python è un pacchetto che è possibile insta
 
 NOTE: NetApp gestisce un repository GitHub contenente esempi di codice e altre informazioni utili. È possibile accedere alla cartella _esempi_ per accedere agli esempi utilizzando la libreria client Python.
 
-.Link correlati
-https://github.com/NetApp/ontap-rest-python["Repository GitHub di ONTAP REST Python"^]
+.Informazioni correlate
+* https://github.com/NetApp/ontap-rest-python["Repository GitHub di ONTAP REST Python"^]
+* https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library["Esempi di librerie di client Python REST ONTAP"^]
+

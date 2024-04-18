@@ -16,25 +16,17 @@ summary: 'Si consiglia di preparare l"ambiente di runtime locale prima di utiliz
 [role="lead"]
 Si consiglia di preparare l'ambiente di runtime locale prima di utilizzare la libreria client Python.
 
-.Requisiti di base
-È necessario utilizzare Python 3.5 o versione successiva. Sono inoltre necessari i seguenti pacchetti:
-
-* richieste 2.22.1 o successive
-* requests-toolbelt 0.9.1 o versione successiva
-* marshmallow 3.2.1 o versione successiva
-
-
 .Nome e versione del pacchetto
 Il nome del pacchetto di librerie client Python è *netapp-ontap*. La versione associata al pacchetto è una combinazione dei numeri di versione principali e minori di ONTAP da cui è stata generata la libreria, insieme a una versione minore per il client all'interno della release di ONTAP. Ad esempio, i numeri di versione validi includono: 9.6.1, 9.6.2 e 9.7.1.
 
 .Installazione
 È necessario utilizzare pip per installare il pacchetto netapp_ontap dal sito Web Python Package Index (PyPi).
 
-.Documentazione e risorse aggiuntive
-Consulta la _NetApp Developer Network_ per i link alla documentazione e ad altre risorse.
+.Pacchetti e documentazione di ONTAP
+Ogni versione di ONTAP che inizia con 9,6 ha un pacchetto PyPI e la relativa documentazione. Vedere link:../python/packages.html["Pacchetti e documentazione"] per ulteriori informazioni. I requisiti di installazione sono inclusi in ogni pacchetto e includono diverse versioni delle seguenti:
 
-.Informazioni correlate
-* https://pypi.org/project/netapp-ontap["PyPI: NetApp ONTAP 9.14.1"^]
-* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["Documentazione PCL NetApp per 9.14.1"^]
-* https://devnet.netapp.com/restapi.php["Rete di sviluppatori NetApp: API RESTful di ONTAP"^]
+* python
+* richieste
+* richieste-cintura degli attrezzi
+* marshmallow
 
