@@ -14,7 +14,7 @@ summary: È possibile utilizzare queste chiamate API per amministrare la funzion
 
 
 [role="lead"]
-SnapLock è un'implementazione basata su storage della tradizionale soluzione ottica WORM (write once, Read Many) e fornisce la conservazione a lungo termine dei dati. È possibile utilizzare queste chiamate API per amministrare la funzione SnapLock.
+È possibile utilizzare queste chiamate API per amministrare la funzione ONTAP SnapLock.
 
 .Log (Registro)
 La struttura di log di SnapLock si basa su directory e file di un volume specifico che contengono i record di log. I file di log vengono riempiti e archiviati in base alle dimensioni massime dei log. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.

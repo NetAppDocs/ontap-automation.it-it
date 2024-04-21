@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: resources/overview_categories.html 
 keywords: resources, resource categories 
-summary: 'Le risorse disponibili tramite l"API REST di ONTAP sono organizzate in categorie, come mostrato nella pagina di documentazione dell"API di ONTAP.' 
+summary:  
 ---
 = Panoramica delle categorie di risorse
 :hardbreaks:
@@ -14,14 +14,13 @@ summary: 'Le risorse disponibili tramite l"API REST di ONTAP sono organizzate in
 
 
 [role="lead"]
-Le risorse disponibili tramite l'API REST ONTAP sono organizzate in categorie, come mostrato nella documentazione online dell'API ONTAP. Di seguito viene presentata una breve descrizione di ciascuna delle risorse e, se necessario, ulteriori considerazioni sull'utilizzo.
+Le risorse disponibili tramite le API REST ONTAP sono organizzate per categorie. Ciascuna delle categorie di risorse include una breve descrizione insieme a considerazioni di utilizzo aggiuntive, ove appropriato.
 
-Le risorse RIMANENTI descritte in questo riepilogo si basano sull'ultima versione del prodotto. Per informazioni sulle modifiche apportate dalle release precedenti, vedere link:../whats_new.html["Novità dell'API REST di ONTAP"] così come il https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Note di rilascio di ONTAP"^].
+Le risorse RIMANENTI descritte nel riepilogo si basano sull'ultima versione del prodotto. Per informazioni più dettagliate sulle modifiche apportate nelle versioni precedenti, vedere link:../whats_new.html["Novità dell'API REST di ONTAP"] così come il https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Note di rilascio di ONTAP"^].
 
 
-TIP: Per molti degli endpoint REST, è possibile includere una chiave UUID come parte della stringa di percorso per accedere a una specifica istanza dell'oggetto. Tuttavia, è anche possibile accedere agli oggetti utilizzando un valore di proprietà su un parametro di query.
+TIP: Per molti degli endpoint REST, è possibile includere una chiave UUID come parte della stringa di percorso per accedere a una specifica istanza dell'oggetto. Tuttavia, in molti casi è anche possibile accedere agli oggetti utilizzando un valore di proprietà su un parametro di query.
 
 .Informazioni correlate
-* link:../rest/object_references_and_access.html["Ulteriori considerazioni DI RIPOSO"]
 * link:../reference/api_reference.html["Riferimento API"]
 

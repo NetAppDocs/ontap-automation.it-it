@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-Queste chiamate API possono essere utilizzate per gestire le impostazioni di sicurezza del cluster e SVM.
+Puoi utilizzare queste chiamate API per gestire le impostazioni di sicurezza del cluster e della SVM.
 
 .Account
 Esiste una raccolta di account utente per il cluster e le SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.

@@ -14,7 +14,7 @@ summary: È possibile utilizzare queste chiamate API per gestire i servizi NDMP.
 
 
 [role="lead"]
-Il protocollo di gestione dei dati di rete fornisce uno standard per il backup dei dispositivi NAS. È possibile utilizzare queste chiamate API per gestire i servizi NDMP.
+È possibile utilizzare queste chiamate API per gestire i servizi NDMP.
 
 .Modalità NDMP
 La modalità operativa NDMP può essere SVM Scope o Node Scope. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
