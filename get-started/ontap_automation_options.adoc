@@ -20,13 +20,13 @@ Sono disponibili diverse opzioni per automatizzare la distribuzione e l'amminist
 
 == API REST di ONTAP
 
-A partire da ONTAP 9.6, ONTAP include un'API REST estesa che fornisce le basi per automatizzare l'implementazione e l'amministrazione dei sistemi storage. Da allora, l'API REST ha continuato a espandersi e maturare. Ora offre l'opzione preferita e strategica per l'automazione dell'amministrazione delle implementazioni ONTAP. Quando si utilizza l'API REST ONTAP, è necessario tenere in considerazione diversi aspetti.
+A partire da ONTAP 9.6, ONTAP include un'API REST estesa che fornisce le basi per automatizzare l'implementazione e l'amministrazione dei sistemi storage. Da allora, l'API REST ha continuato a espandersi e maturare. Ora offre l'opzione preferita e strategica per l'automazione dell'amministrazione delle implementazioni ONTAP.
 
 .Accesso all'API REST in modo nativo
 È possibile accedere direttamente all'API REST di ONTAP utilizzando qualsiasi linguaggio di programmazione che supporti un client REST. Le lingue più diffuse includono Python, PowerShell e Java.
 
 .Migrazione del codice ONTAPI legacy per utilizzare REST
-L'API ONTAPI (ZAPI) è il set originale di chiamate proprietarie incluse nel software NetApp ONTAP per supportare l'automazione delle attività di gestione e amministrazione dello storage dei dati. L'interfaccia ONTAPI verrà disattivata nelle versioni future di ONTAP. Se si dispone di codice esistente che utilizza l'API ONTAPI, è necessario pianificare la migrazione da ONTAPI. NetApp fornisce supporto per la conversione del codice per utilizzare la nuova API REST ONTAP. Vedere link:../migrate/ontapi_disablement.html["Migrare all'API REST"] per ulteriori informazioni.
+L'API ONTAPI (Zephyr API o ZAPI) è il set originale di chiamate proprietarie incluso nel software NetApp ONTAP per supportare l'automazione delle attività di amministrazione e gestione dello storage dei dati. L'API fa parte di link:../sw-tools/nmsdk.html["SDK per la gestibilità di NetApp"]. Si prevede che l'interfaccia ONTAPI sarà disattivata nelle versioni future di ONTAP. Se si dispone di codice esistente che utilizza l'API ONTAPI, è necessario pianificare la migrazione da ONTAPI. NetApp fornisce supporto per la conversione del codice per utilizzare la nuova API REST ONTAP. Vedere link:../migrate/ontapi_disablement.html["Migrare da ONTAPI all'API REST"] per ulteriori informazioni.
 
 
 

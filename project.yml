@@ -12,7 +12,7 @@ sidebar:
   - title: Documentazione sull'automazione ONTAP
     url: "/index.html"
   - title: Novità
-    url: "/whats_new.html"
+    url: "/whats-new.html"
   - section: get-started
   - section: rest
   - section: workflows
@@ -22,6 +22,3 @@ sidebar:
   - section: additional
   - title: Note legali
     url: "/legal-notices.html"
-product-family:
-  name: ONTAP
-  repo: ontap-family

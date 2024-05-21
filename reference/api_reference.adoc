@@ -25,7 +25,8 @@ NOTE: È possibile accedere alla documentazione di riferimento dell'API REST da 
 
 È possibile accedere a una copia della documentazione di riferimento dell'API REST di ONTAP attraverso i collegamenti riportati di seguito. La documentazione viene mantenuta dalla versione ONTAP.
 
-* https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.14.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.15.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9141/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.14.1"^]
 * https://docs.netapp.com/us-en/ontap-restapi-9131/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.13.1"^]
 * https://docs.netapp.com/us-en/ontap-restapi-9121/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.12.1"^]
 * https://docs.netapp.com/us-en/ontap-restapi-9111/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.11.1"^]

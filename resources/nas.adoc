@@ -109,6 +109,9 @@ Le impostazioni di configurazione di un'interfaccia per Kerberos. Questo tipo di
 .Realms Kerberos NFS
 Le impostazioni di configurazione per i realm Kerberos. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
 
+.NFS su TLS
+Questa risorsa consente di recuperare e aggiornare la configurazione dell'interfaccia quando si utilizza NFS su TLS. Questo tipo di risorsa è stato introdotto con ONTAP 9,15.
+
 .Servizi NFS
 La configurazione principale del server NFS. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.7.
 
