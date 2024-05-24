@@ -20,4 +20,4 @@ NetApp offre supporto per l'utilizzo di PowerShell per l'amministrazione dei tuo
 PowerShell è un programma di Microsoft che puoi utilizzare per l'automazione dei task e la gestione della configurazione. Include un ambiente shell della riga di comando e un linguaggio di scripting.
 
 .Toolkit PowerShell NetApp ONTAP
-Il PowerShell Toolkit NetApp.ONTAP include il modulo PowerShell per NetApp ONTAP. Il toolkit supporta ONTAP in esecuzione in una varietà di ambienti, tra cui sistemi NetApp AFF e FAS, commodity hardware e cloud. Il modulo include oltre 2.400 cmdlet che supportano collettivamente l'amministrazione dello storage sugli host Windows.
+Il NetApp. Il toolkit per PowerShell di ONTAP include il modulo PowerShell per NetApp ONTAP. Il toolkit supporta ONTAP in esecuzione in una varietà di ambienti, tra cui sistemi NetApp AFF e FAS, commodity hardware e cloud. Il modulo include oltre 2.400 cmdlet che supportano collettivamente l'amministrazione dello storage sugli host Windows.

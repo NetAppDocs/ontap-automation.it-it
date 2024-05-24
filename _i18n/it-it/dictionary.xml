@@ -1796,9 +1796,7 @@
   <block id="3d265b4e1eeef0ddf17881fa003b18cc" category="paragraph-title">PowerShell</block>
   <block id="501fd8414e2cb7ea1f33c45defefd651" category="paragraph">PowerShell è un programma di Microsoft che puoi utilizzare per l'automazione dei task e la gestione della configurazione. Include un ambiente shell della riga di comando e un linguaggio di scripting.</block>
   <block id="c714c2b9a4fb9d44e4562afa883f47ea" category="paragraph-title">Toolkit PowerShell NetApp ONTAP</block>
-  <block id="2824bab8832a0ba6a00dcfa6fe1a811d" category="paragraph">Il PowerShell Toolkit NetApp.ONTAP include il modulo PowerShell per NetApp ONTAP. Il toolkit supporta ONTAP in esecuzione in una varietà di ambienti, tra cui sistemi NetApp AFF e FAS, commodity hardware e cloud. Il modulo include oltre 2.400 cmdlet che supportano collettivamente l'amministrazione dello storage sugli host Windows.</block>
   <block id="58e663c52068f671ebd2ded87406b54b" category="doc">Scarica e installa il PowerShell Toolkit</block>
-  <block id="7d908c3b8b26af09f296e971b3eb24ef" category="paragraph">Sono disponibili due opzioni per scaricare e installare il toolkit PowerShell di NetApp ONTAP.</block>
   <block id="0659d428df833a806e29e65e632d380a" category="paragraph-title">Supporto NetApp</block>
   <block id="abbe6086a8dd2213ec443ee7529470ed" category="paragraph">Puoi scaricare il toolkit PowerShell dal sito NetApp Support:</block>
   <block id="35b4e347a5f9044d1a2f8b0b36f86a4b" category="paragraph"><block ref="35b4e347a5f9044d1a2f8b0b36f86a4b" category="inline-link-rx"></block></block>
@@ -1879,7 +1877,6 @@
   <block id="4f11865970671ba7b86c9b6eda8a46ed" category="list-text">richieste-cintura degli attrezzi</block>
   <block id="104004214ebf2a9e7840ed8d280a887d" category="list-text">marshmallow</block>
   <block id="6c271a07c1fe500a9af8e4bb8e005441" category="sidebar">Migrare da ONTAPI all'API REST</block>
-  <block id="336165a88740b33476f13e8f41666771" category="sidebar">Toolkit PowerShell</block>
   <block id="326737de1766f7c8b80a5acde0f18651" category="sidebar">Scaricare e installare</block>
   <block id="10c96e88b9c4e92d1c2ae63f9eade937" category="paragraph">È possibile utilizzare queste chiamate API per amministrare la funzione ONTAP SnapLock.</block>
   <block id="4e8316643e7aaa485e54110d73c76f12" category="paragraph">Le risorse disponibili tramite le API REST ONTAP sono organizzate per categorie. Ciascuna delle categorie di risorse include una breve descrizione insieme a considerazioni di utilizzo aggiuntive, ove appropriato.</block>
@@ -1932,4 +1929,6 @@
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conoscenza e supporto</block>
   <block id="98bf123aa3933daaa4019109c98c08eb" category="sidebar">Documenti di ONTAP 9</block>
   <block id="34a5cab8543c50812e1e9045207ef342" category="sidebar">Documenti ONTAP Select</block>
+  <block id="9a48142f39a67f56da7343e45f9a5f6a" category="paragraph">Sono disponibili due opzioni per scaricare e installare il toolkit PowerShell di NetApp ONTAP.</block>
+  <block id="d61a36a5306e6c21551315a0807bb00a" category="paragraph">Il NetApp. Il toolkit per PowerShell di ONTAP include il modulo PowerShell per NetApp ONTAP. Il toolkit supporta ONTAP in esecuzione in una varietà di ambienti, tra cui sistemi NetApp AFF e FAS, commodity hardware e cloud. Il modulo include oltre 2.400 cmdlet che supportano collettivamente l'amministrazione dello storage sugli host Windows.</block>
 </blocks>
