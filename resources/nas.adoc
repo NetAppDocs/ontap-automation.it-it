@@ -44,7 +44,7 @@ Il server CIFS può utilizzare i gruppi locali per l'autorizzazione quando deter
 È possibile visualizzare informazioni sulle connessioni NetBIOS del cluster. I dettagli includono gli indirizzi IP e i nomi NetBIOS registrati. Queste informazioni consentono di risolvere i problemi di risoluzione dei nomi. Questo tipo di risorsa è stato introdotto con ONTAP 9.11.1.
 
 .Servizi CIFS
-La configurazione principale del server CIFS. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.7.
+La configurazione principale del server CIFS. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.7 e 9.15.
 
 .File di sessione CIFS
 È possibile recuperare un elenco di file aperti per le sessioni CIFS in base a diverse opzioni di filtraggio. Questo tipo di risorsa è stato introdotto con ONTAP 9.11.1.
