@@ -88,11 +88,15 @@ https://www.youtube.com/playlist?list=PLHSh2r3A9gQRG1kkAcx1MmtVYPimyxOp_["Automa
 
 * Presentazione di Insight 2022 (26 minuti).
 +
-https://www.netapp.tv/details/29670["Modernizza la gestione dello storage ONTAP con l'API REST ONTAP"^]
+https://media.netapp.com/video-detail/152137a0-4153-59dc-ad7d-232af1785dd5/modernize-your-ontap-storage-management-with-ontap-rest-apis-1837["Modernizza la gestione dello storage ONTAP con l'API REST ONTAP"^]
+
+
 
 * Presentazione di Insight 2021 (31 minuti).
 +
-https://www.netapp.tv/details/28343["NetApp ONTAP: Risparmia tempo e semplifica l'utilizzo delle API REST"^]
+https://media.netapp.com/video-detail/f353c28a-2364-5e5e-bf86-5d7ef66360fe/netapp-ontap-save-time-and-simplify-using-rest-apis-brk-1103-3["NetApp ONTAP: Risparmia tempo e semplifica l'utilizzo delle API REST"^]
+
+
 
 * Servizi di formazione NetApp.
 +
