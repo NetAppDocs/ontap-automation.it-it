@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: new features, new in release 
 summary: 'NetApp aggiorna periodicamente l"API REST di ONTAP per offrire nuove funzionalità, miglioramenti e correzioni di bug.' 
 ---
-= Novità dell'API REST ONTAP e dell'automazione
+= Novità dell'API REST ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
