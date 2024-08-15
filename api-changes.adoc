@@ -1,0 +1,44 @@
+---
+permalink: api-changes.html 
+sidebar: sidebar 
+keywords: rest api, api changes, parameters, default values, breaking changes, documentation errors 
+summary: 'NetApp continua a migliorare e aggiornare l"API REST ONTAP con ogni release principale del prodotto. Tali aggiornamenti possono occasionalmente includere modifiche alle chiamate API esistenti, ad esempio i parametri e i valori predefiniti utilizzati. Queste modifiche possono influire sul software che accede all"API REST.' 
+---
+= Modifiche alle chiamate API REST ONTAP
+:allow-uri-read: 
+
+
+[role="lead"]
+NetApp continua a migliorare e aggiornare l'API REST ONTAP con ogni release principale del prodotto. Tali aggiornamenti possono occasionalmente includere modifiche alle chiamate API esistenti, ad esempio i parametri e i valori predefiniti utilizzati. Queste modifiche possono influire sul software che accede all'API REST.
+
+
+
+== Modifiche alle chiamate API REST ONTAP esistenti
+
+Qualsiasi modifica alle chiamate API esistenti può influire sul software che accede all'API REST. È necessario esaminare l'elenco delle modifiche nella tabella seguente per determinare se vi è un impatto sull'ambiente di automazione ONTAP. Ogni voce include l'endpoint API applicabile, una descrizione della modifica e la release ONTAP che è stata introdotta.
+
+[cols="40%,50%,10%"]
+|===
+| Endpoint | Descrizione della modifica | Release di ONTAP 
+
+
+| `/security/authentication/duo/groups`
+`/security/authentication/duo/profiles` | Il campo *_links* nella risposta è stato rimosso dal duogruppo per questi endpoint. Non è prevista alcuna azione o soluzione alternativa consigliata al cliente. Il campo dovrebbe essere aggiunto nuovamente in una futura release di ONTAP. | 9.15.1 
+|===
+
+
+== Errori nella documentazione di riferimento dell'API REST ONTAP
+
+Man mano che NetApp migliora e aggiorna l'API REST ONTAP, talvolta è possibile introdurre errori nella documentazione di riferimento online. Questi errori possono creare confusione quando si utilizza l'API, ma in genere non influiscono né disturbano il software o l'ambiente di automazione ONTAP.
+
+È necessario rivedere l'elenco degli errori nella tabella riportata di seguito. In questo modo potrai comprendere meglio e navigare nella documentazione di riferimento dell'API REST di ONTAP. Ogni voce include l'endpoint API applicabile, una descrizione dell'errore e la release ONTAP che è stata introdotta.
+
+[cols="40%,50%,10%"]
+|===
+| Endpoint | Descrizione della modifica | Release di ONTAP 
+
+
+| `/storage/quota/reports` | La documentazione dell'API REST per l'endpoint indica che *specifier* è un campo valido. Tuttavia, lo specificatore di quota non è supportato con questo endpoint. Non è prevista alcuna azione o soluzione alternativa consigliata al cliente. Questo campo verrà rimosso dalla documentazione API in una versione futura di ONTAP. | 9.6 
+|===
+.Informazioni correlate
+link:whats-new.html["Novità dell'API REST di ONTAP"]
