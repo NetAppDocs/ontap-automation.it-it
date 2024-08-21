@@ -1119,8 +1119,6 @@
   <block id="e69e5f7f3b9067e533a0c848ce387094" category="inline-link">netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool</block>
   <block id="9a602388f357467e0f50667f5767b094" category="paragraph"><block ref="9a602388f357467e0f50667f5767b094" category="inline-link-rx"></block></block>
   <block id="7c3954a6c1ca76b5209bce67c8c332e8" category="doc">Non abilitazione di ONTAPI</block>
-  <block id="d662068ac363663b595ce3a43cc70a12" category="inline-link">CPC-00410 fine della disponibilità: ONTAPI</block>
-  <block id="4985f6980a34153c58b9f31390f6ce91" category="list-text"><block ref="4985f6980a34153c58b9f31390f6ce91" category="inline-link-rx"></block></block>
   <block id="40ccd15522e040a44684db0616c80933" category="summary">NetApp fornisce documentazione che descrive il mapping tra le chiamate ONTAPI e le chiamate API REST equivalenti.</block>
   <block id="b728900a222dcfb25f698d581d9e8863" category="paragraph">L'API REST di ONTAP include funzionalità equivalenti a ONTAPI nella maggior parte delle aree. NetApp fornisce documentazione che descrive il mapping tra le chiamate ONTAPI e le chiamate API REST equivalenti.</block>
   <block id="0b3de81010176abb2584daa05d6aa0c1" category="paragraph">La documentazione di mappatura API dipende dalla versione di ONTAP:</block>
@@ -1949,4 +1947,6 @@
   <block id="79d1f0bd73ced50c557a63343981d432" category="cell">La documentazione dell'API REST per l'endpoint indica che *specifier* è un campo valido. Tuttavia, lo specificatore di quota non è supportato con questo endpoint. Non è prevista alcuna azione o soluzione alternativa consigliata al cliente. Questo campo verrà rimosso dalla documentazione API in una versione futura di ONTAP.</block>
   <block id="4fa32eb56fb8ae063a3c75b36cb19a62" category="paragraph"><block ref="4fa32eb56fb8ae063a3c75b36cb19a62" category="inline-link-macro-rx"></block></block>
   <block id="aa23dd032f1fc4a5a95d9eb732608f33" category="admonition">Per ulteriori informazioni, incluse limitazioni o problemi noti, consultare anche la<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> . Vedere anche <block ref="edc7b83fd666812e33623acd898a41ba" category="inline-link-macro-rx"></block> per eventuali modifiche che potrebbero influire sul software di automazione.</block>
+  <block id="d22eb7366a95f4b359ba96e0653153f2" category="inline-link">CPC-00410 rinvio dell'annuncio di fine disponibilità di ONTAPI (ZAPI)</block>
+  <block id="ea53ecb52450e46f8a6a0fb33b6e191a" category="list-text"><block ref="ea53ecb52450e46f8a6a0fb33b6e191a" category="inline-link-rx"></block></block>
 </blocks>

@@ -18,6 +18,6 @@ L'API ONTAPI (ZAPI) è l'insieme originale di chiamate proprietarie incluse nel 
 
 .Informazioni correlate
 * link:../get-started/ontap_automation_options.html["Comprendere le opzioni di automazione di ONTAP"]
-* https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPC-00410 fine della disponibilità: ONTAPI"^]
+* https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPC-00410 rinvio dell'annuncio di fine disponibilità di ONTAPI (ZAPI)"^]
 * https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification["Domande frequenti sulla trasformazione delle API REST da ZAPI a ONTAP per CPC"^]
 
