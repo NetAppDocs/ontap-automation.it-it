@@ -23,7 +23,7 @@ NOTE: Mentre l'SDK per la gestione NetApp e OnCommand Workflow Automation hanno 
 È possibile scaricare l'SDK per la gestione NetApp dal sito di supporto NetApp. L'SDK supporta diversi linguaggi sul lato client, tra cui: Python, PowerShell, C, C++, Java, C#, VB. NET e Ruby. Assicurati di esaminare lo strumento della matrice di interoperabilità per informazioni sull'SDK per la gestione NetApp e sul modo in cui è supportato con la tua versione di ONTAP.
 
 .USA OnCommand Workflow Automation
-Puoi anche utilizzare l'API fornita con SDK per automatizzare le attività di gestione senza scrivere script. OnCommand Workflow Automation (OnCommand Wfa) fornisce diversi workflow preconfezionati per implementare ed eseguire le attività di gestione. Puoi scaricare il pacchetto Wfa di OnCommand dall'archivio per l'automazione dello storage NetApp.
+Puoi anche utilizzare l'API fornita con SDK per automatizzare le attività di gestione senza scrivere script. OnCommand Workflow Automation (OnCommand Wfa) fornisce diversi workflow preconfezionati per implementare ed eseguire le attività di gestione.
 
 .Informazioni correlate
 * https://mysupport.netapp.com/site/["Sito di supporto NetApp"^]
