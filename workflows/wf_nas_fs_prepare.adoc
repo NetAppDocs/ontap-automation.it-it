@@ -10,7 +10,7 @@ summary: 'È possibile gestire le autorizzazioni e le policy di audit per i file
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

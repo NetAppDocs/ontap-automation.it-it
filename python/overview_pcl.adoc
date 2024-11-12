@@ -10,7 +10,7 @@ summary: 'La libreria client di NetApp ONTAP Python è un pacchetto che è possi
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

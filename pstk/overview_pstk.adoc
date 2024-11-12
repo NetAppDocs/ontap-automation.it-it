@@ -10,7 +10,7 @@ summary: 'NetApp offre supporto per l"utilizzo di PowerShell per l"amministrazio
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

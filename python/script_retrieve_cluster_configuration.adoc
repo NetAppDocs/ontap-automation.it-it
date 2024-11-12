@@ -10,7 +10,7 @@ summary: È possibile eseguire lo script utilizzando Python 3 nella CLI per recu
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: Puoi fornire a un utente funzionalità di protezione dei dati limitate.
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

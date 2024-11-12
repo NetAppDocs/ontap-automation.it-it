@@ -10,7 +10,7 @@ summary: 'È possibile recuperare l"istanza di un processo ONTAP specifico. In g
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: È possibile utilizzare il seguente flusso di lavoro per creare una nuo
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

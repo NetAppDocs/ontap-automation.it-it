@@ -62,7 +62,7 @@ Gli endpoint sono stati introdotti per consentire il recupero e l'impostazione d
 Un carico DI lavoro QOS rappresenta un oggetto storage monitorato dalla QOS. È possibile recuperare i flussi DI lavoro QOS. Questo tipo di risorsa è stato introdotto con ONTAP 9.10.
 
 .Qtree
-È possibile utilizzare queste chiamate API per i Qtree di gestione, un tipo di file system suddiviso in modo logico. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+È possibile utilizzare queste chiamate API per i Qtree di gestione, un tipo di file system suddiviso in modo logico. Questo tipo di risorsa è stato introdotto con ONTAP 9,6. La funzione di monitoraggio delle performance esteso del qtree è stata aggiunta con ONTAP 9.16,1.
 
 .Report sulle quote
 Report sulle quote, una tecnica per limitare o tenere traccia dell'utilizzo di file o spazio. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.

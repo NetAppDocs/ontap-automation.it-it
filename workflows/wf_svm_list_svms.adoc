@@ -10,7 +10,7 @@ summary: 'È possibile elencare le Storage Virtual Machine (SVM) definite all"in
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: È possibile utilizzare questo flusso di lavoro per creare un utente co
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

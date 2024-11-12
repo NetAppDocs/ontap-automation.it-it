@@ -5,7 +5,12 @@ keywords: rest api, api changes, parameters, default values, breaking changes, d
 summary: 'NetApp continua a migliorare e aggiornare l"API REST ONTAP con ogni release principale del prodotto. Tali aggiornamenti possono occasionalmente includere modifiche alle chiamate API esistenti, ad esempio i parametri e i valori predefiniti utilizzati. Queste modifiche possono influire sul software che accede all"API REST.' 
 ---
 = Modifiche alle chiamate API REST ONTAP
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

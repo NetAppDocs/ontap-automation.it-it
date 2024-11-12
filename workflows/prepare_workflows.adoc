@@ -10,7 +10,7 @@ summary: Prima di utilizzare i flussi di lavoro ONTAP con una distribuzione live
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

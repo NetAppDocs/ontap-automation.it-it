@@ -10,7 +10,7 @@ summary: È possibile recuperare un elenco di dischi nel cluster. Questa operazi
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: È possibile recuperare le autorizzazioni effettive correnti per un fil
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

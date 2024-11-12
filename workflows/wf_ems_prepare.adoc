@@ -10,7 +10,7 @@ summary: 'È possibile configurare l"elaborazione del sistema di gestione degli 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

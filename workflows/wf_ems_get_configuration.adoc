@@ -10,7 +10,7 @@ summary: È possibile recuperare la configurazione EMS corrente per un cluster O
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

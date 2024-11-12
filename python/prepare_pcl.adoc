@@ -10,7 +10,7 @@ summary: 'Si consiglia di preparare l"ambiente di runtime locale prima di utiliz
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

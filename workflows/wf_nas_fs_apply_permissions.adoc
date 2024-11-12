@@ -10,7 +10,7 @@ summary: È possibile applicare un nuovo descrittore di protezione a un file o u
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

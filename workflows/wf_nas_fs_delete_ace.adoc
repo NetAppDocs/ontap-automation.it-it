@@ -10,7 +10,7 @@ summary: 'È possibile eliminare una voce di controllo dell"accesso esistente (A
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

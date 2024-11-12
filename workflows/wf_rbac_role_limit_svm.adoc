@@ -10,7 +10,7 @@ summary: 'Puoi definire un ruolo per limitare l"amministrazione del volume stora
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

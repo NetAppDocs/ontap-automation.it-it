@@ -19,6 +19,9 @@ summary: È possibile utilizzare queste chiamate API per accedere allo storage a
 .Bucket
 Un bucket è un container di oggetti ed è strutturato utilizzando uno spazio dei nomi degli oggetti. Ogni server a oggetti S3 può avere più bucket. Questo tipo di risorsa è stato introdotto con ONTAP 9.7 e aggiornato con ONTAP 9.8.
 
+.Istantanee benna
+Puoi creare e amministrare le snapshot dei tuoi bucket S3. Questa funzione è stata aggiunta con ONTAP 9.16,1.
+
 .Servizi
 È possibile creare e gestire la configurazione di ONTAP S3, incluse le configurazioni dei server e dei bucket. Questo tipo di risorsa è stato introdotto con ONTAP 9.7.
 

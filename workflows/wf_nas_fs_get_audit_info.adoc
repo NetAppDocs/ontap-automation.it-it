@@ -10,7 +10,7 @@ summary: È possibile recuperare tutte le informazioni di controllo per un file 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
