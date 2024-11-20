@@ -1073,9 +1073,6 @@
   <block id="4921daa1d1156e8a0f7fe7b45dfc92fb" category="section-title">Modifiche alla disponibilità di SnapDiff in ONTAPI</block>
   <block id="e5e32a25be86538826bb7ce943294815" category="paragraph">A partire da ONTAP 9.10.1, le chiamate SnapDiff v1 e v2 ONTAPI non possono essere richiamate. Qualsiasi applicazione di terze parti che richiama le chiamate SnapDiff v1 o v2 ONTAPI non funzionerà a partire da ONTAP 9.10.1. Gli utenti di ONTAP devono verificare che l'applicazione di backup supporti le chiamate REST SnapDiff v3 prima di eseguire l'aggiornamento a ONTAP 9.10.1.</block>
   <block id="d96bdb3acb68ad565307604365b57f70" category="paragraph">La disponibilità delle API SnapDiff nelle release di ONTAP viene definita come segue:</block>
-  <block id="c731207305059b4146b7b02e506607f9" category="list-text">ONTAP 9.7 e versioni precedenti: v1 e v2 (solo ONTAPI)</block>
-  <block id="a7fc2881def06d9d5d2e90252bccd071" category="list-text">ONTAP 9.8 – 9.9.1: v1, v2 e v3 (ONTAPI e REST API)</block>
-  <block id="1a7f82d18a27e10799e90edeb79d7ff5" category="list-text">ONTAP 9.10.1: Solo v3 (solo API REST)</block>
   <block id="1b18b55a054bdd1b04a8c8f5c862bc4f" category="doc">Preparati a utilizzare i flussi di lavoro</block>
   <block id="11678e3d67c685db9322ab4433f227a6" category="paragraph-title">Tipo di elaborazione</block>
   <block id="288aae25bc408055f50c21c991903a44" category="paragraph">Asincrono</block>
@@ -1954,4 +1951,7 @@
   <block id="5002d79d77c997408c96270b3cd46237" category="list-text">Il supporto per le nuove funzioni di ONTAP 9.8 non disponibili tramite ONTAPI è stato aggiunto all'API REST. Ciò include il supporto delle API REST per bucket e servizi ONTAP S3, SnapMirror Active Sync (in precedenza SnapMirror Business Continuity) e file system analytics.</block>
   <block id="982a944cf7d3a2f28ae7bfcc8755ec2c" category="list-text">ONTAP 9.8 offre flussi di lavoro più efficienti e moderni utilizzando l'API REST. Ad esempio, gli aggiornamenti del firmware con un clic sono ora disponibili per diversi tipi di firmware.</block>
   <block id="c408f623f341094b81899c67b52a1051" category="list-text">La pagina della documentazione online di ONTAP include etichette che indicano la release di ONTAP in cui sono stati introdotti ogni endpoint o parametro REST, incluse quelle nuove nel 9,8.</block>
+  <block id="3ae9565cf3f15d0b18e64848bf75114f" category="list-text">ONTAP 9.7 e versioni precedenti: v1 e v2 (solo ONTAPI)</block>
+  <block id="87fa2e5a8b05545afa808741d9743b82" category="list-text">ONTAP 9.8 – 9.9.1: v1, v2 e v3 (ONTAPI e REST API)</block>
+  <block id="12f58f465df2b1ae3ddb0a5303288c2d" category="list-text">ONTAP 9.10,1 e versioni successive: Solo V3 (solo API REST)</block>
 </blocks>
