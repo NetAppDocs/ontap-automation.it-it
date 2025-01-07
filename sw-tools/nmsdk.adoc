@@ -29,5 +29,5 @@ Puoi anche utilizzare l'API fornita con SDK per automatizzare le attività di ge
 * https://mysupport.netapp.com/site/["Sito di supporto NetApp"^]
 * https://www.netapp.com/company/interoperability/["Tool di matrice di interoperabilità NetApp"^]
 * https://mysupport.netapp.com/documentation/docweb/index.html?productID=63638&language=en-US["Documentazione SDK per la gestione NetApp"^]
-* https://www.netapp.com/data-management/oncommand-workflow-automation-documentation/["Documentazione OnCommand Workflow Automation"^]
+* https://docs.netapp.com/us-en/workflow-automation/["Documentazione OnCommand Workflow Automation"^]
 
