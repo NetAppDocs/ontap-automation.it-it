@@ -4,10 +4,8 @@ title: Strumenti software
 entries:
 - title: Libreria client Python
   entries:
-  - title: Panoramica
-    url: "/python/overview_pcl.html"
-  - title: Preparatevi a utilizzare la libreria client Python
-    url: "/python/prepare_pcl.html"
+  - title: Informazioni sulla libreria client Python
+    url: "/python/learn-about-pcl.html"
   - title: Pacchetti e documentazione
     url: "/python/packages.html"
   - title: Script per recuperare la configurazione del cluster

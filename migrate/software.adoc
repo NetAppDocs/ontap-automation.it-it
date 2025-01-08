@@ -52,9 +52,7 @@ Per un'introduzione a questa funzione, vedere link:../rest/access_ontap_cli.html
 
 == Libreria client Python
 
-La libreria client di Python è un pacchetto che puoi installare e utilizzare per accedere all'API REST di ONTAP con Python. Consente di sviluppare rapidamente un codice affidabile per l'automazione delle implementazioni ONTAP.
-
-Per un'introduzione alla libreria client Python, vedere link:../python/overview_pcl.html["Panoramica della libreria client Python"]. Per gli esempi di Python, vedere https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library["Esempi di libreria client Python"^].
+La libreria client di Python è un pacchetto che puoi installare e utilizzare per accedere all'API REST di ONTAP con Python. Consente di sviluppare rapidamente un codice affidabile per l'automazione delle implementazioni ONTAP. Per ulteriori informazioni sulla libreria client Python, fare riferimento a link:../python/learn-about-pcl.html["Libreria client Python"].
 
 
 

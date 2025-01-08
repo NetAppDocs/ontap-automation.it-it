@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: python/learn-about-pcl.html 
+keywords: learn about python client library, learn about pcl, pcl overview, pcl 
+summary: 'La libreria client Python di NetApp ONTAP è un pacchetto che puoi installare e utilizzare per scrivere rapidamente script che accedono all"API REST di ONTAP. È necessario preparare l"ambiente di runtime locale prima di utilizzarlo.' 
+---
+= Informazioni sulla libreria client Python di ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+La libreria client Python di NetApp ONTAP è un pacchetto che puoi installare e utilizzare per scrivere rapidamente script che accedono all'API REST di ONTAP. È necessario preparare l'ambiente di runtime locale prima di utilizzarlo.
+
+.Vantaggi e caratteristiche
+È possibile utilizzare la libreria client Python per sviluppare rapidamente codice solido per automatizzare l'amministrazione delle implementazioni ONTAP. Fornisce diversi servizi sottostanti, tra cui:
+
+* Gestione delle connessioni
+* Elaborazione asincrona
+* Gestione delle eccezioni
+* Messaggi di errore uniformi
+
+
+.Nome e versione del pacchetto
+Il nome del pacchetto di librerie client Python è *netapp-ontap*. La versione associata al pacchetto è una combinazione dei numeri di versione principali e minori di ONTAP da cui è stata generata la libreria, insieme a una versione minore per la libreria client all'interno della release di ONTAP. Ad esempio, i numeri di versione validi includono 9,6.1, 9,6.2 e 9,7.1.
+
+.Installazione
+È necessario utilizzare l'utilità *pip* per installare il pacchetto NetApp_ONTAP dal sito Python Package Index (PyPi).
+
+.Pacchetti e documentazione di ONTAP
+Ogni versione di ONTAP che inizia con 9,6 ha un pacchetto PyPI e la relativa documentazione. Per ulteriori informazioni, vedere link:../python/packages.html["Pacchetti e documentazione"] . I requisiti di installazione sono inclusi in ogni pacchetto e specificano diverse versioni di quanto segue:
+
+* python
+* richieste
+* richieste-cintura degli attrezzi
+* marshmallow
+
+
+.Esempi di codice
+NetApp gestisce un repository GitHub con esempi di codice e altre informazioni utili. È possibile accedere alla cartella _esempi_ per accedere agli esempi utilizzando la libreria client Python. Per i dettagli, fare riferimento alle seguenti posizioni su GitHub:
+
+* https://github.com/NetApp/ontap-rest-python["Repository GitHub di ONTAP REST Python"^]
+* https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library["Esempi di librerie di client Python REST ONTAP"^]
+
