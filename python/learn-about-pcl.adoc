@@ -16,6 +16,9 @@ summary: 'La libreria client Python di NetApp ONTAP è un pacchetto che puoi ins
 [role="lead"]
 La libreria client Python di NetApp ONTAP è un pacchetto che puoi installare e utilizzare per scrivere rapidamente script che accedono all'API REST di ONTAP. È necessario preparare l'ambiente di runtime locale prima di utilizzarlo.
 
+
+NOTE: È inoltre necessario esaminare le risorse disponibili in link:../additional/learn_more.html["Scopri di più sull'API REST di ONTAP"].
+
 .Vantaggi e caratteristiche
 È possibile utilizzare la libreria client Python per sviluppare rapidamente codice solido per automatizzare l'amministrazione delle implementazioni ONTAP. Fornisce diversi servizi sottostanti, tra cui:
 
