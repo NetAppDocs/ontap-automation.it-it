@@ -4,7 +4,7 @@ permalink: reference/api_reference.html
 keywords: reference, API reference, ONTAP API documentation, online reference, swagger 
 summary: 'Il riferimento API contiene dettagli sulle chiamate API REST ONTAP, inclusi i metodi HTTP, i parametri di input e le risposte. Questo riferimento completo è utile quando si sviluppano applicazioni di automazione utilizzando l"API REST.' 
 ---
-= Riferimento API
+= Riferimento per l'API REST ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

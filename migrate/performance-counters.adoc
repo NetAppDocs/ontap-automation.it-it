@@ -4,7 +4,7 @@ permalink: migrate/performance-counters.html
 keywords: performance, performance counters, mapping 
 summary: Il contatore ONTAP conserva informazioni dettagliate sulle prestazioni di ciascun sistema ONTAP. Esporta questi dati come una serie di contatori delle prestazioni che è possibile utilizzare per valutare le prestazioni del sistema ONTAP e contribuire a raggiungere gli obiettivi di prestazioni. 
 ---
-= Contatori delle performance
+= Utilizzo dei contatori delle prestazioni con l'API REST ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

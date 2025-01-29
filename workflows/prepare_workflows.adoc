@@ -4,7 +4,7 @@ permalink: workflows/prepare_workflows.html
 keywords: workflows, preparation, prepare to use workflows 
 summary: Prima di utilizzare i flussi di lavoro ONTAP con una distribuzione live, è necessario acquisire familiarità con la struttura e il formato dei flussi di lavoro. 
 ---
-= Preparati a utilizzare i flussi di lavoro
+= Prepararsi a utilizzare i flussi di lavoro delle API REST di ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
