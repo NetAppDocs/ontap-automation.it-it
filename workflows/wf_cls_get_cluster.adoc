@@ -4,7 +4,7 @@ permalink: workflows/wf_cls_get_cluster.html
 keywords: workflow, get cluster, cluster configuration 
 summary: È possibile recuperare la configurazione per un cluster ONTAP che include campi specifici. Questa operazione può essere eseguita durante la valutazione dello stato del cluster o prima di aggiornare la configurazione. 
 ---
-= Ottenere la configurazione del cluster
+= Ottieni la configurazione del cluster usando l'API REST di ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

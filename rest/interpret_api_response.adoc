@@ -4,7 +4,7 @@ permalink: rest/interpret_api_response.html
 keywords: response, api response, status codes 
 summary: Ogni richiesta API genera una risposta al client. È necessario esaminare la risposta per determinare se è stata eseguita correttamente e recuperare dati aggiuntivi in base alle necessità. 
 ---
-= Interpretazione di una risposta API
+= Interpretare una risposta dell'API REST ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

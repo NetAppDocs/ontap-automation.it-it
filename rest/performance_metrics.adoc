@@ -4,7 +4,7 @@ permalink: rest/performance_metrics.html
 keywords: performance, performance metrics 
 summary: 'ONTAP raccoglie le metriche delle performance relative agli oggetti e ai protocolli di storage SVM selezionati e riporta queste informazioni attraverso l"API REST. È possibile utilizzare questi dati per monitorare le prestazioni di un sistema ONTAP.' 
 ---
-= Metriche delle performance per le risorse di storage
+= Accedi alle metriche delle performance con l'API REST di ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

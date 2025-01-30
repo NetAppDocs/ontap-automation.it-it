@@ -6,17 +6,17 @@ entries:
   entries:
   - title: Base REST per i web Services
     url: "/rest/rest_web_services_foundation.html"
-  - title: Caratteristiche operative di base
+  - title: Caratteristiche operative
     url: "/rest/operational_characteristics.html"
   - title: Variabili di input
     url: "/rest/input_variables.html"
   - title: Interpretare una risposta API
     url: "/rest/interpret_api_response.html"
-  - title: Elaborazione asincrona utilizzando l'oggetto lavoro
+  - title: Elaborazione asincrona
     url: "/rest/asynchronous_processing.html"
   - title: Riferimenti e accesso agli oggetti
     url: "/rest/object_references_and_access.html"
-  - title: Metriche delle performance per le risorse di storage
+  - title: Metriche delle performance
     url: "/rest/performance_metrics.html"
 - title: Sicurezza RBAC
   entries:
