@@ -4,7 +4,7 @@ permalink: workflows/wf_nas_fs_delete_ace.html
 keywords: nas, file security, access control entry, ace, delete ace 
 summary: 'È possibile eliminare una voce di controllo dell"accesso esistente (ACE) da un file o una cartella specifici. La modifica si propaga a qualsiasi oggetto figlio.' 
 ---
-= Eliminare una voce di controllo degli accessi
+= Eliminare una voce di controllo dell'accesso utilizzando l'API REST ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

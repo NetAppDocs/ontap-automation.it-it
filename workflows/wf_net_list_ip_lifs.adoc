@@ -4,7 +4,7 @@ permalink: workflows/wf_net_list_ip_lifs.html
 keywords: workflow, job, job state 
 summary:  
 ---
-= List the IP interfaces (Elenca interfacce
+= Elencare le interfacce IP che utilizzano l'API REST ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

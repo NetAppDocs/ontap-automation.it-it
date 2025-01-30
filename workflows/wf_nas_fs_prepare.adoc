@@ -4,7 +4,7 @@ permalink: workflows/wf_nas_fs_prepare.html
 keywords: nas, file security, sacl, dacl, prepare 
 summary: 'È possibile gestire le autorizzazioni e le policy di audit per i file disponibili nelle SVM all"interno di un cluster ONTAP.' 
 ---
-= Prepararsi a gestire la sicurezza dei file e le policy di controllo
+= Prepararsi a gestire la sicurezza dei file e le policy di audit utilizzando l'API REST di ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

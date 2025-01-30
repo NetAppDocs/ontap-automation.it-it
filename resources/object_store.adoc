@@ -4,7 +4,7 @@ permalink: resources/object_store.html
 keywords: object store resources 
 summary: È possibile utilizzare queste chiamate API per accedere allo storage a oggetti basato su S3. 
 ---
-= Archivio di oggetti
+= Risorse degli archivi di oggetti nell'API REST ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

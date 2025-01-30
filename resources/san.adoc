@@ -4,7 +4,7 @@ permalink: resources/san.html
 keywords: san resources 
 summary: È possibile utilizzare queste chiamate API per gestire le risorse SAN. 
 ---
-= SAN
+= Risorse SAN nell'API REST ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

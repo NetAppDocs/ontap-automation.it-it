@@ -4,7 +4,7 @@ permalink: workflows/wf_rbac_role_data_protection.html
 keywords: rbac, role, data protection, limited data protection 
 summary: Puoi fornire a un utente funzionalità di protezione dei dati limitate. 
 ---
-= Attivare l'amministrazione della protezione dei dati
+= Attivare l'amministrazione della protezione dei dati utilizzando l'API REST ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

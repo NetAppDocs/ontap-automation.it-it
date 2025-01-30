@@ -4,7 +4,7 @@ permalink: resources/networking.html
 keywords: networking resources 
 summary: È possibile utilizzare queste chiamate API per gestire le risorse di rete fisiche e logiche utilizzate con il cluster. 
 ---
-= Networking
+= Risorse di rete nell'API REST di ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

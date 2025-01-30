@@ -4,7 +4,7 @@ permalink: resources/name_services.html
 keywords: name services resources 
 summary: È possibile utilizzare queste chiamate API per gestire i name service supportati da ONTAP. 
 ---
-= Servizi di nome
+= Denominare le risorse dei servizi nell'API REST ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: resources/support.html
 keywords: support resources 
 summary: È possibile utilizzare queste chiamate API per gestire le funzionalità ONTAP utilizzate per supportare un cluster. 
 ---
-= Supporto
+= Risorse di supporto nell'API REST ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

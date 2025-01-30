@@ -4,7 +4,7 @@ permalink: workflows/wf_rbac_user_role.html
 keywords:  
 summary: È possibile utilizzare questo flusso di lavoro per creare un utente con un ruolo REST associato. 
 ---
-= Creare un utente con un ruolo
+= Creare un utente con un ruolo utilizzando l'API REST di ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
