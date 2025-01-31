@@ -1683,10 +1683,8 @@
   <block id="5cd76801bc70b25fab5348133fbeaaff" category="list-text">Se si identifica un intervallo funzionale nell'API REST di ONTAP, è possibile richiedere una nuova funzionalità per l'API.</block>
   <block id="2d808b90a1137a1a9fb1f2a6b8aab8eb" category="inline-link">Come richiedere una funzionalità per l'API REST ONTAP</block>
   <block id="2f25f340fb53d4017b182c6b51020451" category="paragraph"><block ref="2f25f340fb53d4017b182c6b51020451" category="inline-link-rx"></block></block>
-  <block id="f954d54d4b0a7e9ea5cf236808483a7c" category="summary">NetApp offre supporto per l'utilizzo di PowerShell per l'amministrazione dei tuoi sistemi storage ONTAP.</block>
   <block id="c79fa3b95a882a4d5a7a0e5e00100e39" category="doc">Panoramica del PowerShell Toolkit</block>
   <block id="3d265b4e1eeef0ddf17881fa003b18cc" category="paragraph-title">PowerShell</block>
-  <block id="501fd8414e2cb7ea1f33c45defefd651" category="paragraph">PowerShell è un programma di Microsoft che puoi utilizzare per l'automazione dei task e la gestione della configurazione. Include un ambiente shell della riga di comando e un linguaggio di scripting.</block>
   <block id="c714c2b9a4fb9d44e4562afa883f47ea" category="paragraph-title">Toolkit PowerShell NetApp ONTAP</block>
   <block id="0659d428df833a806e29e65e632d380a" category="paragraph-title">Supporto NetApp</block>
   <block id="abbe6086a8dd2213ec443ee7529470ed" category="paragraph">Puoi scaricare il toolkit PowerShell dal sito NetApp Support:</block>
@@ -1800,7 +1798,6 @@
   <block id="f617bf9bf27979ddd862da656c1ac630" category="admonition">La funzionalità RBAC di ONTAP ha continuato a espandersi ed è stata notevolmente migliorata con ONTAP 9.11.1 (e versioni successive). Per ulteriori informazioni, vedere <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> e. <block ref="1d53a2f90038290ad464bebe3ee5abe5" category="inline-link-macro-rx"></block></block>
   <block id="fe6ccd0a0c871758ba9563377db86e13" category="doc">La prima chiamata ONTAP REST API</block>
   <block id="e02870eb3d03aec6ab03fa4fa4f87b65" category="doc">Risorse di laboratorio delle API REST ONTAP</block>
-  <block id="b5ca69b3b3ee6f013fa4a87b8fdd4fb5" category="doc">Scaricare e installare il toolkit PowerShell ONTAP</block>
   <block id="940f4511f0af1bd466600a8213691360" category="inline-link">NetApp. Toolkit PowerShell ONTAP</block>
   <block id="4028e751d6613e2ade147d59afdd8a50" category="paragraph"><block ref="4028e751d6613e2ade147d59afdd8a50" category="inline-link-rx"></block></block>
   <block id="0220d9b548f6fab03e4a4e2d9ca818fe" category="summary">NetApp continua a migliorare e aggiornare l'API REST ONTAP con ogni release principale del prodotto. Tali aggiornamenti possono occasionalmente includere modifiche alle chiamate API esistenti, ad esempio i parametri e i valori predefiniti utilizzati. Queste modifiche possono influire sul software che accede all'API REST.</block>
@@ -1980,4 +1977,9 @@
   <block id="598efe1689990327c62503c7c48dbd74" category="doc">Elenca le SVM che utilizzano l'API REST ONTAP</block>
   <block id="3a77755c4eaf7897cda1f7db8e722428" category="sidebar">Automazione ONTAP</block>
   <block id="47ac2234b10a714bdea293d370ad2ce1" category="sidebar">Documentazione di automazione ONTAP</block>
+  <block id="773636ecc39ec5e888c33fed3471ca6a" category="summary">NetApp offre supporto per PowerShell che puoi utilizzare per amministrare i tuoi sistemi storage ONTAP.</block>
+  <block id="2fa251c44aacb71e26d10444ef2c35d7" category="doc">Ulteriori informazioni sul toolkit PowerShell di NetApp</block>
+  <block id="f1f7a58e7fbfd1ed521da099492f9928" category="paragraph">PowerShell è un'altra opzione per automatizzare l'amministrazione dei cluster ONTAP.</block>
+  <block id="a96db3613c36742398cc9d0c8e5e717a" category="paragraph">PowerShell è un linguaggio di programmazione di Microsoft che è possibile utilizzare per l'automazione dei task e la gestione della configurazione. Include un ambiente shell della riga di comando e un linguaggio di scripting.</block>
+  <block id="f8769a3b6c00e170fce8e2d7779f5f7c" category="doc">Ulteriori informazioni sull'SDK per la gestione NetApp</block>
 </blocks>
