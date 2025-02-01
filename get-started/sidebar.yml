@@ -4,6 +4,8 @@ title: Inizia subito
 entries:
 - title: Comprendere le opzioni di automazione
   url: "/get-started/ontap_automation_options.html"
+- title: Informazioni sui servizi Web REST
+  url: "/get-started/learn-about-rest.html"
 - title: Come accedere all'API REST
   url: "/get-started/access_rest_api.html"
 - title: La prima chiamata ONTAP REST API

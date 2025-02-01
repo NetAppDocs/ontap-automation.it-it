@@ -967,7 +967,6 @@
   <block id="6e70b7cc1cd3e6a65b37dbcdde8ecd4a" category="paragraph">È possibile accedere all'API ONTAP utilizzando uno dei diversi linguaggi e tool di programmazione. Le scelte più popolari includono Python, Java, Curl e PowerShell. Un programma, uno script o uno strumento che utilizza l'API agisce come un client di servizi Web REST. L'utilizzo di un linguaggio di programmazione consente una comprensione più approfondita dell'API e offre l'opportunità di automatizzare l'amministrazione di ONTAP.</block>
   <block id="9670d5b867b93341fdec8b7aadfdba79" category="paragraph">Il formato dell'URL di base utilizzato per accedere direttamente alla versione più recente dell'API è:</block>
   <block id="433c12a33fdba27dd646123b380a2c4e" category="paragraph">Per accedere a una versione API specifica in cui sono supportate più versioni, il formato dell'URL è:</block>
-  <block id="8ed6428212b41847f33c5db651c2aa70" category="doc">Base REST per i web Services</block>
   <block id="c0aefd46729e17daeac7adf6c79cc100" category="paragraph">Representational state Transfer (REST) è uno stile per la creazione di applicazioni web distribuite. Quando viene applicato alla progettazione di un'API di servizi Web, stabilisce un insieme di tecnologie per esporre le risorse basate su server e gestirne gli stati. Utilizza protocolli e standard mainstream per fornire una base flessibile per l'amministrazione dei cluster ONTAP.</block>
   <block id="a3262c740712f07d5eb90eab53b90682" category="admonition">Mentre REST stabilisce un insieme comune di tecnologie e Best practice, i dettagli di ciascuna API possono variare in base alle scelte effettuate durante lo sviluppo. Prima di utilizzarla con una distribuzione live, è necessario conoscere le caratteristiche di progettazione dell'API REST di ONTAP.</block>
   <block id="b0fcdfb2c58efafaace08609d3e95f6d" category="section-title">Risorse e rappresentazione dello stato</block>
@@ -1982,4 +1981,5 @@
   <block id="f1f7a58e7fbfd1ed521da099492f9928" category="paragraph">PowerShell è un'altra opzione per automatizzare l'amministrazione dei cluster ONTAP.</block>
   <block id="a96db3613c36742398cc9d0c8e5e717a" category="paragraph">PowerShell è un linguaggio di programmazione di Microsoft che è possibile utilizzare per l'automazione dei task e la gestione della configurazione. Include un ambiente shell della riga di comando e un linguaggio di scripting.</block>
   <block id="f8769a3b6c00e170fce8e2d7779f5f7c" category="doc">Ulteriori informazioni sull'SDK per la gestione NetApp</block>
+  <block id="40165cda75e3c737682e919501eec98c" category="doc">Informazioni sui servizi Web REST</block>
 </blocks>
