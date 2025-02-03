@@ -10,7 +10,7 @@ summary: 'Ogni release di ONTAP aggiorna l"API REST ONTAP per offrirti nuove fun
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
