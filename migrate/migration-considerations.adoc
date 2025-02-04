@@ -56,7 +56,7 @@ La disponibilità delle API SnapDiff nelle release di ONTAP viene definita come 
 * ONTAP 9.10,1 e versioni successive: Solo V3 (solo API REST)
 
 
-Vedere anche la https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Note di rilascio di ONTAP"^] per ulteriori informazioni.
+Il supporto è stato ritirato in punti diversi in ciascuna release. Questo include ONTAP 9.10.1 P11 e versioni successive, 9.11.1 P7 e versioni successive e 9.12.1 GA e versioni successive. Per ulteriori informazioni, vedere la https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Note di rilascio di ONTAP"^] .
 
 
 
