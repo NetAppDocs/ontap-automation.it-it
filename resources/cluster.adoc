@@ -43,8 +43,11 @@ Ogni licenza può essere gestita come pacchetto separato. Questo tipo di risorsa
 .Licenze
 Le licenze consentono di implementare funzionalità e funzionalità specifiche di ONTAP. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
 
+.Ping del mediatore
+È possibile effettuare il ping del servizio cloud BlueXP . Questo tipo di risorsa è una novità di ONTAP 9.17.1.
+
 .Mediatori
-È possibile gestire il mediatore associato a MetroCluster, inclusa l'aggiunta o la rimozione dell'istanza del mediatore. Questo tipo di risorsa è stato utilizzato per la prima volta in ONTAP 9.8.
+È possibile gestire il mediatore associato a MetroCluster, inclusa l'aggiunta o la rimozione dell'istanza del mediatore. Questo tipo di risorsa è una novità di ONTAP 9.8 e aggiornato con la versione 9.17.1.
 
 .MetroCluster
 È possibile creare e gestire un'implementazione MetroCluster, inclusa l'esecuzione di operazioni di switchover o switchback. Questo tipo di risorsa è stato aggiornato con ONTAP 9.8 e con 9.11.

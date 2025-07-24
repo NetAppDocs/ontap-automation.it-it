@@ -35,4 +35,4 @@ I controller del sottosistema NVMe rappresentano connessioni dinamiche tra host 
 Una mappa del sottosistema NVMe è un'associazione di uno spazio dei nomi NVMe con un sottosistema NVMe. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
 
 .Sottosistemi NVMe
-Un sottosistema NVMe mantiene lo stato di configurazione e il controllo dell'accesso allo spazio dei nomi per un set di host connessi a NVMe. Questo tipo di risorsa è stato introdotto con ONTAP 9.6.
+Un sottosistema NVMe gestisce lo stato di configurazione e il controllo di accesso allo spazio dei nomi per un insieme di host connessi a NVMe. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con la versione 9.17.1.
