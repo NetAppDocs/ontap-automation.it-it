@@ -14,7 +14,13 @@ summary: 'Prima di eseguire la migrazione all"API REST di ONTAP dall"API ONTAPI 
 
 
 [role="lead"]
-Prima di eseguire la migrazione all'API REST di ONTAP dall'API ONTAPI (ZAPI) o dalla CLI di ONTAP, è necessario prendere in considerazione diversi aspetti.
+L'API ONTAPI (ZAPI) è il set originale di chiamate proprietarie incluse nel software NetApp ONTAP .  L'API è fornita tramite Network Manageability SDK e supporta l'automazione delle attività di amministrazione e gestione dell'archiviazione dei dati.  Se si utilizza ONTAPI, è opportuno pianificare la migrazione all'API REST ONTAP per sfruttare il set di funzionalità ONTAP ampliato disponibile con l'API REST.
+
+.Informazioni correlate
+* link:../get-started/ontap_automation_options.html["Comprendere le opzioni di automazione di ONTAP"]
+* https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPC-00410 rinvio dell'annuncio di fine disponibilità di ONTAPI (ZAPI)"^]
+* https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification["Domande frequenti sulla trasformazione delle API REST da ZAPI a ONTAP per CPC"^]
+
 
 
 
@@ -57,9 +63,3 @@ La disponibilità delle API SnapDiff nelle release di ONTAP viene definita come 
 
 
 Il supporto è stato ritirato in punti diversi in ciascuna release. Questo include ONTAP 9.10.1 P11 e versioni successive, 9.11.1 P7 e versioni successive e 9.12.1 GA e versioni successive. Per ulteriori informazioni, vedere la https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Note di rilascio di ONTAP"^] .
-
-
-
-== Invia la tua ONTAPI per scoprire le lacune delle API REST
-
-NetApp si impegna a supportare i clienti nella migrazione da ONTAPI alle API REST ONTAP. Se notate qualcosa che manca nell'API REST, fatecelo sapere. È possibile presentare queste lacune e qualsiasi altra idea al https://forms.office.com/Pages/ResponsePage.aspx?id=oBEJS5uSFUeUS8A3RRZbOtlEKM3rNwBHjLH8dubcgOVURVM2UzIzTkQzSzdTU0pQRVFFRENZWlAxNi4u["ONTAPI ALL'API REST"^] pagina.
