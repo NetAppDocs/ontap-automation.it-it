@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: get-started/ontap_automation_options.html 
-keywords: ontap automation, rest api, python client library, powershell, ansible, bluexp automation catalog 
+keywords: ontap automation, rest api, python client library, powershell, ansible, bluexp automation catalog, netapp, console 
 summary: 'Sono disponibili diverse opzioni per automatizzare la distribuzione e l"amministrazione dei vostri sistemi storage ONTAP.' 
 ---
 = Comprendere le opzioni di automazione di ONTAP
@@ -49,5 +49,5 @@ Puoi utilizzare il NetApp.ONTAP PowerShell Toolkit per automatizzare l'amministr
 .Ansible
 Ansible è uno strumento software open-source che supporta il provisioning, la gestione della configurazione e l'implementazione delle applicazioni. Dal suo rilascio e dalla successiva acquisizione da parte di RedHat, ha continuato a crescere in popolarità. NetApp offre moduli certificati Ansible che i clienti possono utilizzare per automatizzare l'amministrazione dei propri sistemi storage ONTAP. Vedere link:../additional/learn_more.html["Scopri di più"] e. https://www.netapp.com/devops-solutions/ansible/["Soluzioni NetApp Ansible DevOps"^] per ulteriori informazioni.
 
-.Catalogo di automazione BlueXP
-NetApp https://console.bluexp.netapp.com/automationCatalog/["Catalogo di automazione BlueXP"^] È disponibile tramite l'interfaccia utente web BlueXP. Il catalogo fornisce accesso a soluzioni predisposte per l'installazione automatica e l'integrazione di ONTAP con altri prodotti. Vedere https://docs.netapp.com/us-en/netapp-automation/["Automazione di NetApp"^] per documentazione e ulteriori informazioni.
+.Catalogo di automazione della console NetApp
+NetApp https://console.netapp.com/automationCatalog/["Catalogo di automazione della console NetApp"^] è disponibile tramite l'interfaccia utente web della Console.  Il catalogo fornisce accesso a soluzioni pacchettizzate che possono aiutarti ad automatizzare la distribuzione e l'integrazione di ONTAP con altri prodotti.  Vedere https://docs.netapp.com/us-en/netapp-automation/["Automazione di NetApp"^] per documentazione e maggiori informazioni.
