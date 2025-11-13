@@ -55,6 +55,9 @@ Le chiamate API possono essere utilizzate per installare, visualizzare ed elimin
 .Cisco Duo
 Duo fornisce l'autenticazione a due fattori per gli accessi SSH. Puoi configurare Duo per il funzionamento a livello di cluster ONTAP o SVM. Questo tipo di risorsa è stato introdotto con ONTAP 9,14.
 
+.Sicurezza della rete del cluster
+È possibile recuperare e aggiornare la configurazione di sicurezza della rete del cluster, inclusi i certificati. Questo tipo di risorsa è stato introdotto con ONTAP 9.18.
+
 .Sicurezza del cluster
 È possibile recuperare i dettagli della protezione a livello di cluster e aggiornare alcuni parametri. Questo tipo di risorsa è stato introdotto con ONTAP 9.7 e aggiornato con ONTAP 9.8.
 
@@ -69,6 +72,9 @@ Questo set di chiamate API consente di utilizzare il servizio di gestione delle 
 
 .Mapping dei ruoli di gruppo
 È possibile creare e amministrare relazioni di mapping tra gruppi e ruoli. Questo tipo di risorsa è stato introdotto con ONTAP 9,16.
+
+.Sicurezza della rete HA
+È possibile recuperare e aggiornare la configurazione di sicurezza della rete HA. Questo tipo di risorsa è stato introdotto con ONTAP 9.18.
 
 .IPSec
 IPSec (Internet Protocol Security) è una suite di protocolli che garantisce la sicurezza tra due endpoint su una rete IP sottostante. Questo tipo di risorsa è stato utilizzato per la prima volta in ONTAP 9.8.

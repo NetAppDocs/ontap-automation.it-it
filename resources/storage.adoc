@@ -40,6 +40,9 @@ I dischi fisici nel cluster. Questo tipo di risorsa è stato introdotto con ONTA
 .FlexCache
 Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.8.
 
+.Stato della connessione FlexCache
+È possibile recuperare lo stato della connessione FlexCache . Questo tipo di risorsa è stato introdotto con ONTAP 9.18.
+
 .Origini di FlexCache
 FlexCache è una cache persistente di un volume di origine. Questo tipo di risorsa è stato introdotto originariamente con ONTAP 9.6. Il supporto è stato migliorato con l'API REST di ONTAP 9.9 per supportare la modifica tramite il metodo DI PATCH HTTP.
 
