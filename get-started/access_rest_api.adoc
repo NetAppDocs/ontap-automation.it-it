@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: get-started/access_rest_api.html 
-keywords: accessing the rest api, lif 
+keywords: access rest api, lif, cluster lif, svm lif, node lif 
 summary: 'È possibile accedere all"API REST di ONTAP in diversi modi.' 
 ---
 = Come accedere all'API REST di ONTAP
@@ -20,17 +20,14 @@ summary: 'È possibile accedere all"API REST di ONTAP in diversi modi.'
 
 == Considerazioni sulla rete
 
-È possibile connettersi all'API REST tramite le seguenti interfacce:
+È possibile connettersi all'API REST ONTAP utilizzando uno dei vari tipi di interfacce. Il LIF scelto deve essere configurato per supportare il protocollo di gestione HTTPS. Inoltre, la configurazione del firewall nella rete deve consentire il traffico HTTPS. Sono supportate le seguenti interfacce:
 
 * LIF gestione cluster
 * LIF di gestione dei nodi
 * LIF gestione SVM
 
 
-La LIF scelta deve essere configurata per supportare il protocollo di gestione HTTPS. Inoltre, la configurazione del firewall nella rete deve consentire il traffico HTTPS.
-
-
-TIP: Si consiglia di utilizzare sempre una LIF di gestione del cluster. In questo modo, le richieste API vengono bilanciate in tutti i nodi ed è possibile evitare i nodi offline o che presentano problemi di connettività. Se sono configurate più LIF di gestione del cluster, sono tutte equivalenti per quanto riguarda l'accesso all'API REST.
+Sebbene sia possibile utilizzare uno qualsiasi di questi LIF, la procedura consigliata è quella di utilizzare il LIF di gestione del cluster. Ciò consente di indirizzare il cluster come un'unica unità logica e fornisce il massimo livello di resilienza e bilanciamento del carico. Un LIF del cluster può essere spostato nel cluster in base alle necessità per gestire aggiornamenti pianificati, eventi di quorum e altri problemi di connettività. Se sono configurati più LIF di gestione cluster, sono tutti equivalenti per quanto riguarda l'accesso all'API REST. Anche i LIF di gestione SVM sono bilanciati in termini di carico, ma le richieste inviate ai LIF con ambito a livello di nodo vengono gestite localmente.
 
 
 
