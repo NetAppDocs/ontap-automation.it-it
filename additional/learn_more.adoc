@@ -30,19 +30,9 @@ Gli articoli del blog sono disposti in diverse sezioni in base all'argomento.
 +
 https://www.netapp.com/blog/new-normal-for-automation["Nuova normalità per l'automazione"^]
 
-
-
-* Puoi esplorare l'utilizzo dell'API REST di ONTAP per gestire la sicurezza dei file e le autorizzazioni.
-+
-https://netapp.io/2021/06/28/simplified-management-of-file-security-permissions-with-ontap-rest-apis["Gestione semplificata delle autorizzazioni di sicurezza dei file con le API REST di ONTAP"^]
-
 * È possibile monitorare gli eventi ONTAP per essere sempre al corrente dell'attività del sistema. La configurazione e la gestione di questi eventi possono essere automatizzate utilizzando l'API REST.
 +
 https://blog.netapp.com/ontap-rest-apis-automate-notification["API REST di ONTAP: Notifica automatica degli eventi ad alta severità"^]
-
-* Puoi utilizzare le API REST per configurare ruoli e livelli di accesso come parte di un ambiente di sicurezza RBAC.
-+
-https://netapp.io/2022/06/26/rbac-using-ontap-rest-apis["Role-based access control (RBAC) utilizzando le API REST ONTAP"^]
 
 * Pause caffè con RIPOSO (6 episodi):
 +
@@ -60,20 +50,9 @@ https://netapp.io/2022/06/26/rbac-using-ontap-rest-apis["Role-based access contr
 
 === Libreria client Python
 
-* Un'introduzione all'utilizzo degli script di esempio di Python forniti da NetApp in GitHub per accedere all'API REST di ONTAP.
-+
-https://netapp.io/2020/04/23/ontap-rest-apis["ONTAP REST API script di esempio Python ora disponibile su GitHub!"^]
-
 * Questo blog fornisce una buona introduzione alle caratteristiche della libreria client Python di ONTAP.
 +
 https://www.netapp.com/blog/simplify-ontap-rest-api-consumption["Semplifica il consumo delle API REST di ONTAP con la libreria client Python"^]
-
-* Questa è una serie di blog in tre parti su come iniziare con la libreria client Python:
-+
-** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt1["Parte 1"^]
-** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt2["Parte 2"^]
-** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt3["Parte 3"^]
-
 
 
 
@@ -81,21 +60,9 @@ https://www.netapp.com/blog/simplify-ontap-rest-api-consumption["Semplifica il c
 
 === Migrazione all'API REST
 
-* NetApp fornisce il supporto per il passaggio dall'API ONTAPI proprietaria all'API REST ONTAP attraverso la documentazione di mappatura.
-+
-https://netapp.io/2020/12/17/ontapi-to-rest-mapping/["ONTAPI to REST Mapping"^]
-
 * Sono disponibili diverse tecnologie che consentono di trasformare l'ambiente di automazione ONTAP in base all'API REST.
 +
 https://www.netapp.com/blog/transform-automation-ontap-rest-api/["Trasforma la tua automazione in API REST ONTAP di ONTAPI"^]
-
-* Per consentire agli utenti di CLI e ONTAP di passare all'API REST di ONTAP, ONTAP fornisce un endpoint REST API privato che può essere utilizzato per accedere a qualsiasi comando CLI.
-+
-https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["Utilizzo del pass-through CLI privato con l'API REST di ONTAP"^]
-
-* NetApp offre uno strumento per aiutare clienti e partner a passare all'API REST di ONTAP.
-+
-https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool/["Transizione da ONTAPI(ZAPI) mediante ONTAPI Usage Reporting Tool"^]
 
 
 
