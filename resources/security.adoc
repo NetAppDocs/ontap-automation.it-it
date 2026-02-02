@@ -28,6 +28,9 @@ La configurazione per un account utente con ambito. Questo tipo di risorsa è st
 .Anti-ransomware
 ONTAP rileva i file potenzialmente contenenti una minaccia ransomware. Esistono diverse categorie di endpoint. È possibile recuperare un elenco di questi file sospetti e rimuoverli da un volume. Questo tipo di risorsa è stato introdotto con ONTAP 9.10.1. Il supporto per la visualizzazione della versione e l'aggiornamento del pacchetto anti-ransomware è stato aggiunto con ONTAP 9.16.
 
+.Abilitazione anti-ransomware
+È possibile controllare il funzionamento della funzionalità di abilitazione della Autonomous Ransomware Protection (ARP). Ciò include il recupero e la modifica delle impostazioni di configurazione. Questo tipo di risorsa è stato introdotto con ONTAP 9.18.1.
+
 .Statistiche sull'entropia anti-ransomware
 Sono disponibili statistiche dettagliate sull'entropia per il funzionamento della funzionalità Autonomous Ransomware Protection (ARP). Questo tipo di risorsa è stato aggiunto con ONTAP 9.17.1.
 
