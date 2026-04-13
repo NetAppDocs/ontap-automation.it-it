@@ -24,7 +24,7 @@ Questa chiamata API REST utilizza il metodo e l'endpoint seguenti.
 | Metodo HTTP | Percorso 
 
 
-| OTTIENI | /api/storage/dischi 
+| OTTIENI | /api/storage/aggregates 
 |===
 .Tipo di elaborazione
 Sincrono
