@@ -21,6 +21,16 @@ TIP: Per ulteriori informazioni, incluse limitazioni o problemi noti, consultare
 
 
 
+== ONTAP 9.19.1
+
+La release ONTAP 9.19.1 include diversi aggiornamenti che continuano a migliorare e perfezionare la ONTAP REST API.
+
+Sicurezza:: È stata aggiunta una nuova `whoami` funzionalità per recuperare le informazioni relative a nome utente, ruolo e autorizzazioni dell'utente connesso. La funzionalità di autenticazione web (WebAuthn) è stata anch'essa migliorata.
+SAN:: La gestione delle mappe LUN è stata aggiornata con una funzionalità di aggiornamento migliorata.
+
+
+
+
 == ONTAP 9.18.1
 
 La release ONTAP 9.18.1 continua ad ampliare le funzionalità dell'API REST di ONTAP con tredici nuove chiamate API. I miglioramenti si concentrano principalmente sulla sicurezza, ma includono anche un miglioramento relativo all'amministrazione dello storage.
