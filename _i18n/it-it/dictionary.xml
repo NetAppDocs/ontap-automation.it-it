@@ -26,7 +26,6 @@
   <block id="42ac9c1cc1752704f9d6980ce41b7ba3" category="paragraph">Le informazioni sulla versione di ONTAP vengono visualizzate in formato JSON.</block>
   <block id="554cfab3938e21d9270bd6b75931f96f" category="section-title">Video</block>
   <block id="488449a83a7af94bacba6d31023a0ace" category="inline-link-macro">Soluzioni NetApp Ansible DevOps</block>
-  <block id="bc00f7a5406f8f98848784d25ca2e573" category="paragraph-title">Utilizzo del pass-through CLI privato con l'API REST di ONTAP</block>
   <block id="93100500d8b18f60a692c67b62fe3e68" category="summary">È possibile eseguire lo script utilizzando Python 3 nella CLI per recuperare la configurazione del cluster ONTAP.</block>
   <block id="954b2e160c60b05e0b5bcd88116d6dee" category="paragraph">Il seguente script fornisce un semplice esempio di come utilizzare la libreria client Python. È possibile eseguire lo script utilizzando Python 3 nella CLI per recuperare la configurazione del cluster ONTAP.</block>
   <block id="e5a1747d44133108641b2ef511e802b0" category="inline-link">Repository GitHub di ONTAP REST Python</block>
@@ -520,8 +519,6 @@
   <block id="94e1cc167c8b21e2dee8ae6449422dc8" category="cell"><block ref="36ed5ccccb1cecc32688dfef7bb00977" prefix="" category="inline-code"></block></block>
   <block id="9a85c4ed4aea58b5cf2264e55823074c" category="list-text"><block ref="32b478a260a90a0150f84bc469ac640b" prefix="" category="inline-code"></block></block>
   <block id="7faf05b9e4d90529c54562f216bfb2d6" category="list-text"><block ref="8f7088b1308a9efa94a1fadb415a83fe" prefix="" category="inline-code"></block></block>
-  <block id="673cd1c7bc219dafd3ab44f7789c7963" category="inline-link">Gestione semplificata delle autorizzazioni di sicurezza dei file con le API REST di ONTAP</block>
-  <block id="6f49384b8a99fec44a7cd1d6ed52add4" category="list-text"><block ref="6f49384b8a99fec44a7cd1d6ed52add4" category="inline-link-rx"></block></block>
   <block id="8b64f73d0c930b953467d71771168fcb" category="cell"><block ref="e6d3e2b20641c094d3561900f189ee36" prefix="" category="inline-code"></block></block>
   <block id="2130e4445c18121e61a0496381717d89" category="list-text"><block ref="11c37609eb90008bd36d83530ab47246" prefix="" category="inline-code"></block></block>
   <block id="b0f540062794ffac7297b2f00a005457" category="list-text"><block ref="64b1a654c15b96443ae00ee82d8ea7ad" prefix="" category="inline-code"></block></block>
@@ -1598,14 +1595,12 @@
   <block id="bb059379feb749c05906d3ac23b4816d" category="section-title">Passaggio 1: Aggiornare il descrittore di protezione</block>
   <block id="698f9eb192e6aa6224d8848f98d6a530" category="summary">È possibile gestire le autorizzazioni e le policy di audit per i file disponibili nelle SVM all'interno di un cluster ONTAP.</block>
   <block id="7e2e1102b90cfd81da1a2e5002c37c9c" category="paragraph">ONTAP utilizza gli elenchi di controllo di accesso di sistema (SACL) e gli elenchi di controllo di accesso discrezionali (DACL) per assegnare le autorizzazioni agli oggetti file. A partire da ONTAP 9,9.1, l'API REST include il supporto per la gestione delle autorizzazioni SACL e DACL. È possibile utilizzare l'API per automatizzare l'amministrazione delle autorizzazioni di protezione dei file. In molti casi è possibile utilizzare una singola chiamata API REST invece di più comandi CLI o chiamate ONTAPI (ZAPI).</block>
-  <block id="3c4e118c8471cd86da2e54560f34234b" category="admonition">Per le versioni ONTAP precedenti alla 9,9.1, è possibile automatizzare l'amministrazione delle autorizzazioni SACL e DACL utilizzando la funzione Passthrough CLI. Vedere <block ref="2827875b29ddc93c1111f4063df563c8" category="inline-link-macro-rx"></block> e.<block ref="cc458ed66c48b12b86281fe13e008c20" category="inline-link-rx"></block> per ulteriori informazioni.</block>
   <block id="5a4c76b14341d9a5432b024437f965d1" category="paragraph">Sono disponibili diversi flussi di lavoro di esempio per illustrare come gestire i servizi di sicurezza dei file ONTAP utilizzando l'API REST. Prima di utilizzare i flussi di lavoro e di inviare una qualsiasi delle chiamate API REST, assicurarsi di riesaminarla <block ref="8db76eb28f35a2f0429c5f03bc9feadd" category="inline-link-macro-rx"></block>.</block>
   <block id="f13ddbbf96dbd385b6b39bedaac4e6f7" category="inline-link">file_security_permissions.py</block>
   <block id="b3b08c8a5c5a09ffbe1430bb1e019e74" category="paragraph">Se si utilizza Python, vedere anche lo script<block ref="3ccddfdb1872f5bc3b7f054cd270fc1b" category="inline-link-rx"></block> per esempi su come automatizzare alcune attività di protezione dei file.</block>
   <block id="0207c62847caaa4c5ffaeaf4b00552d6" category="paragraph">Per molte attività, l'utilizzo dell'API REST ONTAP richiede un numero inferiore di chiamate rispetto ai comandi CLI o alle chiamate ONTAPI (ZAPI) di ONTAP equivalenti. La tabella seguente include un elenco di chiamate API e l'equivalente dei comandi CLI necessari per ciascuna attività.</block>
   <block id="3d1a91a3f9c08c95df6cb1eff36db464" category="inline-link">Script Python che illustra le autorizzazioni dei file</block>
   <block id="bd9e252fe191d999eeb79daa2d91b6a8" category="list-text"><block ref="bd9e252fe191d999eeb79daa2d91b6a8" category="inline-link-rx"></block></block>
-  <block id="0c30cc0a8be3231b1496649b8f111c07" category="list-text"><block ref="0c30cc0a8be3231b1496649b8f111c07" category="inline-link-rx"></block></block>
   <block id="a58cf8beb5e4ede8e197f2cc371725fe" category="sidebar">Prepararsi a gestire la sicurezza dei file</block>
   <block id="22b4fdae10b975d500f499f9cd7d2659" category="sidebar">Ottenere autorizzazioni efficaci</block>
   <block id="f520e25b29f7e72fdce54450ea759fc8" category="sidebar">Ottenere informazioni sulla verifica</block>
@@ -1987,4 +1982,5 @@
   <block id="7c152b2ce344c1d6fc432fba33fc71cf" category="list-text">È stata aggiunta una nuova<block ref="1b0679be72ad976ad5d491ad57a5eec0" prefix=" " category="inline-code"></block> funzionalità per recuperare le informazioni relative a nome utente, ruolo e autorizzazioni dell'utente connesso. La funzionalità di autenticazione web (WebAuthn) è stata anch'essa migliorata.</block>
   <block id="50627d24ccfbf3209a01226c32f4208c" category="list-text">La gestione delle mappe LUN è stata aggiornata con una funzionalità di aggiornamento migliorata.</block>
   <block id="92d15479dd92b1e555eec98a86d59c71" category="sidebar">Modifiche e considerazioni relative all'API REST di ONTAP</block>
+  <block id="5c7f695288b6d2a3f37f4f2e098cf200" category="admonition">Per le release di ONTAP precedenti alla 9.9.1, puoi automatizzare l'amministrazione delle autorizzazioni SACL e DACL utilizzando la funzionalità di passthrough CLI. Vedi <block ref="2827875b29ddc93c1111f4063df563c8" category="inline-link-macro-rx"></block> per maggiori informazioni.</block>
 </blocks>
