@@ -18,6 +18,7 @@ summary: È possibile utilizzare il seguente flusso di lavoro per creare una nuo
 
 
 
+[[step-1-configure-the-system-wide-email-settings]]
 == Passaggio 1: Configurare le impostazioni di posta elettronica a livello di sistema
 
 È possibile effettuare la seguente chiamata API per configurare le impostazioni e-mail a livello di sistema.
@@ -59,6 +60,7 @@ curl --request PATCH \
 ----
 
 
+[[step-2-define-a-message-filter]]
 == Passo 2: Definizione di un filtro dei messaggi
 
 È possibile effettuare una chiamata API per definire una regola di filtro corrispondente ai messaggi.
@@ -107,6 +109,7 @@ curl --request POST \
 ----
 
 
+[[step-3-create-a-message-destination]]
 == Passo 3: Creazione di una destinazione di messaggio
 
 È possibile effettuare una chiamata API per creare una destinazione del messaggio.

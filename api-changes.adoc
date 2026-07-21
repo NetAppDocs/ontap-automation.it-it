@@ -18,6 +18,7 @@ NetApp continua a migliorare e aggiornare l'API REST di ONTAP con ogni nuova ver
 
 
 
+[[changes-to-existing-ontap-rest-api-calls]]
 == Modifiche alle chiamate API REST ONTAP esistenti
 
 Le modifiche alle chiamate API REST ONTAP esistenti, come endpoint e parametri, possono influire sul software che utilizza l'API. Nella maggior parte delle situazioni, a seconda dell'ambiente, queste sono considerate _breaking changes_. Dovresti consultare l'elenco nella tabella seguente per determinare se vi è un impatto sul tuo ambiente di automazione. Ogni voce include l'endpoint o l'area API applicabile, una descrizione della modifica e la release ONTAP in cui è stata introdotta.
@@ -35,6 +36,7 @@ Le modifiche alle chiamate API REST ONTAP esistenti, come endpoint e parametri, 
 |===
 
 
+[[additional-rest-api-usage-considerations]]
 == Ulteriori considerazioni sull'utilizzo delle API REST
 
 Oltre alle modifiche dirompenti o incompatibili con le versioni precedenti, ci sono diverse considerazioni aggiuntive da tenere presenti quando si utilizza l'API REST di ONTAP. Esistono diverse tipologie di problematiche, tra cui l'introduzione di chiamate API nuove o alternative, nonché modifiche all'elaborazione interna di ONTAP. Ogni voce include l'endpoint o l'area API applicabile, una descrizione del comportamento e la versione di ONTAP in cui è stata introdotta.
@@ -51,6 +53,7 @@ Oltre alle modifiche dirompenti o incompatibili con le versioni precedenti, ci s
 |===
 
 
+[[ontap-rest-api-reference-documentation-errors]]
 == Errori nella documentazione di riferimento dell'API REST ONTAP
 
 Man mano che NetApp migliora e aggiorna l'API REST di ONTAP, a volte possono essere introdotti errori nella documentazione di riferimento online. Questi errori possono creare confusione durante l'utilizzo dell'API, ma generalmente non influiscono né interrompono il software di automazione ONTAP o l'ambiente. Dovresti esaminare l'elenco degli errori nella tabella seguente. Questo ti aiuterà a comprendere e navigare meglio la documentazione di riferimento dell'API REST di ONTAP. Ogni voce include l'endpoint o l'area dell'API applicabile, una descrizione dell'errore e la versione di ONTAP in cui è stato introdotto.

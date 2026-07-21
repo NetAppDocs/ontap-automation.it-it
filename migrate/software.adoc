@@ -21,6 +21,7 @@ NOTE: Tutti gli esempi di codice Python sono disponibili nel https://github.com/
 
 
 
+[[ontapi-usage-reporting-tool]]
 == Tool di reporting sull'utilizzo di ONTAPI
 
 Il tool di reporting sull'utilizzo di ONTAPI è progettato per aiutare i servizi professionali, i clienti e i partner NetApp a identificare l'utilizzo di ONTAPI nel proprio ambiente ONTAP. Gli script vengono forniti per tre diversi casi di utilizzo, come descritto nella tabella seguente.
@@ -42,6 +43,7 @@ Il tool di reporting sull'utilizzo di ONTAPI è progettato per aiutare i servizi
 
 
 
+[[private-cli-passthrough]]
 == Pass-through CLI privato
 
 L'API REST offre un'ampia copertura delle funzionalità e delle strutture disponibili con ONTAP. Tuttavia, in alcuni casi può essere utile l'accesso diretto all'interfaccia utente di ONTAP tramite l'API REST.
@@ -50,12 +52,14 @@ Per un'introduzione a questa funzione, vedere link:../rest/access_ontap_cli.html
 
 
 
+[[python-client-library]]
 == Libreria client Python
 
 La libreria client di Python è un pacchetto che puoi installare e utilizzare per accedere all'API REST di ONTAP con Python. Consente di sviluppare rapidamente un codice affidabile per l'automazione delle implementazioni ONTAP. Per ulteriori informazioni sulla libreria client Python, fare riferimento a link:../python/learn-about-pcl.html["Libreria client Python"].
 
 
 
+[[ontap-powershell-toolkit]]
 == Toolkit PowerShell ONTAP
 
 Il NetApp.ONTAP PowerShell Toolkit migliora l'ambiente PowerShell locale con un modulo che include oltre 2.400 cmdlet. Consente di sviluppare rapidamente codice per l'host Windows per automatizzare le distribuzioni di ONTAP. Per ulteriori informazioni, vedere link:../pstk/learn-about-pstk.html["Ulteriori informazioni sul toolkit PowerShell di NetApp"].

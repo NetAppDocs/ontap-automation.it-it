@@ -21,12 +21,14 @@ NOTE: La funzionalità RBAC di ONTAP ha continuato a espandersi ed è stata note
 
 
 
+[[ontap-roles]]
 == Ruoli di ONTAP
 
 Un ruolo è un insieme di privilegi che definiscono collettivamente le azioni che l'utente può intraprendere. Ciascun privilegio identifica un percorso di accesso specifico e il livello di accesso associato. I ruoli vengono assegnati agli account utente e applicati da ONTAP durante le decisioni relative al controllo degli accessi.
 
 
 
+[[types-of-roles]]
 === Tipi di ruoli
 
 Esistono due tipi di ruoli. Sono stati introdotti e adattati a diversi ambienti con l'evoluzione di ONTAP.
@@ -46,6 +48,7 @@ NOTE: L'utilizzo di ciascun tipo di ruolo comporta vantaggi e svantaggi. Vedere 
 |===
 
 
+[[scope]]
 === Scopo
 
 Ogni ruolo ha un ambito o un contesto all'interno del quale viene definito e applicato. L'ambito determina dove e come viene utilizzato un ruolo specifico.
@@ -65,6 +68,7 @@ NOTE: Gli account utente di ONTAP hanno anche un ambito simile che determina il 
 |===
 
 
+[[source-of-the-role-definitions]]
 === Origine delle definizioni dei ruoli
 
 Esistono due modi per definire un ruolo ONTAP.
@@ -81,6 +85,7 @@ Esistono due modi per definire un ruolo ONTAP.
 |===
 
 
+[[role-mapping-and-ontap-processing]]
 == Mappatura dei ruoli ed elaborazione ONTAP
 
 A seconda della release ONTAP in uso, tutte o quasi tutte le chiamate REST vengono associate a uno o più comandi CLI. Quando si crea un ruolo DI RIPOSO, viene creato anche un ruolo tradizionale o legacy. Questo ruolo tradizionale *mappato* si basa sui comandi CLI corrispondenti e non può essere manipolato o modificato.
@@ -90,6 +95,7 @@ NOTE: La mappatura inversa dei ruoli non è supportata. In altre termini, la cre
 
 
 
+[[summary-of-rbac-evolution]]
 == Riepilogo dell'evoluzione di RBAC
 
 I ruoli tradizionali sono inclusi in tutte le release di ONTAP 9. I ruoli RIMANENTI sono stati introdotti in seguito e si sono evoluti come descritto di seguito.

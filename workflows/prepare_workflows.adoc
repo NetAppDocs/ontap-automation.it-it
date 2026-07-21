@@ -21,6 +21,7 @@ TIP: È necessario assicurarsi che la versione ONTAP supporti tutte le chiamate 
 
 
 
+[[introduction]]
 == Introduzione
 
 Un _workflow_ è una sequenza di uno o più passaggi necessari per eseguire un'attività o un obiettivo amministrativo specifico. I flussi di lavoro di ONTAP includono i passaggi fondamentali e i parametri necessari per eseguire ciascuna attività. Forniscono un punto di partenza per personalizzare il vostro ambiente di automazione ONTAP.
@@ -41,12 +42,14 @@ Un flusso di lavoro può contenere un solo passaggio. Questi _flussi di lavoro a
 
 
 
+[[input-variables]]
 == Variabili di input
 
 I flussi di lavoro sono progettati per essere il più generali possibile, pertanto possono essere utilizzati in qualsiasi ambiente ONTAP. Tenendo presente ciò, le chiamate API REST utilizzano variabili negli esempi curl e in altri input. Le chiamate API REST possono quindi essere facilmente adattate a diversi ambienti ONTAP.
 
 
 
+[[base-url-format]]
 === Formato URL di base
 
 È possibile accedere all'API REST ONTAP direttamente tramite curl o un linguaggio di programmazione. In questo caso, l'URL di base è diverso dall'URL utilizzato quando si accede alla documentazione online di ONTAP o a Gestione sistema.
@@ -59,6 +62,7 @@ Vedere link:../get-started/access_rest_api.html["Come accedere all'API REST di O
 
 
 
+[[common-input-parameters]]
 === Parametri di input comuni
 
 Esistono diversi parametri di input comunemente utilizzati con la maggior parte delle chiamate API REST. Questi parametri in genere non vengono descritti nei singoli flussi di lavoro. È necessario acquisire familiarità con i parametri. Vedere link:../rest/input_variables.html["Variabili di input che controllano una richiesta API"] per ulteriori informazioni.
@@ -67,6 +71,7 @@ Se sono necessari parametri aggiuntivi per una specifica chiamata API REST, essi
 
 
 
+[[variable-format]]
 === Formato variabile
 
 I valori ID e le altre variabili utilizzate con gli esempi di flusso di lavoro sono opachi e possono variare con ogni cluster ONTAP. Per migliorare la leggibilità degli esempi, non vengono utilizzati i valori effettivi. Vengono utilizzate invece le variabili. Questo approccio, basato su un formato coerente e su un insieme di nomi riservati, presenta diversi vantaggi, tra cui:
@@ -95,6 +100,7 @@ Ecco alcune delle parole chiave variabili più comuni. Questo elenco non è esau
 |===
 
 
+[[json-input-examples]]
 === Esempi di input JSON
 
 Alcune delle chiamate API REST, ad esempio quelle che utilizzano POST o PATCH, richiedono l'input JSON nel corpo della richiesta. Gli esempi di input JSON sono presentati separatamente dagli esempi di arricciatura per chiarezza. È possibile utilizzare gli esempi di input JSON con una delle tecniche descritte di seguito.
@@ -107,12 +113,14 @@ Per prima cosa è necessario copiare e incollare l'esempio Curl in una shell ter
 
 
 
+[[authentication-options]]
 == Opzioni di autenticazione
 
 La tecnica di autenticazione principale disponibile per l'API REST è l'autenticazione di base HTTP. A partire da ONTAP 9,14, è inoltre possibile utilizzare il framework Open Authorization (OAuth 2,0) con autenticazione e autorizzazione basate su token.
 
 
 
+[[http-basic-authentication]]
 === Autenticazione di base HTTP
 
 Quando si utilizza l'autenticazione di base, le credenziali utente devono essere incluse in ogni richiesta HTTP. Sono disponibili due opzioni per l'invio delle credenziali.
@@ -145,6 +153,7 @@ Un'altra opzione quando si utilizza Curl è rimuovere l'intestazione Authorizati
 
 
 
+[[oauth-2-0]]
 === OAuth 2,0
 
 Quando si utilizza OAuth 2,0, è necessario richiedere un token di accesso da un server di autorizzazione esterno e includerlo in ogni richiesta HTTP. I passaggi di base di alto livello sono descritti di seguito. Vedere anche https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html["Panoramica dell'implementazione di ONTAP OAuth 2,0"^] Per ulteriori informazioni su OAuth 2,0 e su come utilizzarlo con ONTAP.
@@ -169,6 +178,7 @@ Dopo aver ottenuto un token di accesso, è possibile creare un'intestazione di a
 
 
 
+[[using-the-examples-with-bash]]
 == Uso degli esempi con Bash
 
 Se si utilizzano direttamente gli esempi di curl del flusso di lavoro, è necessario aggiornare le variabili che contengono con i valori appropriati per l'ambiente in uso. Potete modificare manualmente gli esempi o affidarvi alla shell Bash per eseguire la sostituzione come descritto di seguito.

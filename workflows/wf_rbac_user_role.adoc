@@ -21,6 +21,7 @@ Questo flusso di lavoro include i passaggi tipici necessari per creare un ruolo 
 
 
 
+[[step-1-list-the-data-svms-in-the-cluster]]
 == Fase 1: Elenco delle SVM di dati nel cluster
 
 Eseguire la seguente chiamata API REST per elencare le SVM nel cluster. L'UUID e il nome di ciascuna SVM sono forniti nell'output.
@@ -49,6 +50,7 @@ Selezionare la SVM desiderata dall'elenco in cui creare il nuovo utente e il nuo
 
 
 
+[[step-2-list-the-users-defined-to-the-svm]]
 == Fase 2: Elencare gli utenti definiti nella SVM
 
 Eseguire la seguente chiamata API REST per elencare gli utenti definiti nella SVM selezionata. È possibile identificare la SVM attraverso il parametro owner.
@@ -77,6 +79,7 @@ In base agli utenti già definiti nella SVM, scegliere un nome univoco per il nu
 
 
 
+[[step-3-list-the-rest-roles-defined-to-the-svm]]
 == Fase 3: Elencare i ruoli REST definiti per la SVM
 
 Eseguire la seguente chiamata API REST per elencare i ruoli definiti nella SVM selezionata. È possibile identificare la SVM attraverso il parametro owner.
@@ -106,6 +109,7 @@ In base ai ruoli già definiti nella SVM, scegliere un nome univoco per il nuovo
 
 
 
+[[step-4-create-a-custom-rest-role]]
 == Passaggio 4: Creare un ruolo REST personalizzato
 
 Eseguire la seguente chiamata API REST per creare un ruolo REST personalizzato nella SVM. Il ruolo inizialmente dispone di un solo privilegio che stabilisce un accesso predefinito di *nessuno* in modo che tutti gli accessi siano negati.
@@ -149,6 +153,7 @@ Eseguire di nuovo il passaggio 3 per visualizzare il nuovo ruolo. È inoltre pos
 
 
 
+[[step-5-update-the-role-by-adding-more-privileges]]
 == Passaggio 5: Aggiornare il ruolo aggiungendo ulteriori privilegi
 
 Eseguire la seguente chiamata API REST per modificare il ruolo aggiungendo i privilegi necessari.
@@ -199,6 +204,7 @@ Eseguire di nuovo il passaggio 3 per visualizzare il nuovo ruolo. È inoltre pos
 
 
 
+[[step-6-create-a-user]]
 == Passaggio 6: Creare un utente
 
 Eseguire la seguente chiamata API REST per creare un account utente. Il ruolo *dprole1* creato in precedenza è associato al nuovo utente.

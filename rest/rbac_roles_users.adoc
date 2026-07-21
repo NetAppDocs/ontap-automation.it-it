@@ -21,12 +21,14 @@ NOTE: Vedere link:../workflows/wf_rbac_prepare.html["Flussi di lavoro RBAC"] Per
 
 
 
+[[administrative-access]]
 == Accesso amministrativo
 
 È possibile creare e gestire i ruoli ONTAP attraverso l'API REST o l'interfaccia della riga di comando. I dettagli di accesso sono descritti di seguito.
 
 
 
+[[rest-api]]
 === API REST
 
 Esistono diversi endpoint che possono essere utilizzati quando si lavora con i ruoli RBAC e gli account utente. I primi quattro nella tabella vengono utilizzati per creare e gestire i ruoli. Gli ultimi due vengono utilizzati per creare e gestire gli account utente.
@@ -58,6 +60,7 @@ TIP: È possibile accedere a ONTAP online link:../reference/api_reference.html["
 |===
 
 
+[[command-line-interface]]
 === Interfaccia della riga di comando
 
 Di seguito sono descritti i relativi comandi dell'interfaccia utente di ONTAP. Tutti i comandi sono accessibili a livello di cluster tramite un account amministratore.
@@ -77,6 +80,7 @@ Di seguito sono descritti i relativi comandi dell'interfaccia utente di ONTAP. T
 |===
 
 
+[[role-definitions]]
 == Definizioni dei ruoli
 
 I ruoli RIMANENTI e tradizionali vengono definiti attraverso un insieme di attributi.
@@ -95,12 +99,14 @@ Ogni ruolo contiene un insieme di uno o più privilegi. Ogni privilegio identifi
 
 
 
+[[privileges]]
 == Privilegi
 
 Un ruolo può contenere uno o più privilegi. Ogni definizione di privilegio è una tupla e stabilisce il livello di accesso a una risorsa o a un'operazione specifica.
 
 
 
+[[resource-path]]
 === Percorso delle risorse
 
 Il percorso delle risorse viene identificato come endpoint REST o percorso della directory comando/comando CLI.
@@ -113,6 +119,7 @@ Un comando CLI identifica la destinazione di un ruolo tradizionale. È inoltre p
 
 
 
+[[access-level]]
 === Livello di accesso
 
 Il livello di accesso definisce il tipo di accesso che il ruolo ha al percorso o al comando di risorsa specifico. I livelli di accesso vengono identificati mediante una serie di parole chiave predefinite. Con ONTAP 9.6 sono stati introdotti tre livelli di accesso. Possono essere utilizzati sia per i ruoli tradizionali che PER QUELLI DI RIPOSO. Inoltre, con ONTAP 9.11.1 sono stati aggiunti tre nuovi livelli di accesso. Questi nuovi livelli di accesso possono essere utilizzati solo con i ruoli REST.
@@ -144,18 +151,21 @@ NOTE: I livelli di accesso seguono il modello CRUD. Con REST, si basa sui metodi
 |===
 
 
+[[optional-query]]
 === Query facoltativa
 
 Quando si crea un ruolo tradizionale, è possibile includere facoltativamente un valore *query* per identificare il sottoinsieme di oggetti applicabili per il comando o la directory dei comandi.
 
 
 
+[[summary-of-the-built-in-roles]]
 == Riepilogo dei ruoli integrati
 
 ONTAP include diversi ruoli predefiniti che è possibile utilizzare a livello di cluster o SVM.
 
 
 
+[[cluster-scoped-roles]]
 === Ruoli con ambito del cluster
 
 Nell'ambito del cluster sono disponibili diversi ruoli integrati.
@@ -186,6 +196,7 @@ Vedere https://docs.netapp.com/us-en/ontap/authentication/predefined-roles-clust
 |===
 
 
+[[svm-scoped-roles]]
 === Ruoli con ambito SVM
 
 Nell'ambito di SVM sono disponibili diversi ruoli integrati. Il sistema *vsadmin* fornisce l'accesso alle funzionalità più generali e potenti. Sono disponibili diversi ruoli aggiuntivi adattati a specifiche attività amministrative, tra cui:
@@ -201,6 +212,7 @@ Vedere https://docs.netapp.com/us-en/ontap/authentication/predefined-roles-svm-a
 
 
 
+[[comparing-the-role-types]]
 == Confronto dei tipi di ruolo
 
 Prima di selezionare un ruolo *REST* o *tradizionale*, devi essere consapevole delle differenze. Di seguito sono descritti alcuni dei modi in cui è possibile confrontare i due tipi di ruolo.
@@ -210,6 +222,7 @@ NOTE: Per casi di utilizzo RBAC più avanzati o complessi, è consigliabile util
 
 
 
+[[how-the-user-accesses-ontap]]
 === Modalità di accesso dell'utente a ONTAP
 
 Prima di creare un ruolo, è importante sapere come l'utente accede al sistema ONTAP. In base a ciò, è possibile determinare un tipo di ruolo.
@@ -229,6 +242,7 @@ Prima di creare un ruolo, è importante sapere come l'utente accede al sistema O
 |===
 
 
+[[precision-of-the-access-path]]
 === Precisione del percorso di accesso
 
 Il percorso di accesso definito per un ruolo REST si basa su un endpoint REST. Il percorso di accesso per un ruolo tradizionale si basa su un comando CLI o su una directory di comandi. Inoltre, è possibile includere un parametro di query opzionale con un ruolo tradizionale per limitare ulteriormente l'accesso in base ai valori dei parametri del comando.

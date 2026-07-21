@@ -18,6 +18,7 @@ Sono disponibili diverse opzioni per automatizzare la distribuzione e l'amminist
 
 
 
+[[ontap-rest-api]]
 == API REST di ONTAP
 
 A partire da ONTAP 9.6, ONTAP include una solida API REST che fornisce le basi per automatizzare la distribuzione e l'amministrazione dei sistemi di storage.  Da allora la REST API ha continuato ad espandersi e maturare.  Ora rappresenta l'opzione preferita e strategica per automatizzare l'amministrazione delle distribuzioni ONTAP .
@@ -30,6 +31,7 @@ L'API ONTAPI (Zephyr API o ZAPI) è il set originale di chiamate proprietarie in
 
 
 
+[[client-software-toolkits]]
 == Kit di strumenti software client
 
 NetApp offre toolkit per i client che astraggono l'API REST di ONTAP e semplificano la creazione del codice di automazione. È necessario scegliere una lingua appropriata per il linguaggio e l'ambiente di sviluppo.
@@ -42,6 +44,7 @@ Puoi utilizzare il NetApp.ONTAP PowerShell Toolkit per automatizzare l'amministr
 
 
 
+[[automation-frameworks]]
 == Framework di automazione
 
 È possibile creare e distribuire codice di automazione utilizzando uno dei numerosi framework.

@@ -18,6 +18,7 @@ Ogni richiesta API genera una risposta al client. È necessario esaminare la ris
 
 
 
+[[http-status-code]]
 == Codice di stato HTTP
 
 I codici di stato HTTP utilizzati dall'API REST ONTAP sono descritti di seguito.
@@ -58,6 +59,7 @@ I codici di stato HTTP utilizzati dall'API REST ONTAP sono descritti di seguito.
 |===
 
 
+[[response-headers]]
 == Intestazioni delle risposte
 
 Nella risposta HTTP generata da ONTAP sono incluse diverse intestazioni.
@@ -68,6 +70,7 @@ Tipo di contenuto:: Questo normalmente sarà `application/hal+json`.
 
 
 
+[[response-body]]
 == Corpo di risposta
 
 Il contenuto del corpo di risposta risultante da una richiesta API varia in base all'oggetto, al tipo di elaborazione e al successo o all'errore della richiesta. Il rendering della risposta viene sempre eseguito in JSON.
@@ -96,12 +99,14 @@ In alcuni casi, non viene restituito alcun dato e il corpo della risposta includ
 
 
 
+[[hal-linking]]
 == Collegamento HAL
 
 L'API REST di ONTAP utilizza HAL come meccanismo per supportare Hypermedia come motore di stato dell'applicazione (HATEOAS). Quando viene restituito un oggetto o un attributo che identifica una risorsa specifica, viene incluso anche un collegamento con codifica HAL che consente di individuare e determinare facilmente ulteriori dettagli sulla risorsa.
 
 
 
+[[errors]]
 == Errori
 
 Se si verifica un errore, viene restituito un oggetto di errore nel corpo della risposta.

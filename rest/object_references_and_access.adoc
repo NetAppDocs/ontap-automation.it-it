@@ -18,6 +18,7 @@ summary: 'È possibile fare riferimento alle istanze di risorse o agli oggetti e
 
 
 
+[[object-access-paths]]
 == Percorsi di accesso a oggetti
 
 Ad un livello elevato, esistono due tipi di percorso quando si accede a un oggetto:
@@ -34,6 +35,7 @@ L'oggetto non è il riferimento principale della chiamata API, ma è collegato a
 
 
 
+[[accessing-an-object-using-the-uuid]]
 == Accesso a un oggetto utilizzando l'UUID
 
 A ogni oggetto viene assegnato un identificatore univoco al momento della creazione, che nella maggior parte dei casi è un UUID a 128 bit. I valori UUID assegnati sono immutabili e vengono utilizzati internamente in ONTAP per accedere e gestire le risorse. Per questo motivo, l'UUID fornisce in genere il modo più rapido e stabile per accedere agli oggetti.
@@ -42,6 +44,7 @@ Per molti tipi di risorse, è possibile fornire un valore UUID come parte della 
 
 
 
+[[accessing-an-object-using-an-object-property]]
 == Accesso a un oggetto mediante una proprietà Object
 
 Oltre a un UUID, è anche possibile accedere a un oggetto utilizzando una proprietà Object. Nella maggior parte dei casi, è conveniente utilizzare la proprietà name. Ad esempio, è possibile utilizzare il seguente parametro di query nella stringa URL per accedere a un'istanza del nodo con il relativo nome: `/cluster/nodes?name=node_one`. Oltre a un parametro di query, è possibile accedere a un oggetto esterno tramite una proprietà nell'oggetto primario.
@@ -65,6 +68,7 @@ In particolare, è possibile un peggioramento delle performance quando si verifi
 
 
 
+[[cluster-versus-svm-context]]
 == Confronto tra cluster e contesto SVM
 
 Esistono diversi endpoint REST che supportano sia un cluster che SVM. Quando si utilizza uno di questi endpoint, è possibile indicare il contesto della chiamata API tramite `scope=[svm|cluster]` valore. Esempi di endpoint che supportano un contesto doppio includono interfacce IP e ruoli di sicurezza.
@@ -74,6 +78,7 @@ NOTE: Il valore dell'ambito ha una base di valori predefinita sulle proprietà f
 
 
 
+[[using-patch-and-delete-on-a-collection-of-objects]]
 == Utilizzo DI PATCH ed ELIMINAZIONE su un insieme di oggetti
 
 Ogni endpoint REST che supporta PATCH o ELIMINI su un'istanza di risorsa supporta anche lo stesso metodo su un insieme di oggetti. L'unico requisito è che almeno un campo debba essere fornito attraverso un parametro di query nella stringa URL. Quando si rilascia UNA PATCH o SI ELIMINA una raccolta, ciò equivale a eseguire le seguenti operazioni internamente:

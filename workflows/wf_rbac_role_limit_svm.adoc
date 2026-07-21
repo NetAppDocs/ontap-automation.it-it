@@ -27,6 +27,7 @@ Viene dapprima creato un ruolo tradizionale per consentire inizialmente l'access
 
 
 
+[[step-1-create-the-role]]
 == Fase 1: Creare il ruolo
 
 Puoi emettere una chiamata API per creare il ruolo RBAC.
@@ -68,6 +69,7 @@ curl --request POST \
 ----
 
 
+[[step-2-update-the-role]]
 == Passaggio 2: Aggiornare il ruolo
 
 È possibile eseguire una chiamata API per aggiornare il ruolo esistente.

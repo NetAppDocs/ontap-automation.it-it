@@ -22,6 +22,7 @@ La libreria client Python di NetApp ONTAP è un pacchetto che puoi installare e 
 
 
 
+[[features-and-benefits]]
 == Caratteristiche e vantaggi
 
 È possibile utilizzare la libreria client Python per sviluppare rapidamente codice solido per automatizzare l'amministrazione delle implementazioni ONTAP. Fornisce diversi servizi sottostanti, tra cui:
@@ -34,6 +35,7 @@ La libreria client Python di NetApp ONTAP è un pacchetto che puoi installare e 
 
 
 
+[[packages-and-documentation]]
 == Pacchetti e documentazione
 
 Il nome del pacchetto della libreria client Python è _NetApp-ONTAP_. La versione associata al pacchetto è una combinazione dei numeri di versione principali e minori di ONTAP da cui è stata generata la libreria, insieme a una versione minore per la libreria client all'interno della release di ONTAP. Ad esempio, i numeri di versione validi includono 9,6.1, 9,6.2 e 9,7.1.
@@ -43,8 +45,13 @@ Ogni versione di ONTAP che inizia con 9,6 dispone di un pacchetto PyPI con relat
 .Elenco dei pacchetti e documentazione
 [%collapsible]
 ====
+.ONTAP 9.19.1
+* https://pypi.org/project/netapp-ontap/["PyPI: NetApp ONTAP 9.19.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP3383665/html/index.html["NetApp PCL documentazione per 9.19.1"^]
+
+
 .ONTAP 9.18.1
-* https://pypi.org/project/netapp-ontap/["PyPI: NetApp ONTAP 9.18.1"^]
+* https://pypi.org/project/netapp-ontap/9.18.1.0["PyPI: NetApp ONTAP 9.18.1"^]
 * https://library.netapp.com/ecmdocs/ECMLP3364865/html/index.html["NetApp PCL documentazione per 9.18.1"^]
 
 
@@ -111,6 +118,7 @@ Ogni versione di ONTAP che inizia con 9,6 dispone di un pacchetto PyPI con relat
 ====
 
 
+[[code-samples]]
 == Esempi di codice
 
 NetApp gestisce un repository GitHub con esempi di codice e altre informazioni utili. È possibile accedere alla cartella _esempi_ per accedere agli esempi utilizzando la libreria client Python. Per i dettagli, fare riferimento alle seguenti posizioni su GitHub:

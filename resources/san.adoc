@@ -46,7 +46,7 @@ Una sessione iSCSI è una o più connessioni TCP che collegano un iniziatore iSC
 Gli attributi LUN sono coppie nome/valore definite dal chiamante che possono essere memorizzate facoltativamente con un LUN. Gli attributi sono disponibili per salvare piccole quantità di metadati specifici dell'applicazione e non vengono interpretati da ONTAP. Gli endpoint consentono di creare, aggiornare, eliminare e rilevare gli attributi di un LUN. Questo tipo di risorsa è stato introdotto con ONTAP 9.10.
 
 .Mappe LUN
-Una mappa LUN è un'associazione tra una LUN e un initiator group. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.19.1.
+Una mappa LUN è un'associazione tra una LUN e un initiator group. Questo tipo di risorsa è stato introdotto con ONTAP 9.6 e aggiornato con ONTAP 9.19.
 
 .LUN esegue la mappatura dei nodi di reporting
 I nodi di reporting sono i nodi del cluster da cui vengono annunciati i percorsi di rete verso un LUN mappato utilizzando i protocolli SAN come parte della funzione SLM (Selective LUN map) di ONTAP. I nuovi endpoint consentono di aggiungere, rimuovere e rilevare i nodi di reporting di una mappa LUN. Questo tipo di risorsa è stato introdotto con ONTAP 9.10.

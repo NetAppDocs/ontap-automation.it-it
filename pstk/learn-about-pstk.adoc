@@ -18,6 +18,7 @@ NetApp offre un toolkit per le applicazioni PowerShell che puoi utilizzare per a
 
 
 
+[[overview]]
 == Panoramica
 
 PowerShell è un'altra opzione per automatizzare l'amministrazione dei cluster ONTAP.
@@ -30,6 +31,7 @@ Il NetApp. Il toolkit per PowerShell di ONTAP include il modulo PowerShell per N
 
 
 
+[[download-and-install]]
 == Scaricare e installare
 
 Sono disponibili due opzioni per scaricare e installare il toolkit PowerShell di NetApp ONTAP.

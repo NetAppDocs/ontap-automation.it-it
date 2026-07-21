@@ -18,6 +18,7 @@ summary: 'È possibile configurare l"elaborazione del sistema di gestione degli 
 
 
 
+[[overview]]
 === Panoramica
 
 Sono disponibili diversi flussi di lavoro di esempio che illustrano come utilizzare i servizi EMS di ONTAP. Prima di utilizzare i flussi di lavoro e di inviare una qualsiasi delle chiamate API REST, assicurarsi di riesaminarla link:../workflows/prepare_workflows.html["Preparati a utilizzare i flussi di lavoro"].
@@ -26,6 +27,7 @@ Se si utilizza Python, vedere anche lo script https://github.com/NetApp/ontap-re
 
 
 
+[[ontap-rest-api-versus-ontap-cli-commands]]
 === API REST ONTAP e comandi CLI ONTAP
 
 Per molte attività, l'utilizzo dell'API REST ONTAP richiede un numero di chiamate inferiore rispetto ai comandi CLI ONTAP equivalenti. La tabella seguente include un elenco di chiamate API e l'equivalente dei comandi CLI necessari per ciascuna attività.
