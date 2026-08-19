@@ -193,10 +193,10 @@ Tenere presente quanto segue:
 [[pagination-when-retrieving-objects-in-a-collection]]
 == Impaginazione durante il recupero di oggetti in una raccolta
 
-Quando si esegue una chiamata API utilizzando GET per accedere a un insieme di oggetti dello stesso tipo, ONTAP tenta di restituire il maggior numero possibile di oggetti in base a due vincoli. È possibile controllare ciascuno di questi vincoli utilizzando parametri di query aggiuntivi sulla richiesta. Il primo vincolo raggiunto per una richiesta GET specifica termina la richiesta e limita quindi il numero di record restituiti.
+Quando effettui una chiamata API tramite GET per accedere a una raccolta di oggetti dello stesso tipo, ONTAP cerca di restituire il maggior numero possibile di oggetti in base a due vincoli (numero massimo di oggetti, tempo impiegato per recuperarli). Puoi controllare ciascuno di questi utilizzando parametri di query aggiuntivi nella richiesta. Il primo vincolo raggiunto per una specifica richiesta GET interrompe la richiesta e quindi limita il numero di record restituiti. Se una richiesta termina prima di aver iterato su tutti gli oggetti, la risposta contiene il link necessario per recuperare il batch successivo di record.
 
 
-NOTE: Se una richiesta termina prima di scorrere tutti gli oggetti, la risposta contiene il collegamento necessario per recuperare il batch successivo di record.
+TIP: Se una chiamata API restituisce zero record, senza alcun next link, questo potrebbe indicare che si è verificato un timeout prima che fosse possibile recuperare dei record. In questo caso, puoi riprovare la richiesta usando un valore  `return_timeout` più grande o un valore  `max_records` più piccolo (o entrambi).
 
 Limitazione del numero di oggetti:: Per impostazione predefinita, ONTAP restituisce un massimo di 10,000 oggetti per una richiesta GET. È possibile modificare questo limite utilizzando `max_records` parametro di query. Ad esempio:
 +
