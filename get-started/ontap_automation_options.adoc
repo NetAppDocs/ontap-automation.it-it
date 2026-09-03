@@ -40,7 +40,7 @@ NetApp offre toolkit per i client che astraggono l'API REST di ONTAP e semplific
 La libreria client Python è un pacchetto che puoi utilizzare per scrivere script per accedere all'API REST di ONTAP. Fornisce supporto per diversi servizi sottostanti, tra cui gestione della connessione, elaborazione delle richieste asincrone e gestione delle eccezioni. Utilizzando la libreria client Python, puoi sviluppare rapidamente un codice solido per supportare i tuoi obiettivi di automazione ONTAP. Per ulteriori informazioni, vedere link:../python/learn-about-pcl.html["Libreria client Python"] .
 
 .Toolkit PowerShell
-Puoi utilizzare il NetApp.ONTAP PowerShell Toolkit per automatizzare l'amministrazione di un cluster ONTAP da un host Windows. Per ulteriori informazioni, vedere link:../pstk/learn-about-pstk.html["Ulteriori informazioni sul toolkit PowerShell di NetApp"] .
+Puoi usare il NetApp.ONTAP PowerShell Toolkit per automatizzare l'amministrazione di un cluster ONTAP da un host Windows. Vedi link:../pstk/learn-about-pstk.html["Scopri il NetApp ONTAP PowerShell Toolkit"] per maggiori informazioni.
 
 
 
