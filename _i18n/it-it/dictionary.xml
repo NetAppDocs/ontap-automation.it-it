@@ -1823,7 +1823,6 @@
   <block id="6f44ad18926a737f5583547164ea23a6" category="admonition">Tutti gli esempi di codice Python sono disponibili nel<block ref="e359793ef9022d56bacc77e70a2f7722" category="inline-link-rx"></block> repository GitHub. È inoltre necessario esaminare le risorse disponibili in <block ref="b91c0d7b0884fbccd6e11fc23dddcee7" category="inline-link-macro-rx"></block>.</block>
   <block id="f0e9bdffcded3071566cc636f2645353" category="doc">Note legali per l'API REST ONTAP</block>
   <block id="0d2211154e74dec09269bf1111f07b01" category="doc">Mappatura delle API REST di ONTAPI a ONTAP</block>
-  <block id="484b32b038170aab3e10173e4c46ac03" category="doc">Considerazioni sulla migrazione per l'API REST ONTAP</block>
   <block id="7736cc9045eca4ab635dbdd3296019b8" category="doc">Utilizzo dei contatori delle prestazioni con l'API REST ONTAP</block>
   <block id="f96e7d2ed62f1d1dbbd27c415dfa237d" category="doc">Tool e software che supportano l'API REST di ONTAP</block>
   <block id="426bacf234f4a8f3095a2847314d55b0" category="doc">Riferimento per l'API REST ONTAP</block>
@@ -1964,7 +1963,6 @@
   <block id="aea50297ce3c7b46d330df439a818aad" category="paragraph">La release ONTAP 9.19.1 include diversi aggiornamenti che continuano a migliorare e perfezionare la ONTAP REST API.</block>
   <block id="50627d24ccfbf3209a01226c32f4208c" category="list-text">La gestione delle mappe LUN è stata aggiornata con una funzionalità di aggiornamento migliorata.</block>
   <block id="92d15479dd92b1e555eec98a86d59c71" category="sidebar">Modifiche e considerazioni relative all'API REST di ONTAP</block>
-  <block id="5c7f695288b6d2a3f37f4f2e098cf200" category="admonition">Per le release di ONTAP precedenti alla 9.9.1, puoi automatizzare l'amministrazione delle autorizzazioni SACL e DACL utilizzando la funzionalità di passthrough CLI. Vedi <block ref="2827875b29ddc93c1111f4063df563c8" category="inline-link-macro-rx"></block> per maggiori informazioni.</block>
   <block id="930f6e309ea31ddf8913bc2743474206" category="inline-link">PyPI: NetApp ONTAP 9.19.1</block>
   <block id="fc079a70c22d237bf5ba1cb37fd321ed" category="list-text"><block ref="fc079a70c22d237bf5ba1cb37fd321ed" category="inline-link-rx"></block></block>
   <block id="ed9d9bda2b176aa2a1f17944b6d4a5b8" category="inline-link">NetApp PCL documentazione per 9.19.1</block>
@@ -1987,4 +1985,7 @@
   <block id="b201a8dd29e4f52f8c7bcba56cc89a4b" category="inline-link-macro">Scopri il NetApp ONTAP PowerShell Toolkit</block>
   <block id="8b7efead83e22c580ef9c77c4e535a8e" category="paragraph">Puoi usare il NetApp.ONTAP PowerShell Toolkit per automatizzare l'amministrazione di un cluster ONTAP da un host Windows. Vedi <block ref="d2abc1459267dbe95f589ada27893a0a" category="inline-link-macro-rx"></block> per maggiori informazioni.</block>
   <block id="8440ec0fb315f7d587b38429a761b612" category="paragraph">Il NetApp.ONTAP PowerShell Toolkit migliora il tuo ambiente PowerShell locale con un modulo che include oltre 2.400 cmdlet. Ti permette di sviluppare rapidamente codice per il tuo host Windows per automatizzare le distribuzioni ONTAP. Per ulteriori informazioni, vedi <block ref="d2abc1459267dbe95f589ada27893a0a" category="inline-link-macro-rx"></block>.</block>
+  <block id="b6d0a2a842f978459f1bd6e49da11974" category="doc">Scopri come migrare all'API REST di ONTAP</block>
+  <block id="249dde32b5b3415eea7043c85ab74e06" category="admonition">Per le release di ONTAP precedenti alla 9.9.1, puoi automatizzare l'amministrazione delle autorizzazioni SACL e DACL utilizzando la funzionalità di passthrough CLI. Consulta <block ref="4cdee464b402508aee95b27a583991b8" category="inline-link-macro-rx"></block> per ulteriori informazioni.</block>
+  <block id="76372f20d2a63611bf93c8514dcab6f2" category="sidebar">Scopri la migrazione</block>
 </blocks>
