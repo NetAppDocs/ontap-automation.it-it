@@ -4,7 +4,7 @@ permalink: get-started/access_rest_api.html
 keywords: access rest api, lif, cluster lif, svm lif, node lif 
 summary: 'È possibile accedere all"API REST di ONTAP in diversi modi.' 
 ---
-= Come accedere all'API REST di ONTAP
+= Modi per accedere all'API REST di ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -6,7 +6,7 @@ entries:
   url: "/get-started/ontap_automation_options.html"
 - title: Informazioni sui servizi Web REST
   url: "/get-started/learn-about-rest.html"
-- title: Come accedere all'API REST
+- title: Modi per accedere all'API REST
   url: "/get-started/access_rest_api.html"
 - title: La prima chiamata ONTAP REST API
   url: "/get-started/first_call.html"

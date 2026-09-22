@@ -2,7 +2,7 @@
 section: migrate
 title: Migrare da ONTAPI all'API REST
 entries:
-- title: Considerazioni sulla migrazione
+- title: Scopri come migrare
   url: "/migrate/migration-considerations.html"
 - title: ONTAPI per il mapping REST
   url: "/migrate/mapping.html"
