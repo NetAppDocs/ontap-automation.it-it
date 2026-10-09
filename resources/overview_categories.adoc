@@ -4,7 +4,7 @@ permalink: resources/overview_categories.html
 keywords: resources, resource categories 
 summary: Le risorse disponibili tramite le API REST ONTAP sono organizzate per categorie. Ciascuna delle categorie di risorse include una breve descrizione insieme a considerazioni di utilizzo aggiuntive, ove appropriato. 
 ---
-= Panoramica delle categorie di risorse nell'API REST ONTAP
+= Categorie di risorse nell'API REST di ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
